@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Joseph Horowitz</title>
+        <link rel="icon" type="image/png" href="images/favicon.png">
+        <!-- CSS IMPORT -->
+        <link rel="stylesheet" href="css/projects.css">
+        <!-- JavaScript -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <main>
+            <header>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/l6iDFiNyqYY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h1>Asteroid Escape</h1>
+                <p>Asteroid Escape was created for the class called Fundamentals of Programming and Computer Science and was my term project for the end of the semester. For this project I created a gesture based game that used input from a Kinect to map the users movements into the game.  </p>
+                <div class="content-wrap">
+                    <div class="column">
+                        <h3>Timeline</h3>
+                        <p>November-December 2017</p>
+                    </div>
+                    <div class="column">
+                        <h3>My Role</h3>
+                        <p>Developer</p>
+                    </div>
+                    <div class="column">
+                        <h3>Tools</h3>
+                        <p>Python, Pykinect, Autodesk Maya</p>
+                    </div>
+                </div>
+            </header>
+            <section>
+                <h1>3D Renderer</h1>
+                <p>One of the main challenges I faced when making this project was the fact that the Kinect API I was using, PyKinect, was incompatable with 3D renderers. As a solution, I decided to create my own. <p>
+                <p>My 3D renderer drew points outwards from the center, the closer the point to the camera, the further out it was drawn. I could then feed the renderer sets of points, edges, and faces and it would draw objects from back to front.</p>
+                <img src="/images/asteroidEscape/3D.png">
+                <p>From there I modelled a cockpit and few asteroids in Autodesk Maya and fed the fbx files into my program by hand to create complete 3D scenes.</p>
+                <img src="/images/asteroidEscape/background.png">
+            </section>
+            <footer>© 2020 &lt/&gt by Joseph Horowitz.</footer>
+        </main>
+        <nav>
+            <a href="../index.html#section1" id="back">JH</a>
+            <a href="#top" id="up">TOP</a>
+        </nav>
+    </body>
+</html>
