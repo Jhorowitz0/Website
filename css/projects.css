@@ -39,6 +39,7 @@ section{
 }
 
 img{
+    object-fit: contain;
     width: 100%;
     border-radius: 7px;
 }
@@ -52,8 +53,8 @@ img{
 }
 
 .carousel-cell .vertimg{
-    width: auto;
-    height: 90vh;
+    object-fit: contain;
+    height: 70vh;
 }
 
 video, iframe{
@@ -136,6 +137,7 @@ footer{
 
  .carousel-cell {
     width: 60%;
+    height: 70vh;
     margin: 0px 50px;
     opacity: 0.1;
     border-radius: 5px;
@@ -145,8 +147,11 @@ footer{
 }
 
 .vert{
-    width: auto;
+    width: 29%;
+    height: auto;
 }
+
+
 
 .is-selected{
     /* background: #EFC88B; */
@@ -178,7 +183,8 @@ footer{
 }
 .flickity-button:hover .flickity-button-icon{
     fill: #E01A4F;
-    scale: 110%;
+    transform: scale(1.1);
+
 }
 
 .flickity-prev-next-button.previous {

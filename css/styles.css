@@ -78,15 +78,14 @@ h2{
 .downArrow {
     width: 50px;
     fill: #050517;
-    translate: 0 30vh;
+    transform: translateY(30vh);
     transition: 0.1s;
 }
 
 .downArrow:hover {
     transition: 0.1s;
     width: 50px;
-    translate: 0 30.5vh;
-    scale: 110%;
+    transform: scale(1.02) translateY(30.5vh);
     fill: #E01A4F;
 }
   /* --------------------CAROUSEL STYLES----------------------- */
@@ -133,14 +132,14 @@ h2{
 }
 .flickity-button:hover .flickity-button-icon{
     fill: #E01A4F;
-    scale: 110%;
+    transform: scale(1.1);
 }
 
 .flickity-prev-next-button.previous {
-    left: 15%;
+    left: 14%;
   }
 .flickity-prev-next-button.next {
-    right: 15%;
+    right: 14%;
 }
 
 flickity-page-dots {
@@ -180,8 +179,8 @@ flickity-page-dots {
 
 
 .carousel-content a:hover{
-    scale:120%;
     font-size: 30px;
+    transform: scale(1.2);
     transition: 0.3s;
 }
 
@@ -300,16 +299,15 @@ h4{
     text-emphasis-style: none;
     text-decoration: none;
     color: #D0D6DD;
-    translate: 0 -25px;
+    transform: translate(0, -25px);
 }
 
 .nav-item .nav-marker{
-    transition: rotate 0.3s, translate 0.1s;
+    transition: 0.2s;
 }
 
 .nav-item:hover .nav-marker{
-    translate: 120px;
-    rotate: 90deg;
+    transform: translateX(120px) rotate(90deg);
 }
 
 .nav-item .nav-title{
@@ -325,12 +323,12 @@ h4{
     opacity: 1;
     font-weight: bold;
     font-size: 20px;
-    translate: 0 -35px;
+    transform: translate(0, -35px);
 }
 
 #JH:hover{
     font-size: 25px;
-    translate: 0 -45px;
+    transform: translate(0, -45px);
 }
 
 
