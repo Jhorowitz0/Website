@@ -169,6 +169,7 @@ flickity-page-dots {
 
 .carousel-cell{
     background-size: cover;
+    height: 100%;
 }
 
 .carousel-content h4{
