@@ -105,6 +105,7 @@ h2{
     background: #D0D6DD;
     overflow: hidden;
     background-size: cover;
+    background-repeat: no-repeat;
   }
 
 .is-selected{
@@ -403,13 +404,6 @@ h4{
 
     .side-nav-wrap{
         display:none;
-    }
-
-    .carousel-cell {
-        width: 60%;
-        height: 500px;
-        border-radius: 5px;
-        counter-increment: gallery-cell;
     }
 
     .flickity-prev-next-button {
