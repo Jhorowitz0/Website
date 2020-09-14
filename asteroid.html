@@ -9,6 +9,17 @@
         <link rel="stylesheet" href="css/projects.css">
         <!-- JavaScript -->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+        <script>
+
+            function reloadIt() {
+                if (window.location.href.substr(-2) !== "?r") {
+                    window.location = window.location.href + "?r";
+                }
+            }
+            
+            setTimeout('reloadIt()', 10)();
+            
+        </script>
     </head>
     <body>
         <main>
