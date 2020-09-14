@@ -105,7 +105,6 @@ h2{
     background: #D0D6DD;
     overflow: hidden;
     background-size: cover;
-    background-repeat: no-repeat;
   }
 
 .is-selected{
