@@ -185,7 +185,7 @@ flickity-page-dots {
 }
 
 #asteroid{
-    background: url(/images/asteroidEscape/background.PNG);
+    background: url(/images/asteroidEscape/background.png);
     background-size: cover;
 
 }
@@ -201,7 +201,7 @@ flickity-page-dots {
 }
 
 #trucks{
-    background: url(/images/trucks/background.PNG);
+    background: url(/images/trucks/background.png);
     background-size: cover;
 }
 
