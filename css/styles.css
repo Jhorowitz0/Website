@@ -89,10 +89,14 @@ h2{
     fill: #E01A4F;
 }
   /* --------------------CAROUSEL STYLES----------------------- */
+.carousel {
+    height: 70vh;
+}
+
 
 .carousel-cell {
     width: 60%;
-    height: 70vh;
+    height: 100%;
     margin: 0px 50px;
     opacity: 0.1;
     border-radius: 5px;
@@ -100,6 +104,7 @@ h2{
     transition: 0.5s;
     background: #D0D6DD;
     overflow: hidden;
+    background-size: cover;
   }
 
 .is-selected{
@@ -164,11 +169,6 @@ flickity-page-dots {
     font-size: 30px;
     background: rgba(0,0,0,80%);
     padding-left: 5%;
-    height: 100%;
-}
-
-.carousel-cell{
-    background-size: cover;
     height: 100%;
 }
 
