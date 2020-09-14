@@ -89,6 +89,10 @@ h2{
     fill: #E01A4F;
 }
   /* --------------------CAROUSEL STYLES----------------------- */
+.flickity-viewport {
+    position: relative;
+}
+
 .carousel {
     height: 70vh;
 }
