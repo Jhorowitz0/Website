@@ -167,6 +167,10 @@ flickity-page-dots {
     height: 100%;
 }
 
+.carousel-cell{
+    background-size: cover;
+}
+
 .carousel-content h4{
     font-size: 50px;
 }
