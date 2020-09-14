@@ -185,13 +185,13 @@ flickity-page-dots {
 }
 
 #asteroid{
-    background: url(/images/asteroidEscape/background.png);
+    background: url(/images/asteroidEscape/background.PNG);
     background-size: cover;
 
 }
 
 #glop{
-    background: url(/images/glop/background.png);
+    background: url(/images/glop/background.PNG);
     background-size: cover;
 }
 
