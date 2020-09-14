@@ -360,6 +360,14 @@ h4{
 }
 /* --------------------TABLET CHANGES----------------------- */
 @media only screen and (max-width: 1400px) {
+
+    .downArrow {
+        width: 50px;
+        fill: #050517;
+        transform: translateY(20vh);
+        transition: 0.1s;
+    }
+
     .flickity-prev-next-button.previous {
         left: 13%;
     }

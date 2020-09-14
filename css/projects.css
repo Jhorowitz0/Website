@@ -99,6 +99,8 @@ h1{
     padding: 5px;
 }
 
+/* -----------------------nav styles ------------------ */
+
 #back{
     position: fixed;
     top: 4%;
@@ -208,6 +210,19 @@ flickity-page-dots {
 
 /* --------------------TABLET CHANGES----------------------- */
 @media only screen and (max-width: 1400px) {
+
+    header{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 10%;
+    }
+
+    section{
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 40px;
+    }
+
     .content-wrap{
         flex-direction: column;
     }
@@ -222,6 +237,22 @@ flickity-page-dots {
     }
     .flickity-prev-next-button.next {
         right: 13%;
+    }
+
+    #back{
+        position: fixed;
+        top: 2%;
+        left: 3%;
+        font-size: 30px;
+        transition: 0.3s;
+    }
+
+    #up{
+        position: fixed;
+        top: 2%;
+        right: 1.5%;
+        font-size: 25px;
+        transition: 0.3s;
     }
 
 }
