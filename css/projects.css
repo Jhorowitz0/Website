@@ -259,15 +259,57 @@ flickity-page-dots {
 
 @media only screen and (max-width: 800px) {
 
+    h1{
+        font-size: 40px;
+        color: #E01A4F;
+        font-weight: 900;
+        padding: 0;
+        margin: 0;
+        padding-top: 20px;
+    }
+
+    p{
+        color: #D0D6DD;
+        font-size: 20px;
+        margin-top: 40px;
+        padding-top: 20px;
+    }
+
+    #back{
+       display: none;
+    }
+
+    #up{
+        display: none;
+    }
+
+    .carousel-cell .vertimg{
+        object-fit: contain;
+        height: 100vh;
+    }
+
+    .carousel-cell {
+        width: 80%;
+        height: 100vh;
+        margin: 0px 50px;
+        opacity: 1;
+        border-radius: 5px;
+        counter-increment: gallery-cell;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
     .flickity-prev-next-button {
         width: 50px;
         height: 50px;
     }
     
     .flickity-prev-next-button.previous {
-        left: 5%;
+        left: 0;
+        /* right: 5%; */
+
     }
     .flickity-prev-next-button.next {
-        right: 5%;
+        right: 0;
     }
 }

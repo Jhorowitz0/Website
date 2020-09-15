@@ -395,20 +395,22 @@ h4{
 
 }
 /* --------------------MOBILE CHANGES----------------------- */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
+
+    em{
+        color: blue;
+    }
 
     .downArrow {
         width: 30px;
-        fill: #050517;
-        translate: 0 20vh;
+        fill: red;
+        transform: translateY(20vh);
         transition: 0.1s;
     }
     
     .downArrow:hover {
         transition: 0.1s;
         width: 30px;
-        translate: 0 30.5vh;
-        scale: 110%;
         fill: #E01A4F;
     }
 
