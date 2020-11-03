@@ -26,6 +26,29 @@ a{
     text-decoration: none;
 }
 
+#play_button{
+    color: #D0D6DD;
+    outline: #D0D6DD;
+    text-decoration: none;
+    background-color: #E01A4F;
+    text-align: center;
+    padding-bottom: 20px;
+    width: 30%;
+}
+
+#play_button:hover{
+    color: #E01A4F;
+    text-decoration: none;
+    background-color:#D0D6DD;
+    text-align: center;
+    padding-bottom: 20px;
+    width: 30%;
+}
+
+#play_button:hover a {
+    color: #E01A4F;
+}
+
 header{
     width: 50%;
     margin: 0 auto;
