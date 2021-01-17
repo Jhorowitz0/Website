@@ -6,25 +6,19 @@
         <title>Joseph Horowitz</title>
         <link rel="icon" type="image/png" href="images/favicon.png">
         <!-- CSS IMPORT -->
+        <link rel="stylesheet" href="/css/flickity.css" media="screen">
         <link rel="stylesheet" href="css/projects.css">
         <!-- JavaScript -->
+        <script src="/js/flickity.pkgd.js" defer></script>
+        <script src="/js/project.js" defer></script>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
-        <script>
-
-            function reloadIt() {
-                if (window.location.href.substr(-2) !== "?r") {
-                    window.location = window.location.href + "?r";
-                }
-            }
-            
-            setTimeout('reloadIt()', 10)();
-            
-        </script>
     </head>
     <body>
         <main>
             <header>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/l6iDFiNyqYY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </header>
+            <section>
                 <h1>Asteroid Escape</h1>
                 <p>Asteroid Escape was created for the class called Fundamentals of Programming and Computer Science and was my term project for the end of the semester. For this project I created a gesture based game that used input from a Kinect to map the users movements into the game.  </p>
                 <div class="content-wrap">
@@ -41,8 +35,8 @@
                         <p>Python, Pykinect, Autodesk Maya</p>
                     </div>
                 </div>
-            </header>
-            <section>
+            </section>
+            <section id="renderer">
                 <h1>3D Renderer</h1>
                 <p>One of the main challenges I faced when making this project was the fact that the Kinect API I was using, PyKinect, was incompatable with 3D renderers. As a solution, I decided to create my own. <p>
                 <p>My 3D renderer drew points outwards from the center, the closer the point to the camera, the further out it was drawn. I could then feed the renderer sets of points, edges, and faces and it would draw objects from back to front.</p>
@@ -52,9 +46,29 @@
             </section>
             <footer>© 2020 &lt/&gt by Joseph Horowitz.</footer>
         </main>
-        <nav>
-            <a href="../index.html#section1" id="back">JH</a>
-            <a href="#top" id="up">TOP</a>
+            <nav>
+                <!-- ---------------SIDENAV---------------- -->
+            <div class="side-nav-wrap">
+                <div class="wrap-outer">
+                    <div class="wrap-middle">
+                        <div class="wrap-inner">
+                            <nav class="side-nav">
+                                <a class="nav-link" href="./index.html">
+                                    <p" id="link">Home</p>
+                                </a>
+                                <a class="nav-item" href="#description">
+                                    <p class="nav-title">Description</p>
+                                    <div class="nav-marker"></div>
+                                </a>
+                                <a class="nav-item" href="#renderer">
+                                    <p class="nav-title">3D Renderer</p>
+                                    <div class="nav-marker"></div>
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </nav>
     </body>
 </html>

@@ -16,7 +16,9 @@
     <body>
         <main>
             <header>
-                <img src="/images/support/background.jpg">
+                <img id="titleImg" src="/images/support/background.jpg">
+            </header>
+            <section id='description'>
                 <h1>Support Circle</h1>
                 <p>Support Circle was a project created for the class Interaction Design Overview at Carnegie Mellon. 
                     The assignment was to design a mobile application in the domain of “caring for a loved one”. The design question our team had to tackle was: 
@@ -37,8 +39,8 @@
                         <p>Adobe Photoshop, Adobe Indesign, Adobe XD</p>
                     </div>
                 </div>
-            </header>
-            <section>
+            </section>
+            <section id="research">
                 <h1>Research</h1>
                 <p>
                     To begin our process, we believed it was important to do research about the domain of caring for a loved one. 
@@ -46,27 +48,27 @@
                     We believe the information the caregiver needed would be the foundation of the baseline features for our application, and the pain points/current issues would help us identify how we could make an application to improve this domain. 
                     Additionally, we performed a competitive analysis with other caregiving applications on the market to see what can be improved in this field. 
                 <p>
+                <div class="carousel" data-flickity='{"lazyLoad": 1 }'>
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image"
+        data-flickity-lazyload="/images/support/app1.PNG"/>
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image"
+        data-flickity-lazyload="/images/support/app2.PNG"/>
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image"
+        data-flickity-lazyload="/images/support/app4.PNG"/>
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image"
+        data-flickity-lazyload="/images/support/app5.PNG"/>
+                    </div>
+                    </div>
+                </div>
             </section>
-            <div class="carousel" data-flickity='{"lazyLoad": 1 }'>
-                <div class="carousel-cell">
-                    <img class="carousel-cell-image"
-      data-flickity-lazyload="/images/support/app1.PNG"/>
-                </div>
-                <div class="carousel-cell">
-                    <img class="carousel-cell-image"
-      data-flickity-lazyload="/images/support/app2.PNG"/>
-                </div>
-                <div class="carousel-cell">
-                    <img class="carousel-cell-image"
-      data-flickity-lazyload="/images/support/app4.PNG"/>
-                </div>
-                <div class="carousel-cell">
-                    <img class="carousel-cell-image"
-      data-flickity-lazyload="/images/support/app5.PNG"/>
-                </div>
-                </div>
-            </div>
-            <section>
+            <section id="brainstorming">
                 <h1>Brainstorming</h1>
                 <p>
                     After conducting research on the domain, we learned the field of caregiving is heavily focused on providing support and care for elderly people. 
@@ -75,7 +77,7 @@
                     We decided to shift our audience to people who struggle with anxiety or panic attacks, mainly because we found a lack of caregiving applications on the market for this target audience. 
                 </p>
             </section>
-            <section>
+            <section id="personas">
                 <h1>Personas and Journey Maps</h1>
                 <p>In order to identify what functions our app would need, we created various personas that represented users in our app.
                     We then tried to come up with as many scenarios involving our app as possible and how it would best benefit its users.
@@ -86,7 +88,7 @@
                 </p>
                 <img src="/images/support/journeymap.PNG">
             </section>
-            <section>
+            <section id="userTesting">
                 <h1>User Testing</h1>
                 <p>
                     Once we identified some of the features and pages our app would consist of, we created a crude page flow on post-its.
@@ -96,25 +98,25 @@
                     From there we showed the app to potential users and let them "click through" our screen concepts. We asked them to think out loud and critique anything they saw as ineffective or non-intuitive.
                 </p>
             </section>
-            <section>
+            <section id="prototyping">
                 <h1>Wireframing and Prototyping</h1>
                 <p>Using feedback from our user tests and taking inspiration from other similar apps, we created some basic black and white prototypes of out app pages. </p>
+                <div class="carousel" data-flickity='{"lazyLoad": 1 }'>
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image"
+        data-flickity-lazyload="/images/support/wireframe.PNG"/>
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image"
+        data-flickity-lazyload="/images/support/prototype.PNG"/>
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image"
+                        data-flickity-lazyload="/images/support/prototype2.PNG"/>
+                    </div>
+                </div>
             </section>
-            <div class="carousel" data-flickity='{"lazyLoad": 1 }'>
-                <div class="carousel-cell">
-                    <img class="carousel-cell-image"
-      data-flickity-lazyload="/images/support/wireframe.PNG"/>
-                </div>
-                <div class="carousel-cell">
-                    <img class="carousel-cell-image"
-      data-flickity-lazyload="/images/support/prototype.PNG"/>
-                </div>
-                <div class="carousel-cell">
-                    <img class="carousel-cell-image"
-                    data-flickity-lazyload="/images/support/prototype2.PNG"/>
-                </div>
-            </div>
-            <section>
+            <section id="finalResult">
                 <h1>The Final Result</h1>
             </section>
             <div class="carousel" data-flickity='{"lazyLoad": 1 }'>
@@ -162,8 +164,48 @@
             <footer>© 2020 &lt/&gt by Joseph Horowitz.</footer>
         </main>
         <nav>
-            <a href="../index.html#section2" id="back">JH</a>
-            <a href="#top" id="up">TOP</a>
+                <!-- ---------------SIDENAV---------------- -->
+            <div class="side-nav-wrap">
+                <div class="wrap-outer">
+                    <div class="wrap-middle">
+                        <div class="wrap-inner">
+                            <nav class="side-nav">
+                                <a class="nav-link" href="./index.html">
+                                    <p" id="link">Home</p>
+                                </a>
+                                <a class="nav-item" href="#description">
+                                    <p class="nav-title">Description</p>
+                                    <div class="nav-marker"></div>
+                                </a>
+                                <a class="nav-item" href="#research">
+                                    <p class="nav-title">Research</p>
+                                    <div class="nav-marker"></div>
+                                </a>
+                                <a class="nav-item" href="#brainstorming">
+                                    <p class="nav-title">Brainstorming</p>
+                                    <div class="nav-marker"></div>
+                                </a>
+                                <a class="nav-item" href="#personas">
+                                    <p class="nav-title">Personas</p>
+                                    <div class="nav-marker"></div>
+                                </a>
+                                <a class="nav-item" href="#userTesting">
+                                    <p class="nav-title">User Testing</p>
+                                    <div class="nav-marker"></div>
+                                </a>
+                                <a class="nav-item" href="#prototyping">
+                                    <p class="nav-title">Prototyping</p>
+                                    <div class="nav-marker"></div>
+                                </a>
+                                <a class="nav-item" href="#finalResults">
+                                    <p class="nav-title">Final Result</p>
+                                    <div class="nav-marker"></div>
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </nav>
     </body>
 </html>

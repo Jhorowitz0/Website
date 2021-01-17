@@ -8,27 +8,27 @@ body {
     padding: 0;
     font-size: 15px;
     line-height: 1.5;
-    background: #050517;
-    color: #D0D6DD;
+    background: #FFFFFF;
+    color: #050517;
     font-family: 'Montserrat', sans-serif;
 }
 
 main {margin: 0;}
 
 p{
-    color: #D0D6DD;
+    color:  #050517;
     font-size: 30px;
 }
 
 a{
-    color: #D0D6DD;
+    color:  #050517;
     outline: none;
     text-decoration: none;
 }
 
 #play_button{
-    color: #D0D6DD;
-    outline: #D0D6DD;
+    color:  #050517;
+    outline:  #050517;
     text-decoration: none;
     background-color: #E01A4F;
     text-align: center;
@@ -39,7 +39,7 @@ a{
 #play_button:hover{
     color: #E01A4F;
     text-decoration: none;
-    background-color:#D0D6DD;
+    background-color:#050517;
     text-align: center;
     padding-bottom: 20px;
     width: 30%;
@@ -50,13 +50,32 @@ a{
 }
 
 header{
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
-    margin-top: 10%;
+    margin-top: 0%;
+}
+
+header img{
+    border-radius: 0%;
+}
+
+header p {
+    width: 70%;
+    margin: 0 auto;
+}
+
+header h1 {
+    width: 70%;
+    margin: 0 auto;
+}
+
+header .content-wrap{
+    width: 70%;
+    margin: 0 auto;
 }
 
 section{
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
     padding-bottom: 40px;
 }
@@ -200,7 +219,7 @@ footer{
  /* icon color */
 .flickity-button-icon {
     transition: 0.25s;
-    fill:  #D0D6DD;
+    fill:  #050517;
 }
 
  /* hide disabled button */
@@ -228,12 +247,132 @@ flickity-page-dots {
 }
 
 .flickity-page-dots .dot {
-    background: #D0D6DD;
+    background: #050517;
 }
 
 .flickity-page-dots .dot.is-selected {
     background: #E01A4F;
 }
+
+
+/* --------------------SIDENAV STYLES----------------------- */
+.side-nav-wrap{
+    position: fixed;
+    height: 99vh;
+    left: 20px;
+    bottom: 0;
+}
+
+.side-nav{
+    display:flex;
+    flex-direction: column;
+    color:#050517;;
+}
+
+.nav-item{
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.nav-marker{
+    display: block;
+    background: #050517;
+    height: 5px;
+    width: 30px;
+    position: relative;
+}
+
+
+.nav-title{
+    width: 200px;
+    font-size: 15px;
+    text-align: left;
+    position: absolute;
+    text-emphasis-style: none;
+    text-decoration: none;
+    color: #050517;
+    transform: translate(0, -25px);
+}
+
+.nav-item .nav-marker{
+    transition: 0.2s;
+}
+
+.nav-item:hover .nav-marker{
+    transform: translateX(120px) rotate(90deg);
+}
+
+.nav-item .nav-title{
+    transition: 0.25s;
+    opacity: 0;
+}
+
+.nav-item:hover .nav-title{
+    opacity: 1;
+}
+
+.nav-link{
+    padding-top: 20px;
+    margin: 0;
+    text-align: center;
+    height: 35px;
+}
+
+#link{
+    opacity: 1;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.25s;
+}
+
+#link:hover{
+    font-size: 21px;
+    color:#E01A4F;
+}
+
+
+@keyframes grow {
+    from {width: 30px;}
+    to {width: 40px;}
+}
+  
+@keyframes shrink {
+    from {width: 40px;}
+    to {width: 30px;}
+}
+  
+@keyframes slide {
+    from {
+      translate: 0 0;
+    }
+    to {
+      translate: 100px 100px;
+    }
+}
+
+
+/* below are 3 wrappers: an outer,middle,and inner to center stuff vertically easily */
+
+.wrap-outer{
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin: 50px 0;
+    padding: 0;
+}
+
+.wrap-middle{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.wrap-inner{
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 400px; */
 
 /* --------------------TABLET CHANGES----------------------- */
 @media only screen and (max-width: 1400px) {

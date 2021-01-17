@@ -6,14 +6,19 @@
         <title>Joseph Horowitz</title>
         <link rel="icon" type="image/png" href="images/favicon.png">
         <!-- CSS IMPORT -->
+        <link rel="stylesheet" href="/css/flickity.css" media="screen">
         <link rel="stylesheet" href="css/projects.css">
         <!-- JavaScript -->
+        <script src="/js/flickity.pkgd.js" defer></script>
+        <script src="/js/project.js" defer></script>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
     </head>
     <body>
         <main>
             <header>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/vI82_h5eXSU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </header>
+            <section id="description">
                 <h1>Glop</h1>
                 <p>Glop is an experimental animation created using motion capture technology and a Style Transfer AI to create a unique looking animation. </p>
                 <div class="content-wrap">
@@ -30,12 +35,12 @@
                         <p>Autodesk Maya, Motion Builder, 3D coat, HTML/CSS</p>
                     </div>
                 </div>
-            </header>
-            <section>
+            </section>
+            <section id="makingOf">
                 <h1>Making Of Video</h1>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/TmvDMgYw1J4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </section>
-            <section>
+            <section id="motionCapture">
                 <h1>Motion Capture</h1>
                 <p>For this project, me and 2 others were tasked with creating a distinctively stylized animation in only 2 weeks. Due to the time crunch, we had to get creative with our schedule which lead to some unexpected solutions.
                     We decided that it would be faster to use Carnegie Mellon's motion capture lab instead of hand-animating the whole thing. 
@@ -43,13 +48,13 @@
                 <img src="/images/glop/motion.JPG">
                 <p>We then took the motions captured, edited good takes together, and mapped our human motions onto our non-human characters in Motion Builder.</p>
             </section>
-            <section>
+            <section id="design">
                 <h1>Character and Environment Design</h1>
                 <p>The overall character and environment design aimed to create a surreal, dreamy style. We combined body parts from rats, raccoons, and anteaters to create our creatures and used various skybox textures to create engaging landscape assets. </p>
                 <img src="/images/glop/textured.PNG">
                 <p>The overall model and texture polish was fairly low as most of the detail is lost during the style transfer process.</p>
             </section>
-            <section>
+            <section id="ai">
                 <h1>Style Transfer AI</h1>
                 <p>In order to ultimately achieve an interesting style in a fairly short amount of time, we decided on using a style transfer AI. Style transfer AIs are trained on a source image, learning the style of it. They can then apply that style to other images. </p>
                 <img src="/images/glop/wrapper.PNG">
@@ -59,9 +64,41 @@
             </section>
             <footer>© 2020 &lt/&gt by Joseph Horowitz.</footer>
         </main>
-        <nav>
-            <a href="../index.html#section1" id="back">JH</a>
-            <a href="#top" id="up">TOP</a>
+            <nav>
+                <!-- ---------------SIDENAV---------------- -->
+            <div class="side-nav-wrap">
+                <div class="wrap-outer">
+                    <div class="wrap-middle">
+                        <div class="wrap-inner">
+                            <nav class="side-nav">
+                                <a class="nav-link" href="./index.html">
+                                    <p" id="link">Home</p>
+                                </a>
+                                <a class="nav-item" href="#description">
+                                    <p class="nav-title">Description</p>
+                                    <div class="nav-marker"></div>
+                                </a>
+                                <a class="nav-item" href="#makingOf">
+                                    <p class="nav-title">Making Of</p>
+                                    <div class="nav-marker"></div>
+                                </a>
+                                <a class="nav-item" href="#motionCapture">
+                                    <p class="nav-title">Motion Capture</p>
+                                    <div class="nav-marker"></div>
+                                </a>
+                                <a class="nav-item" href="#Design">
+                                    <p class="nav-title">Design</p>
+                                    <div class="nav-marker"></div>
+                                </a>
+                                <a class="nav-item" href="#ai">
+                                    <p class="nav-title">Style Transfer</p>
+                                    <div class="nav-marker"></div>
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </nav>
     </body>
 </html>

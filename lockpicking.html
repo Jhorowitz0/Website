@@ -28,6 +28,8 @@
         <main>
             <header>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/pDgdUdJRVeQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </header>
+            <section id="description">
                 <h1>Lockpicking Simulator</h1>
                 <p>Lockpicking Simulator is a short interactive demo of a mechanic that is entirely touch and sound based. The project was created as a personal exploration into the game creation pipeline, from modeling assets to coding mechanics.</p>
                 <div class="content-wrap">
@@ -44,45 +46,43 @@
                         <p>Autodesk Maya, 3D coat, Mudbox, Unreal Engine 4</p>
                     </div>
                 </div>
-            </header>
-            <section>
+            </section>
+            <section id="environment">
                 <h1>The Environment</h1>
                 <p>Although the core of this game is the lockpicking mechanic, I wanted to try my hand at highly detailed, properly modelled and textured assets. 
                     I created the simple assets solely in Maya, while the higher detailed models like the door and walls were sculpted in ZBrush. 
                     I then created normal maps for the high poly models so that I could lower poly count while still maintaining detail. <p>
-            </section>
-            <div class="carousel" data-flickity>
-                <div class="carousel-cell">
-                    <img src="/images/lockpicking/lockm.png">
+                <div class="carousel" data-flickity>
+                    <div class="carousel-cell">
+                        <img src="/images/lockpicking/lockm.png">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="/images/lockpicking/lock2m.png">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="/images/lockpicking/doorm.png">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="/images/lockpicking/lampm.png">
+                    </div>
                 </div>
-                <div class="carousel-cell">
-                    <img src="/images/lockpicking/lock2m.png">
-                </div>
-                <div class="carousel-cell">
-                    <img src="/images/lockpicking/doorm.png">
-                </div>
-                <div class="carousel-cell">
-                    <img src="/images/lockpicking/lampm.png">
-                </div>
-            </div>
-            <section>
                 <p>From there, I used mudbox to paint images onto the models and also created displacement maps from stone, metal and wood textures. </p>
+                <div class="carousel" data-flickity>
+                    <div class="carousel-cell">
+                        <img src="/images/lockpicking/lockt.png">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="/images/lockpicking/lampt.png">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="/images/lockpicking/doort.png">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="/images/lockpicking/wallt.png">
+                    </div>
+                </div>
             </section>
-            <div class="carousel" data-flickity>
-                <div class="carousel-cell">
-                    <img src="/images/lockpicking/lockt.png">
-                </div>
-                <div class="carousel-cell">
-                    <img src="/images/lockpicking/lampt.png">
-                </div>
-                <div class="carousel-cell">
-                    <img src="/images/lockpicking/doort.png">
-                </div>
-                <div class="carousel-cell">
-                    <img src="/images/lockpicking/wallt.png">
-                </div>
-            </div>
-            <section>
+            <section id="mechanics">
                 <h1>The Mechanics</h1>
                 <p>I chose to create a game about lockpicking because lockpicking is primarily sound and touch based and saw it as an interesting challenge mechanic wise.
                     In order to make the mechanics as interesting and realistic as possible, I bought a cheap lockpicking set and spent a few weeks learning the basics. 
@@ -93,9 +93,33 @@
             </section>
             <footer>© 2020 &lt/&gt by Joseph Horowitz.</footer>
         </main>
-        <nav>
-            <a href="../index.html#section1" id="back">JH</a>
-            <a href="#top" id="up">TOP</a>
+            <nav>
+                <!-- ---------------SIDENAV---------------- -->
+            <div class="side-nav-wrap">
+                <div class="wrap-outer">
+                    <div class="wrap-middle">
+                        <div class="wrap-inner">
+                            <nav class="side-nav">
+                                <a class="nav-link" href="./index.html">
+                                    <p" id="link">Home</p>
+                                </a>
+                                <a class="nav-item" href="#description">
+                                    <p class="nav-title">Description</p>
+                                    <div class="nav-marker"></div>
+                                </a>
+                                <a class="nav-item" href="#environment">
+                                    <p class="nav-title">Environment</p>
+                                    <div class="nav-marker"></div>
+                                </a>
+                                <a class="nav-item" href="#mechanics">
+                                    <p class="nav-title">The Mechanics</p>
+                                    <div class="nav-marker"></div>
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </nav>
     </body>
 </html>
