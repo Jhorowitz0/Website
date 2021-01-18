@@ -14,9 +14,10 @@ var flkty = new Flickity( '.main-carousel', {
 
 
 var darkColor = "#050517";
-var lightColor = "#D0D6DD";
-var highlight = "#E01A4F";
+var lightColor = "#FFFFFF";
+var highlight = "#4e8097";
 var navColor = darkColor;
+var headerColor = "#4e8097"
 
 var navElements = document.querySelectorAll(".nav-item"); // item containing both title and marker
 var navTitles = document.querySelectorAll(".nav-title"); // the title of each section in the nav 
@@ -63,7 +64,7 @@ function updateNav(){
       break;
     }
 
-    if(i > 0 && elemPos>0){
+    if(elemPos>0){
       curPage = i-1;
       break;
     }
@@ -86,9 +87,25 @@ function updateNav(){
 
 }
 
+function colorShift(){
+  let pos1 = window.pageYOffset;
+  let pos2 = 300;
+  if(pos1 < pos2*0.5){
+      document.body.style.backgroundColor = headerColor;
+      document.body.style.color = lightColor;
+      navColor = lightColor;
+  }
+  else{
+      document.body.style.backgroundColor = lightColor;
+      document.body.style.color = darkColor;
+      navColor = darkColor;
+  }
+}
+
 
 function onScroll(){
     updateNav();
+    colorShift();
 }
 
 function onPointerMove(){
@@ -110,6 +127,7 @@ function onPointerMove(){
   
 }
 
+colorShift();
 updateNav();
 document.addEventListener("scroll",onScroll,false);
 document.addEventListener("pointermove",onPointerMove,false);

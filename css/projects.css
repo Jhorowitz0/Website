@@ -6,84 +6,66 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.5;
-    background: #FFFFFF;
+    background: #4e8097;
     color: #050517;
     font-family: 'Montserrat', sans-serif;
+    transition: 500ms;
 }
 
 main {margin: 0;}
 
 p{
     color:  #050517;
-    font-size: 30px;
+    font-size: 16px;
 }
 
 a{
-    color:  #050517;
     outline: none;
     text-decoration: none;
 }
 
-#play_button{
-    color:  #050517;
-    outline:  #050517;
-    text-decoration: none;
-    background-color: #E01A4F;
+
+#button{
+    display:flex;
     text-align: center;
-    padding-bottom: 20px;
-    width: 30%;
+    width: 20%;
+    margin: 0px auto;
+    padding-top: 10px;
 }
 
-#play_button:hover{
-    color: #E01A4F;
-    text-decoration: none;
-    background-color:#050517;
+#button a{
+    color:  #FFFFFF;
+    background-color: #8db7cc;
+    border-radius: 20px;
+    padding: 5px 10px;
+    width: 100%;
     text-align: center;
-    padding-bottom: 20px;
-    width: 30%;
 }
 
-#play_button:hover a {
-    color: #E01A4F;
+#button a:hover{
+    color:  #FFFFFF;
+    background-color: #4e8097;
 }
 
 header{
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 0%;
+    width: 50%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
 }
 
 header img{
-    border-radius: 0%;
-}
-
-header p {
-    width: 70%;
-    margin: 0 auto;
-}
-
-header h1 {
-    width: 70%;
-    margin: 0 auto;
-}
-
-header .content-wrap{
-    width: 70%;
-    margin: 0 auto;
+    width: 100%;
+    margin: auto;
+    display: flex;
 }
 
 section{
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
-    padding-bottom: 40px;
-}
-
-img{
-    object-fit: contain;
-    width: 100%;
-    border-radius: 7px;
+    padding-bottom: 20px;
 }
 
 #photoSeries img{
@@ -109,13 +91,61 @@ video, iframe{
 }
 
 h1{
-    font-size: 50px;
-    color: #E01A4F;
+    font-size: 40px;
+    color: #4e8097;
     font-weight: 900;
     padding: 0;
     margin: 0;
     padding-top: 20px;
 }
+
+h2{
+    font-size: 25px;
+    color: #4e8097;
+    font-weight: 900;
+    padding: 0;
+    margin-top: 0;
+    padding-top: 50px;
+}
+
+h3{
+    padding: 0;
+    margin: 0;
+    font-weight: 800;
+    font-size: 20px;
+    color: #4e8097;
+}
+
+h4{
+    font-weight: 900;
+    font-size: 20px;
+    margin: 30px;
+    color: #8db7cc;
+    text-align: center;
+}
+
+img{
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+
+img.p80{
+    width: 80%;
+}
+
+.tagline{
+    font-size: 25px;
+}
+
+.title{
+    background-color: #8db7cc;
+}
+
+.content{
+    width: 60%;
+}
+
 
 .content-wrap{
     display:flex;
@@ -124,17 +154,8 @@ h1{
     padding: 0;
 }
 
-.content-wrap h3{
-    padding: 0;
-    font-weight: 800;
-    font-size: 23px;
-    margin: 0;
-    letter-spacing: 2px;
-    color: #e09daf;
-}
-
 .content-wrap p{
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 200;
     padding: 0;
     margin: 0;
@@ -143,7 +164,26 @@ h1{
 .column{
     width:33%;
     padding: 5px;
+    margin: 0 auto;
 }
+
+.column img{
+    margin: 10px auto;
+    display: flex;
+    width: 60%;
+
+}
+
+.column h2{
+    text-align: center;
+}
+
+p.caption{
+    font-size: 20px;
+    text-align: center;
+}
+
+
 
 /* -----------------------nav styles ------------------ */
 
@@ -165,13 +205,13 @@ h1{
 
 #back:hover{
     transition: 0.3s;
-    color: #E01A4F;
+    color: #4e8097;
     font-weight: 900;
 }
 
 #up:hover{
     transition: 0.3s;
-    color: #E01A4F;
+    color: #4e8097;
     font-weight: 900;
 }
 
@@ -230,7 +270,7 @@ footer{
     background: rgba(255,255,255,0%);
 }
 .flickity-button:hover .flickity-button-icon{
-    fill: #E01A4F;
+    fill: #4e8097;
     transform: scale(1.1);
 
 }
@@ -251,7 +291,7 @@ flickity-page-dots {
 }
 
 .flickity-page-dots .dot.is-selected {
-    background: #E01A4F;
+    background: #4e8097;
 }
 
 
@@ -266,7 +306,7 @@ flickity-page-dots {
 .side-nav{
     display:flex;
     flex-direction: column;
-    color:#050517;;
+    color:#FFFFFF;;
 }
 
 .nav-item{
@@ -276,7 +316,7 @@ flickity-page-dots {
 
 .nav-marker{
     display: block;
-    background: #050517;
+    background: #FFFFFF;
     height: 5px;
     width: 30px;
     position: relative;
@@ -290,7 +330,7 @@ flickity-page-dots {
     position: absolute;
     text-emphasis-style: none;
     text-decoration: none;
-    color: #050517;
+    color: #FFFFFF;
     transform: translate(0, -25px);
 }
 
@@ -323,11 +363,12 @@ flickity-page-dots {
     font-weight: bold;
     font-size: 20px;
     transition: 0.25s;
+    color: #8db7cc;
 }
 
 #link:hover{
     font-size: 21px;
-    color:#E01A4F;
+    color:#8db7cc;
 }
 
 
@@ -386,7 +427,7 @@ flickity-page-dots {
     section{
         width: 80%;
         margin: 0 auto;
-        padding-bottom: 40px;
+        padding-bottom: 20px;
     }
 
     .content-wrap{
