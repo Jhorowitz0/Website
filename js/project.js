@@ -90,6 +90,7 @@ function updateNav(){
 function colorShift(){
   let pos1 = window.pageYOffset;
   let pos2 = 300;
+
   if(pos1 < pos2*0.5){
       document.body.style.backgroundColor = headerColor;
       document.body.style.color = lightColor;
