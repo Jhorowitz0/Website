@@ -1,0 +1,600 @@
+html {
+    scroll-behavior: smooth;
+    overflow: visible;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    background: #4e8097;
+    color: #050517;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    transition: 500ms;
+}
+
+main {margin: 0;}
+
+p{
+    color:  #050517;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+nav p{
+    margin-top: 16px;
+}
+
+
+a{
+    outline: none;
+    text-decoration: none;
+}
+
+em{
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+#button{
+    display:flex;
+    text-align: center;
+    width: 20%;
+    margin: 0px auto;
+    padding-top: 10px;
+}
+
+#button a{
+    color:  #FFFFFF;
+    background-color: #8db7cc;
+    border-radius: 20px;
+    padding: 5px 10px;
+    width: 100%;
+    text-align: center;
+}
+
+#button a:hover{
+    color:  #FFFFFF;
+    background-color: #4e8097;
+}
+
+header{
+    width: 50%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+}
+
+header img{
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+
+section{
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+#photoSeries img{
+    padding: 50px;
+}
+
+.carousel{
+    padding-bottom: 40px;
+}
+
+.carousel-cell img{
+    height: 100%;
+}
+
+video, iframe{
+    width: 100%;
+    height: 500px;
+}
+
+h1{
+    font-size: 45px;
+    color: #4e8097;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    padding-top: 20px;
+}
+
+h2{
+    font-size: 30px;
+    color: #4e8097;
+    font-weight:normal;
+    padding: 0;
+    margin-top: 0;
+    padding-top: 50px;
+}
+
+h3{
+    padding: 0;
+    margin: 0;
+    font-weight:normal;
+    font-size: 20px;
+    color: #4e8097;
+}
+
+h4{
+    font-weight: 900;
+    font-size: 20px;
+    margin: 30px;
+    color: #8db7cc;
+    text-align: center;
+}
+
+iframe {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+        margin-top: auto;
+    margin-top: 40px;
+    display: flex;
+}
+
+img{
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+
+img.p80{
+    width: 80%;
+}
+
+.tagline{
+    font-size: 25px;
+}
+
+.title{
+    background-color: #8db7cc;
+}
+
+.content{
+    width: 60%;
+}
+
+
+.content-wrap{
+    display:flex;
+    width:100%;
+    font-size: 20px;
+    padding: 0;
+}
+
+.content-wrap p{
+    font-size: 14px;
+    font-weight: 200;
+    padding: 0;
+    margin: 0;
+}
+
+.column{
+    width:33%;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.column img{
+    margin: 10px auto;
+    display: flex;
+    width: 60%;
+
+}
+
+.column h2{
+    text-align: center;
+}
+
+p.caption{
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+/* -----------------------nav styles ------------------ */
+
+#back{
+    position: fixed;
+    top: 4%;
+    left: 4%;
+    font-size: 40px;
+    transition: 0.3s;
+}
+
+#up{
+    position: fixed;
+    top: 4%;
+    right: 4%;
+    font-size: 40px;
+    transition: 0.3s;
+}
+
+#back:hover{
+    transition: 0.3s;
+    color: #4e8097;
+    font-weight: 900;
+}
+
+#up:hover{
+    transition: 0.3s;
+    color: #4e8097;
+    font-weight: 900;
+}
+
+footer{
+    text-align: center;
+    margin-bottom: 10vh;
+    padding-top: 100px;
+}
+
+ /* --------------------CAROUSEL STYLES----------------------- */
+
+ .carousel-cell {
+    width: 60%;
+    height: 70vh;
+    margin: 0px 50px;
+    opacity: 0.1;
+    border-radius: 5px;
+    counter-increment: gallery-cell;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.vert{
+    width: 29%;
+    height: auto;
+}
+
+.vertimg{
+    margin: 5px;
+    object-fit:scale-;
+    width: 90%;
+    box-shadow: 0px 0px 3px 3px #f5f5f5;
+}
+
+.is-selected{
+    /* background: #EFC88B; */
+    opacity: 1;
+}
+
+/* no circle */
+.flickity-button {
+    background: transparent;
+}
+/* big previous & next buttons */
+.flickity-prev-next-button {
+    width: 100px;
+    height: 100px;
+}
+
+ /* icon color */
+.flickity-button-icon {
+    transition: 0.25s;
+    fill:  #050517;
+}
+
+ /* hide disabled button */
+.flickity-button:disabled {
+    display: none;
+}
+.flickity-button:hover{
+    background: rgba(255,255,255,0%);
+}
+.flickity-button:hover .flickity-button-icon{
+    fill: #4e8097;
+    transform: scale(1.1);
+
+}
+
+.flickity-prev-next-button.previous {
+    left: 15%;
+  }
+.flickity-prev-next-button.next {
+    right: 15%;
+}
+
+flickity-page-dots {
+    bottom: -22px;
+}
+
+.flickity-page-dots .dot {
+    background: #050517;
+}
+
+.flickity-page-dots .dot.is-selected {
+    background: #4e8097;
+}
+
+
+/* --------------------SIDENAV STYLES----------------------- */
+.side-nav-wrap{
+    position: fixed;
+    height: 99vh;
+    left: 20px;
+    bottom: 0;
+}
+
+.side-nav{
+    display:flex;
+    flex-direction: column;
+    color:#FFFFFF;;
+}
+
+.nav-item{
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.nav-marker{
+    display: block;
+    background: #FFFFFF;
+    height: 5px;
+    width: 30px;
+    position: relative;
+}
+
+
+.nav-title{
+    width: 200px;
+    font-size: 15px;
+    text-align: left;
+    position: absolute;
+    text-emphasis-style: none;
+    text-decoration: none;
+    color: #FFFFFF;
+    transform: translate(0, -25px);
+}
+
+.nav-item .nav-marker{
+    transition: 0.2s;
+}
+
+.nav-item:hover .nav-marker{
+    transform: translateX(120px) rotate(90deg);
+}
+
+.nav-item .nav-title{
+    transition: 0.25s;
+    opacity: 0;
+}
+
+.nav-item:hover .nav-title{
+    opacity: 1;
+}
+
+.nav-link{
+    padding-top: 20px;
+    margin: 0;
+    text-align: center;
+    height: 35px;
+}
+
+#link{
+    opacity: 1;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.25s;
+    color: #8db7cc;
+}
+
+#link:hover{
+    font-size: 21px;
+    color:#8db7cc;
+}
+
+
+@keyframes grow {
+    from {width: 30px;}
+    to {width: 40px;}
+}
+  
+@keyframes shrink {
+    from {width: 40px;}
+    to {width: 30px;}
+}
+  
+@keyframes slide {
+    from {
+      translate: 0 0;
+    }
+    to {
+      translate: 100px 100px;
+    }
+}
+
+
+/* below are 3 wrappers: an outer,middle,and inner to center stuff vertically easily */
+
+.wrap-outer{
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin: 50px 0;
+    padding: 0;
+}
+
+.wrap-middle{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.wrap-inner{
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 400px; */
+}
+
+/* --------------------TABLET CHANGES----------------------- */
+@media only screen and (max-width: 1400px) {
+
+    header{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 10%;
+    }
+
+    section{
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+
+    h3{
+        text-align: center;
+    }
+
+    .side-nav-wrap{
+        display:none;
+    }
+
+    .column{
+        width: 100%;
+    }
+
+    .content-wrap{
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+/* --------------------MOBILE CHANGES----------------------- */
+@media only screen and (max-width: 850px) {
+
+    h1{
+        font-size: 40px;
+        font-weight: 900;
+        padding: 0;
+        margin: 0;
+        padding-top: 20px;
+    }
+
+    p{
+        /* color: #D0D6DD; */
+        font-size: 15px;
+        padding-top: 20px;
+    }
+
+    iframe{
+        width: 80%;
+        padding: 0;
+    }
+
+    .tagline{
+        font-size: 20px;
+        text-align:justify;
+    }
+
+    h4{
+        text-align:justify;
+    }
+
+    #button{
+        width: 80%;
+    }
+
+    
+    /* --------------------CAROUSEL STYLES----------------------- */
+
+    
+    
+    .carousel{
+        height: 80vh;
+    }
+
+    .carousel-cell {
+        width: 100%;
+        height: 100%;
+        margin: 0px 50px;
+        opacity: 0.1;
+        border-radius: 5px;
+        counter-increment: gallery-cell;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    .vert{
+        width: 80%;
+        height: auto;
+    }
+
+    .vert p{
+        font-size: 15px;
+    }
+
+    .vertimg{
+        margin: 5px;
+        object-fit:scale-;
+        width: 90%;
+        box-shadow: 0px 0px 3px 3px #f5f5f5;
+    }
+
+    .is-selected{
+        /* background: #EFC88B; */
+        opacity: 1;
+    }
+
+    /* no circle */
+    .flickity-button {
+        background: transparent;
+    }
+    /* big previous & next buttons */
+    .flickity-prev-next-button {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* icon color */
+    .flickity-button-icon {
+        transition: 0.25s;
+        fill:  #050517;
+    }
+
+    /* hide disabled button */
+    .flickity-button:disabled {
+        display: none;
+    }
+    .flickity-button:hover{
+        background: rgba(255,255,255,0%);
+    }
+    .flickity-button:hover .flickity-button-icon{
+        fill: #4e8097;
+        transform: scale(1.1);
+
+    }
+
+    .flickity-prev-next-button.previous {
+        left: -13%;
+    }
+    .flickity-prev-next-button.next {
+        right: -13%;
+    }
+
+    flickity-page-dots {
+        bottom: -22px;
+    }
+
+    .flickity-page-dots .dot {
+        background: #050517;
+    }
+
+    .flickity-page-dots .dot.is-selected {
+        background: #4e8097;
+    }
+
+
+}
