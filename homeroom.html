@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Joseph Horowitz</title>
+        <link rel="icon" type="image/png" href="images/favicon.png">
+        <!-- CSS IMPORT -->
+        <link rel="stylesheet" href="/css/flickity.css" media="screen">
+        <link rel="stylesheet" href="css/glop.css">
+        <!-- JavaScript -->
+        <script src="/js/flickity.pkgd.js" defer></script>
+        <script src="/js/glop.js" defer></script>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <main>
+            <header>
+                <img id="headerImg" src="./images/glop/title.gif">
+                <img id="titleImg" src="./images/glop/header.gif">
+            </header>
+            <section id="description">
+                <h1 id="title">Homeroom</h1>
+                <p class="tagline">A short 4 player game in which students help each other escape the police.</p>
+                <div class="content-wrap">
+                    <div class="column">
+                        <h3>Timeline</h3>
+                        <p>One Month</p>
+                        <p>Nov-Dec 2020</p>
+                    </div>
+                    <div class="column">
+                        <h3>My Role</h3>
+                        <p>Level Designer, Developer</p>
+                    </div>
+                    <div class="column">
+                        <h3>Tools</h3>
+                        <p>Node.js, Socket.io, Unity, Autodesk Maya</p>
+                    </div>
+                </div>
+                <p>For Homeroom, I collaborated with 3 other artists to create a short game. Homeroom is a collaborative 
+                    game for 4 players in which one player is targeted by police. The other 3 players need to utilize 
+                    the classroom and each other to help block the police from reaching their target and help their 
+                    classmate escape! Everything in Homeroom from the music to the animations to the server code was
+                    made from scratch.  </p>
+
+                <div id="button">
+                    <a href="#final">View Animation</a>
+                </div>
+            </section>
+            <section id="sketches">
+                <h1>Early Sketches</h1>
+                <p>
+                    We wanted Homeroom to have a unique and fun style. Inspired by games such as Fall Guys and Starve 
+                    Together we went for a flat, colorful and cartoonish style, making the heads and eyes on our characters
+                    very large and the models fairly low-poly. 
+                </p>
+                <h2>Initial Renders</h2>
+                <p>
+                    As the designated developer on my team, I started by using PaperSpace to train style 
+                    transfer models on my teammates artwork, hoping to approximate her style. I then created a
+                     renderer that allowed my team and I to test out various styles layered onto an unlit scene. 
+                     The goal of this initial rendering tool was to ultimately work out the final animation style 
+                     we would be using.
+                </p>
+                <img src="./images/glop/wrapper.PNG">
+                <h2>Bulk Stylization</h2>
+                <p>
+                    The next step was to create a basic tool that could render video frames in bulk. I modified my 
+                    style previewer to look in a preset folder for numbered animation frames, stylize each frame, 
+                    and download the finished image. The resulting finished frames could then be stitched back 
+                    into a ready to use video in Adobe Premiere. 
+                </p>
+                <div class="content-wrap">
+                    <div class="column">
+                        <img src="./images/glop/testGif.gif">
+                        <h4>Initial Test Gif</h4>
+                    </div>
+                    <img class="floated" src="./images/glop/icon3.png">
+                </div>
+            </section>
+            <section id="motionCapture">
+                <img class="floated" src="./images/glop/icon2.png">
+                <h1>Motion Capture</h1>
+                <p>
+                    Using motion capture allowed us to quickly act out takes of the scene instead of animating each 
+                    frame by hand. We wore motion capture suits and used infrared cameras to track our bodies as we moved.
+                </p>
+                <img src="/images/glop/motion.JPG">
+                <p>
+                    Mapping the motion capture data from human skeletons to anteater-mole rigs proved to be a little
+                     challenging. I used MotionBuilder to overlay the data and then stretched the joints around the 
+                     head and used reverse kinematics on the knee joints. The whole animation was then ready to be 
+                     exported into Autodesk Maya. 
+                </p>
+                <img src="./images/glop/skeleton.gif">
+                <h4>Human skeleton overlayed on character model.</h4>
+            </section>
+            <section id="sceneConstruction">
+                <h1>Scene Staging</h1>
+                <img src="./images/glop/scene1.gif">
+                <h4>Inital scene setup.</h4>
+                <img src="./images/glop/scene2.gif">
+                <h4>Texturing.</h4>
+                <img src="./images/glop/scene3.gif">
+                <h4>Particles and refined textures.</h4>
+                <img src="./images/glop/scene4.gif">
+                <h4>Final A.I. stylization.</h4>
+            </section>
+            <section id="final">
+                <h1>Final Animation</h1>
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/vI82_h5eXSU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+            <footer>&lt/&gt by Joseph Horowitz.</footer>
+        </main>
+            <nav>
+                <!-- ---------------SIDENAV---------------- -->
+            <div class="side-nav-wrap">
+                <div class="wrap-outer">
+                    <div class="wrap-middle">
+                        <div class="wrap-inner">
+                            <nav class="side-nav">
+                                <a class="nav-link" href="./index.html">
+                                    <p" id="link">Home</p>
+                                </a>
+                                <a class="nav-item" href="#description">
+                                    <p class="nav-title">Description</p>
+                                    <div class="nav-marker"></div>
+                                </a>
+                                <a class="nav-item" href="#styleTransfer">
+                                    <p class="nav-title">Style Transfer</p>
+                                    <div class="nav-marker"></div>
+                                </a>
+                                <a class="nav-item" href="#motionCapture">
+                                    <p class="nav-title">Motion Capture</p>
+                                    <div class="nav-marker"></div>
+                                </a>
+                                <a class="nav-item" href="#sceneConstruction">
+                                    <p class="nav-title">Scene Staging</p>
+                                    <div class="nav-marker"></div>
+                                </a>
+                                <a class="nav-item" href="#final">
+                                    <p class="nav-title">Final Animation</p>
+                                    <div class="nav-marker"></div>
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </body>
+</html>
