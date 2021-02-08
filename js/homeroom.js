@@ -13,9 +13,9 @@ var flkty = new Flickity( '.main-carousel', {
 });
 
 
-var darkColor = "#2D2B40";
-var lightColor = "#FFFFFF";
-var highlight = "#987fdb";
+var darkColor = "#081c1b";
+var lightColor = "#d64052";
+var highlight = "#2fa8a4";
 var navColor = darkColor;
 var headerColor = "#000000"
 
@@ -95,10 +95,10 @@ function colorShift(){
       // document.body.style.backgroundColor = headerColor;
       // document.body.style.color = lightColor;
       navColor = lightColor;
-      document.getElementById('titleImg').style.opacity = "1";
+      document.getElementById('headerImg').style.opacity = "1";
   }
   else{
-    document.getElementById('titleImg').style.opacity = "0";
+    document.getElementById('headerImg').style.opacity = "0";
       // document.body.style.backgroundColor = lightColor;
       // document.body.style.color = darkColor;
       navColor = darkColor;

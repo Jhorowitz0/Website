@@ -7,21 +7,21 @@
         <link rel="icon" type="image/png" href="images/favicon.png">
         <!-- CSS IMPORT -->
         <link rel="stylesheet" href="/css/flickity.css" media="screen">
-        <link rel="stylesheet" href="css/glop.css">
+        <link rel="stylesheet" href="css/homeroom.css">
         <!-- JavaScript -->
         <script src="/js/flickity.pkgd.js" defer></script>
-        <script src="/js/glop.js" defer></script>
+        <script src="/js/homeroom.js" defer></script>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
     </head>
     <body>
         <main>
             <header>
-                <img id="headerImg" src="./images/glop/title.gif">
-                <img id="titleImg" src="./images/glop/header.gif">
+                <img id="headerImg" src="./images/homeroom/header.png">
+                <img id="titleImg" src="./images/homeroom/title.png">
             </header>
             <section id="description">
                 <h1 id="title">Homeroom</h1>
-                <p class="tagline">A short 4 player game in which students help each other escape the police.</p>
+                <p class="tagline">A 4 player game in which students help each other escape the police.</p>
                 <div class="content-wrap">
                     <div class="column">
                         <h3>Timeline</h3>
@@ -43,72 +43,121 @@
                     classmate escape! Everything in Homeroom from the music to the animations to the server code was
                     made from scratch.  </p>
 
+
                 <div id="button">
-                    <a href="#final">View Animation</a>
+                    <a href="#final">View Final Game</a>
                 </div>
             </section>
-            <section id="sketches">
-                <h1>Early Sketches</h1>
+            <section id="design">
+                <h1>Early Designs</h1>
                 <p>
                     We wanted Homeroom to have a unique and fun style. Inspired by games such as Fall Guys and Starve 
                     Together we went for a flat, colorful and cartoonish style, making the heads and eyes on our characters
                     very large and the models fairly low-poly. 
                 </p>
-                <h2>Initial Renders</h2>
+                <img src="./images/homeroom/early_art.png">
+                <img src="./images/homeroom/sketch.png">
+                <img src="./images/homeroom/models.png">
+            </section>
+            <section id="mechanics">
+                <h1>Game Mechanics</h1>
                 <p>
-                    As the designated developer on my team, I started by using PaperSpace to train style 
-                    transfer models on my teammates artwork, hoping to approximate her style. I then created a
-                     renderer that allowed my team and I to test out various styles layered onto an unlit scene. 
-                     The goal of this initial rendering tool was to ultimately work out the final animation style 
-                     we would be using.
+                    Homeroom is fundamentally a team based game based on cooperation and we wanted our mechanics to reflect 
+                    that. The mechanics we created are meant to inspire quick thinking and team tactics, with the game being 
+                    hard to play without proper communication. 
                 </p>
-                <img src="./images/glop/wrapper.PNG">
-                <h2>Bulk Stylization</h2>
+                <h2>Movement</h2> 
                 <p>
-                    The next step was to create a basic tool that could render video frames in bulk. I modified my 
-                    style previewer to look in a preset folder for numbered animation frames, stylize each frame, 
-                    and download the finished image. The resulting finished frames could then be stitched back 
-                    into a ready to use video in Adobe Premiere. 
+                    We designed our levels to be based on a grid, this allows our players to clearly see the more rigid, 
+                    robotic movement of the police agents and predict where they would go. The targeted player is slower 
+                    than the agents, making them an easy catch if they go without help from their classmates. 
+                </p>
+                <h2>Body Blocking</h2> 
+                <p>The main way for players to slow the police agents is to slow them with their own body. This allows
+                     players to form barricades, kiting and slowing agents away from the door for an escape. </p>
+                <img src="./images/homeroom/mechanics01.gif" class="p80">
+                <img src="./images/homeroom/desk.png" class="floated">
+                <h2>Desks</h2>
+                <p>Desks function as a way to inhibit the movement of the police agents and the players. We gave the 
+                    non-targeted players the ability to slowly push desks and manipulate the level. With proper timing 
+                    this allows players to set traps and reroute police agents, turning each level into a kind of puzzle 
+                    and allowing emergent opportunities to arise for creative players. </p>
+                <h2>Backpacks</h2>
+                <p>Backpacks can be picked up and spilled onto the ground to further slow a police agent down. We added this
+                     mechanic as a way to balance the game, making levels harding in layout but adding backpacks to even it out. 
                 </p>
                 <div class="content-wrap">
                     <div class="column">
-                        <img src="./images/glop/testGif.gif">
-                        <h4>Initial Test Gif</h4>
+                        <img src="./images/homeroom/backpack1.png">
                     </div>
-                    <img class="floated" src="./images/glop/icon3.png">
+                    <div class="column">
+                        <img src="./images/homeroom/backpack2.png">
+                    </div>
                 </div>
-            </section>
-            <section id="motionCapture">
-                <img class="floated" src="./images/glop/icon2.png">
-                <h1>Motion Capture</h1>
+                <img src="./images/homeroom/mechanics02.gif" class="p80">
+                <h2>Testing</h2>
                 <p>
-                    Using motion capture allowed us to quickly act out takes of the scene instead of animating each 
-                    frame by hand. We wore motion capture suits and used infrared cameras to track our bodies as we moved.
+                    We used a quick mockup of our game made in p5js and networked with node.js and socket.io to quickly test out
+                     mechanics and enemy AI. This allowed us to see how “fun” our game was with a variety of players and make quick
+                      adjustments before really refining its visual style. 
                 </p>
-                <img src="/images/glop/motion.JPG">
-                <p>
-                    Mapping the motion capture data from human skeletons to anteater-mole rigs proved to be a little
-                     challenging. I used MotionBuilder to overlay the data and then stretched the joints around the 
-                     head and used reverse kinematics on the knee joints. The whole animation was then ready to be 
-                     exported into Autodesk Maya. 
-                </p>
-                <img src="./images/glop/skeleton.gif">
-                <h4>Human skeleton overlayed on character model.</h4>
+                <img src="./images/homeroom/server.jpg">
+                <img src="./images/homeroom/testing.gif">
             </section>
-            <section id="sceneConstruction">
-                <h1>Scene Staging</h1>
-                <img src="./images/glop/scene1.gif">
-                <h4>Inital scene setup.</h4>
-                <img src="./images/glop/scene2.gif">
-                <h4>Texturing.</h4>
-                <img src="./images/glop/scene3.gif">
-                <h4>Particles and refined textures.</h4>
-                <img src="./images/glop/scene4.gif">
-                <h4>Final A.I. stylization.</h4>
+            <section id="levels">
+                <h1>Level Design</h1>
+                <p>
+                    Due to the limited, grid-like nature of our levels, proper level design was key to making the game balanced
+                     and fun. We started with various simple mockups made in photoshop and played through them on paper with one
+                      tester acting as the AI and 4 testers acting as people. 
+                </p>
+                <div class="content-wrap">
+                    <div class="column">
+                        <img src="./images/homeroom/level01.png">
+                    </div>
+                    <div class="column">
+                        <img src="./images/homeroom/level02.png">
+                    </div>
+                </div>
+                <p>Our goal with each level was to slowly introduce each mechanic into the game and require more precise teamwork. 
+                    For example, the first level arranges the desks in such a way that none of them can be pushed, thus forcing 
+                    players to learn how to use their bodies only to block the police agent. </p>
+                    <div class="content-wrap">
+                        <div class="column">
+                            <img src="./images/homeroom/level03.png">
+                        </div>
+                        <div class="column">
+                            <img src="./images/homeroom/level04.png">
+                        </div>
+                    </div>
+            </section>
+            <section id="process">
+                <h1>Process Shots</h1>
+                <p>The next steps was just to refine our game in unity, hooking it up the server and adding models, shading and animations.</p>
+                <img src="./images/homeroom/early_demo1.png">
+                <p class="caption">"cylinders and boxes setup"</p>
+                <img src="./images/homeroom/early_demo0.png">
+                <p class="caption">early scene contruction</p>
+                <img src="./images/homeroom/early_demo2.png">
+                <p class="caption">stylization added</p>
+                <img src="./images/homeroom/colors.png">
+                <p class="caption">Character models</p>
+                <img src="./images/homeroom/demo01.gif">
+                <p class="caption">Animations Added for movement</p>
+                <img src="./images/homeroom/demo02.gif">
+                <p class="caption">Mechanics animations</p>
+                <img src="./images/homeroom/demo03.gif">
+                <p class="caption">Finishing Touches</p>
             </section>
             <section id="final">
-                <h1>Final Animation</h1>
-                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/vI82_h5eXSU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h1>Final Project</h1>
+                <h2>How to Play:</h2>
+                <img src="./images/homeroom/Controls.png">
+                <h2>Gameplay:</h2>
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Gidmwiqyw_4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div id="button">
+                    <a href="https://r1g.itch.io/homeroom">Download</a>
+                </div>
             </section>
             <footer>&lt/&gt by Joseph Horowitz.</footer>
         </main>
@@ -126,20 +175,24 @@
                                     <p class="nav-title">Description</p>
                                     <div class="nav-marker"></div>
                                 </a>
-                                <a class="nav-item" href="#styleTransfer">
-                                    <p class="nav-title">Style Transfer</p>
+                                <a class="nav-item" href="#design">
+                                    <p class="nav-title">Early Designs</p>
                                     <div class="nav-marker"></div>
                                 </a>
-                                <a class="nav-item" href="#motionCapture">
-                                    <p class="nav-title">Motion Capture</p>
+                                <a class="nav-item" href="#mechanics">
+                                    <p class="nav-title">Mechanics</p>
                                     <div class="nav-marker"></div>
                                 </a>
-                                <a class="nav-item" href="#sceneConstruction">
-                                    <p class="nav-title">Scene Staging</p>
+                                <a class="nav-item" href="#levels">
+                                    <p class="nav-title">Level Design</p>
+                                    <div class="nav-marker"></div>
+                                </a>
+                                <a class="nav-item" href="#process">
+                                    <p class="nav-title">Process Shots</p>
                                     <div class="nav-marker"></div>
                                 </a>
                                 <a class="nav-item" href="#final">
-                                    <p class="nav-title">Final Animation</p>
+                                    <p class="nav-title">Final Game</p>
                                     <div class="nav-marker"></div>
                                 </a>
                             </nav>
