@@ -260,13 +260,17 @@ h4{
     transition: 0.2s;
 }
 
-#about #resume:hover{
+#resume:hover{
     background-color: #E01A4F;
     color: #050517;
     transition: 0.2s;
 }
 
-#about a:hover{
+header a{
+    color:#050517;
+}
+
+a:hover{
     color: #E01A4F;
 }
 
