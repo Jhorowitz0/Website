@@ -364,8 +364,30 @@ a:hover{
       translate: 100px 100px;
     }
 }
+
+#headerTitle {
+    width:40%;
+    margin: auto;
+    display:block;
+    margin-left: 0;
+}
+
+#profileDoodle {
+    width:40%; 
+    margin: auto;
+    margin-right: 0;
+}
+
 /* --------------------TABLET CHANGES----------------------- */
 @media only screen and (max-width: 1400px) {
+
+    #profileDoodle {
+        display: none;
+    }
+
+    #headerTitle {
+        width: 100%;
+    }
 
     .downArrow {
         width: 50px;
