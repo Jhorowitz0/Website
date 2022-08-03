@@ -12,9 +12,15 @@
     canvas = document.getElementById("glcanvas");
     gl = glUtils.checkWebGL(canvas);
 
+
+    var importedGLSL = "";
+    importedGLSL += glUtils.SL.Shaders.v1.perlin3D;
+
+    var fragmentShader_SRC =  "precision mediump float; \n \n" + importedGLSL + "\n \n" + glUtils.SL.Shaders.v1.fragment;
+
     // Initialize the shaders and program
     var vertexShader = glUtils.getShader(gl, gl.VERTEX_SHADER, glUtils.SL.Shaders.v1.vertex),
-        fragmentShader = glUtils.getShader(gl, gl.FRAGMENT_SHADER, glUtils.SL.Shaders.v1.fragment);
+        fragmentShader = glUtils.getShader(gl, gl.FRAGMENT_SHADER, fragmentShader_SRC);
 
     program = glUtils.createProgram(gl, vertexShader, fragmentShader);
 
@@ -71,13 +77,14 @@
       document.documentElement.offsetHeight
     );
     scrollPos = window.pageYOffset/(limit-window.innerHeight);
-    console.log(scrollPos);
   }
 
   function getMousePos(){
     if(mousePos) return mousePos;
     else return [0,0];
   }
+
+  document.onkeydown = keyDown;
 
   function animate() {
     tick = function() {
@@ -98,7 +105,7 @@
     }
 
     // Specify the color for clearing <canvas>
-    gl.clearColor(0, 0, 0, 1);
+    gl.clearColor(1, 0, 1, 1);
     gl.clear(gl.COLOR_BUFFER_BIT);
 
 
