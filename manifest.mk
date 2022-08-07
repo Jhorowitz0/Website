@@ -5,8 +5,13 @@
 * Job title
 * linkedin, hover email, resume
 * down arrow
-##Projects
+##Content
 * project title
 * img
 * short description
+* tags 
+* view project
+##Projects
+* 3M
+* Weekly UX AR Challenges
 * 

@@ -1,57 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Joseph Horowitz</title>
-        <link rel="icon" type="image/png" href="images/favicon.png">
-        <!-- CSS IMPORT -->
-        <link rel="stylesheet" href="/css/flickity.css" media="screen">
-        <link rel="stylesheet" href="css/styles.css">
-        <!-- JavaScript -->
-        <script src="/js/flickity.pkgd.js" defer></script>
-        <script src="/js/script.js" defer></script>
-        <script src="/js/bg-lazyload.js" defer></script>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
-        <script>
+<html>
+  <head>
+    <title>Joe Horowitz</title>
+    <meta name="author" content="Joseph B Horowitz">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;500;700;800&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    
+    <!-- GLSL -->
+    <script name="shader" data-src="glsl/lib/easingFunctions.glsl" data-type="easing" data-version="v1"></script>
+    <script name="shader" data-src="glsl/lib/perlin3D.glsl" data-type="perlin3D" data-version="v1"></script>
+    <script name="shader" data-src="glsl/lib/utils.glsl" data-type="utils" data-version="v1"></script>
+    <script name="shader" data-src="glsl/vertex.glsl" data-type="vertex" data-version="v1"></script>
+    <script name="shader" data-src="glsl/fragment.glsl" data-type="fragment" data-version="v1"></script>
+    <!-- JS -->
+    <script type="text/javascript" src="js/lib/signals.js"></script>
+    <script type="text/javascript" src="js/lib/glUtils.js"></script>
+    <script type="text/javascript" src="js/lib/uiUtils.js"></script>
+    <script type="text/javascript" src="js/lib/shaderSetup.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+  </head>
 
-            function reloadIt() {
-                if (window.location.href.substr(-2) !== "?r") {
-                    window.location = window.location.href + "?r";
-                }
-            }
-            
-            setTimeout('reloadIt()', 10)();
-            
-        </script>
-    </head>
-    <body>
-        <main>
-            <!-- ---------------TITLE PAGE---------------- -->
-            <header id="titlewrapper">
-                <div class="wrap-outer">
-                    <div class="wrap-middle">
-                        <div style="display: flex;" >
-                            <div id="profileDoodle">
-                                <img src="images/profile_doodle.png" style="width: 80%;">
-                            </div>
-                            <div id="headerTitle">
-                                <h1>Hi, I am <em>Joseph Horowitz</em>.</h1>
-                                <h3>Mixed Reality Interaction Designer</h3>
-                                <h3><br><br><br>My site is currently under construction. <br>You can reach me at contact@josephbhorowitz.com.</h3>
-                                <div>
-                                    <a href="https://www.linkedin.com/in/joseph-horowitz-26ba45173" target="_blank">
-                                        LinkedIn -
-                                    </a>
-                                    <a id="resume" href="/JosephHorowitz_Resume.pdf" target="_blank">
-                                        Resume
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </header>
-    </body>
+  <body>
+    <div>
+      <form>
+        <h1>Variables</h1>
+        <h3>Color 1:</h3>
+        <input type="color" id="color1" value="#FFFFFF">
+        <h3>Color 2:</h3>
+        <input type="color" id="color2" value="#999999">
+        <h3>Color 3:</h3>
+        <input type="color" id="color3" value="#333333">
+        <h3>Color 4:</h3>
+        <input type="color" id="color4">
+        <h3>Value 1:</h3>
+        <input type="range" id="v1" name="vol" min="0" max="100">
+        <h3>Value 2:</h3>
+        <input type="range" id="v2" name="vol" min="0" max="100">
+        <h3>Value 3:</h3>
+        <input type="range" id="v3" name="vol" min="0" max="100">
+        <h3>Value 4:</h3>
+        <input type="range" id="v4" name="vol" min="0" max="100">
+      </form> 
+    </div>
+    <canvas id="glcanvas">
+      Your browser doesn't appear to support the HTML5 <code>&lt;canvas&gt;</code> element.
+    </canvas>
+    <nav>
+      <img id="icon" src="./img/icon.png" alt="">
+      <div id="middleBar"></div>
+      <div id="links">
+        <a href="">Projects</a>
+        <div id="divider"></div>
+        <a href="">About</a>
+      </div>
+    </nav>
+    <header>
+      <div>
+        <h1>Hello,<br> I'm Joe.</h1>
+      </div>  
+    </header>
+    <div class="sectionDiv"></div>
+    <section id="Subhead">
+      <p>A NYC based UX Designer/Prototyper with a specialization in the AR/VR space. I operate best in the new, experimental meeting points of tech and design and am always trying to push the boundaries on what design can be. </p>
+    </section>
+    <section id="Projects"></section>
+  </body>
 </html>
