@@ -12,9 +12,14 @@
     canvas = document.getElementById("glcanvas");
     gl = glUtils.checkWebGL(canvas);
 
+    //get profile image
+    profile = document.getElementById('ProfileImage');
+
+
     //handles scroll and mouse mmovement
     document.onmousemove = handleMouseMove;
-    document.onscroll = handlePageScroll;
+    // document.onscroll = handlePageScroll;
+    document.addEventListener("scroll",handlePageScroll);
 
     //import help glsl files and append onto fragment shader
     var importedGLSL = "";
@@ -79,6 +84,7 @@
       document.documentElement.offsetHeight
     );
     scrollPos = window.pageYOffset/(limit-window.innerHeight);
+    // fun();
   }
 
   //returns mouse pos
@@ -210,10 +216,10 @@
     var color4 = HEXtoRGB(document.getElementById("color4").value);
     glUtils.uniformFloat3(gl,program,"uColor4",color4[0],color4[1],color4[2]);
 
-    glUtils.uniformFloat1(gl,program,"uValue1",document.getElementById('v1').value/100);
-    glUtils.uniformFloat1(gl,program,"uValue2",document.getElementById('v2').value/100);
-    glUtils.uniformFloat1(gl,program,"uValue3",document.getElementById('v3').value/100);
-    glUtils.uniformFloat1(gl,program,"uValue4",document.getElementById('v4').value/100);
+    glUtils.uniformFloat1(gl,program,"uValue1",0);
+    glUtils.uniformFloat1(gl,program,"uValue2",0);
+    glUtils.uniformFloat1(gl,program,"uValue3",0);
+    glUtils.uniformFloat1(gl,program,"uValue4",0);
     
   }
 

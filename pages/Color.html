@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Joe Horowitz</title>
+    <meta name="author" content="Joseph B Horowitz">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;500;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="../css/projects.css" rel="stylesheet" type="text/css">
+    
+    <!-- GLSL -->
+    <script name="shader" data-src="../glsl/lib/easingFunctions.glsl" data-type="easing" data-version="v1"></script>
+    <script name="shader" data-src="../glsl/lib/perlin3D.glsl" data-type="perlin3D" data-version="v1"></script>
+    <script name="shader" data-src="../glsl/lib/utils.glsl" data-type="utils" data-version="v1"></script>
+    <script name="shader" data-src="../glsl/vertex.glsl" data-type="vertex" data-version="v1"></script>
+    <script name="shader" data-src="../glsl/projectFrag.glsl" data-type="fragment" data-version="v1"></script>
+    <!-- JS -->
+    <script type="text/javascript" src="../js/lib/signals.js"></script>
+    <script type="text/javascript" src="../js/lib/glUtils.js"></script>
+    <script type="text/javascript" src="../js/lib/uiUtils.js"></script>
+    <script type="text/javascript" src="../js/lib/shaderSetup.js"></script>
+  </head>
+
+  <body>
+    <div>
+      <form>
+        <h1>Variables</h1>
+        <h3>Color 1:</h3>
+        <input type="color" id="color1" value="#FFFFFF">
+        <h3>Color 2:</h3>
+        <input type="color" id="color2" value="#EAEAF9">
+        <h3>Color 3:</h3>
+        <input type="color" id="color3" value="#333333">
+        <h3>Color 4:</h3>
+        <input type="color" id="color4">
+        <h3>Value 1:</h3>
+        <input type="range" id="v1" name="vol" min="0" max="100">
+        <h3>Value 2:</h3>
+        <input type="range" id="v2" name="vol" min="0" max="100">
+        <h3>Value 3:</h3>
+        <input type="range" id="v3" name="vol" min="0" max="100">
+        <h3>Value 4:</h3>
+        <input type="range" id="v4" name="vol" min="0" max="100">
+      </form> 
+    </div>
+    <canvas id="glcanvas">
+      Your browser doesn't appear to support the HTML5 <code>&lt;canvas&gt;</code> element.
+    </canvas>
+    <nav>
+      <a href="../index.html">
+        <img id="icon" src="../img/icon.png" alt="">
+      </a> 
+      <div id="middleBar"></div>
+      <div id="links">
+        <div id="NavFill"></div>
+        <a id="ProjectNav" href="../index.html#Projects">Projects</a>
+        <div id="divider"></div>
+        <a id="AboutNav" href="../index.html#About">About</a>
+      </div>
+    </nav>
+    <header>
+      <img>
+      <div id="info" style="background-image: linear-gradient( 91.1deg, rgba(242,209,209,1) -0.9%, rgba(244,241,221,1) 19.9%, rgba(222,245,220,1) 34.1%, rgba(216,239,245,1) 49.1%, rgba(229,223,246,1) 75.8%, rgba(245,234,249,1) 102% );">
+        <div> 
+          <h3>Timeline</h3>
+          <p>3 Months </p>
+        </div>
+        <div> 
+          <h3>Role</h3>
+          <p>Designer, <br>Developer</p>
+        </div>
+        <div> 
+          <h3>Tools</h3>
+          <p>Figma, Unity, <br>MRTK, HoloLens 2</p>
+        </div>
+        <div> 
+          <h3>Deliverables</h3>
+          <p>Functional 3D <br>Prototype</p>
+        </div>
+      </div>
+      <div class="paragraph">
+        <h2>Overview</h2>
+        <p>This project is a functional prototype 3D interface for selecting a color. This is the first project in in a series of case studies reexamining established 2D interfaces with 3D Interaction design principles in mind.
+        </p>
+      </div>
+      <div class="showcase">
+        <video></video>
+      </div>
+    </header>
+    <section style="background-image: linear-gradient( 91.1deg, rgba(242,209,209,1) -0.9%, rgba(244,241,221,1) 19.9%, rgba(222,245,220,1) 34.1%, rgba(216,239,245,1) 49.1%, rgba(229,223,246,1) 75.8%, rgba(245,234,249,1) 102% );">
+      <div class="paragraph" style="padding-bottom: 0;">
+        <h2>Exploring 3D...</h2>
+        <p>Recently, the field of user interaction has begun to broaden to include 3D applications and interfaces. 3D UI design is a unique and young field with its own principals and languages. The goal of this project was to <strong> design an interface that fully utilizes three dimensionality</strong> instead of slapping a conventional 2D interface on a floating plane.
+        </p>
+      </div>
+      <div class="paragraph" style="padding-top: 0;">
+        <h2>...But Why Color?</h2>
+        <p> I decided to start with a color selection tool because color is a fundamentally 3D value; every color being composed of hue, saturation, and brightness. While the color picker as a UI has been explored ad nauseum in 2D, having <strong>the ability to express all 3 dimensions of color in a digestible, usable tool</strong> opens the interface up to new, 3D-focused forms of manipulation.
+        </p>
+      </div>
+    </section>
+    <section style="background-color: white;">
+      <h1>Making a Color</h1>
+      <div class="imgAndText">
+        <div>
+          <div style="background-color: rgb(228, 249, 255)">
+            <p>Color is a naturally three dimensional value. Every color is composed of 3 aspects:</p>
+          </div>
+        </div>
+        <img class="cardMedium">
+      </div>
+      <div class="imgAndText">
+        <img class="cardMedium">
+        <div>
+          <div style="background-color: rgb(228, 255, 241)">
+            <p>Currently, most color picker interfaces take two of these values and map them to a 2D space, with the 3rd value having no choice but to be tacked on as a slider.</p>
+          </div>
+        </div>
+      </div>
+      <div class="imgAndText">
+        <div>
+          <div style="background-color: rgb(249, 228, 255)">
+            <p>Having access to three dimensions allows each of these values <em>(H,S,B)</em> to be mapped directly to each spatial axis <em>(XYZ)</em>. This creates a space containing every possible color. We'll refer to this as <strong>Color-Space</strong> going forwards.</p>
+          </div>
+        </div>
+        <img class="cardMedium">
+      </div>
+    </section>
+    <section style="background-image: linear-gradient( 104deg, #d9f2fa 2.6%, #f9e0f8 90.3% );">
+      <h1>Navigating Color-Space</h1>
+      <div class="paragraph" style="padding-top: 0;">
+        <h2>Where to start?</h2>
+        <p>While it’s fairly easy to map HSB to XYZ and create a cube of color, actually viewing and selecting values within that space is difficult, because we can only ever see 2D cross sections or the outside surface, never all the values within. The first step in this project was <strong>creating a way to easily view and navigate values within Color-Space.</strong></p>
+      </div>
+      <div class="imgAndText">
+        <div>
+          <div>
+            <h2>Color-Space Divided</h2>
+            <p>A natural starting point was to place a color point between <strong>3 separate sliders.</strong> While this approach certainly creates a navigable interface, it's tricky to track 3 sliders at once. <strong>The user is manipulating three separate values, not one fluid color.</strong></p>
+          </div>
+        </div>
+        <img class="cardMedium">
+      </div>
+      <div class="imgAndText">
+        <img class="cardMedium">
+        <div>
+          <div>
+            <h2>Plane & Pole</h2>
+            <p>By combining saturation and brightness into a <strong>2D plane</strong> along the hue slider, we better visualize various shades of each hue, allowing for <strong>easy navigation without overstimulation</strong>, splitting the difference between readability and usability.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section style="background-color: white;">
+      <h1>Physicality in 3D Interfaces</h1>
+      <div class="paragraph" style="padding-top: 0;">
+        <h2>A Design That Feels Present</h2>
+        <p>When designing physical products, <strong>ergonomics are essential.</strong> the design needs to communicate which parts are interactable, and how those parts will move/change. 
+          <br><br>3D interface design is no different. Just because a design is no longer physical doesnt mean it shouldn't <strong>use physical design conventions to communicate function.</strong> Handles should seem grabbable, buttons should seem pressable in order to make an interface familiar.
+          <br><br>
+          For the plane and pole design shown above, making it <strong>appear mechanically accurate</strong> helps communicate how it will move before users interact with it. Proper physicality results in <strong>predictable and familiar 3D UI</strong>.
+        </p>
+      </div>
+      <div class="imgAndText">
+        <img class="cardMedium">
+        <div>
+          <div style="background-color: rgb(252, 233, 248)">
+            <h2>Old-School Lo-Fi</h2>
+            <p>In order to quickly mock up an interface that feels present, the most simple solution was to <strong>actually create the interface physically.</strong> Similar to lo-fi mockups in Figma, This let me get quickly get a sense of scale, general feel, and usability.</p>
+          </div>
+        </div>
+      </div>
+      <div class="imgAndText">
+        <div>
+          <div style="background-color: rgb(232, 228, 255)">
+            <h2>Quick Changes</h2>
+            <p>Usability tests found the interface clunky to circumnavigate, requiring a bit too much walking. As a result, an additional rotation gizmo was added.</p>
+          </div>
+        </div>
+        <img class="cardMedium">
+      </div>
+      <div class="imgAndText">
+        <img class="cardMedium">
+        <div>
+          <div style="background-color: rgb(251, 255, 228)">
+            <h2>Digital Application</h2>
+            <p>Small design adjustments make the interface a lot more familiar - a stationary pole along the hue axis, caps to "stop" the color plane from falling off, a lazy susan inspired rotation gizmo for the design to rest and rotate on.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section style="background-image: linear-gradient( 104deg, #f9dcde 2.6%, #fdfae4 90.3% );">
+      <h1>Touchable Holograms</h1>
+      <div class="paragraph" style="padding-top: 0;">
+        <h2>Action and Reaction</h2>
+        <p>The original 3D interfaces were physical objects. One essential feature of physical interfaces that 3D UI lacks is feedback. We’re acutely tuned to expect touch-based confirmation when we interact with the world around us. Turning handles activates a mechanism which we feel open a door. Pressing a button might give a satisfying pop. <br><br>
+          Without the ability to properly communicate touch, 3D interfaces end up feeling “mushy”, and unresponsive. As a result, 3D interfaces need to compensate with a lot more finely tuned audiovisuals based on the state of the interface. <strong>Every action or even potential action should communicate confirmation </strong>to the user.
+      </div>
+      <div class="imgAndText">
+        <img class="cardMedium">
+        <div>
+          <div>
+            <h2>Visual Feedback</h2>
+            <p>Having the color node grow on proximity and shrink on pinch results in a more responsive experience.</p>
+          </div>
+        </div>
+      </div>
+      <div class="imgAndText">
+        <div>
+          <div>
+            <h2>Audio</h2>
+            <p>While audio might be neat flourish in a 2D interface, auditory response to actions is essential in making holograms have substance.</p>
+          </div>
+        </div>
+        <img class="cardMedium">
+      </div>
+    </section>
+    <section style="background-color: white">
+      <h1>The Result</h1>
+      <div class="paragraph" style="padding-top: 0;">
+        <h2>Final Tweaks</h2>
+        <p>While the core interface is fluid and functional, the addition of a small pop-up menu allows for more in-depth information as well as fine tuning to specific color values. This project was a fun exploration into 3D thinking and hopefully it illustrates how exciting and unexplored the field of 3D UI design can be. </p>
+      </div>
+      <div class="showcase">
+        <img>
+        <p class="caption"><em>Caption</em></p>
+      </div>
+    </section>
+    <footer>
+      <h1>Other Projects</h1>
+      <div class="gallery">
+        <div>
+          <img class="cardSmall">
+        </div>
+        <div>
+          <img class="cardSmall">
+        </div>
+        <div>
+          <img class="cardSmall">
+        </div>
+      </div>
+      <h4 id="signature">&#x3c \ &#x3e & Shaders by yours truly!</h4>
+    </footer>
+  </body>
+</html>

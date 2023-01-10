@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;500;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     
     <!-- GLSL -->
@@ -30,9 +33,9 @@
       <form>
         <h1>Variables</h1>
         <h3>Color 1:</h3>
-        <input type="color" id="color1" value="#FFFFFF">
+        <input type="color" id="color1" value="#E1F9D7">
         <h3>Color 2:</h3>
-        <input type="color" id="color2" value="#999999">
+        <input type="color" id="color2" value="#B9DFBA">
         <h3>Color 3:</h3>
         <input type="color" id="color3" value="#333333">
         <h3>Color 4:</h3>
@@ -51,23 +54,80 @@
       Your browser doesn't appear to support the HTML5 <code>&lt;canvas&gt;</code> element.
     </canvas>
     <nav>
-      <img id="icon" src="./img/icon.png" alt="">
+      <a href="#Top">
+        <img id="icon" src="./img/icon.png" alt="">
+      </a> 
       <div id="middleBar"></div>
       <div id="links">
-        <a href="">Projects</a>
+        <div id="NavFill"></div>
+        <a id="ProjectNav" href="#Projects">Projects</a>
         <div id="divider"></div>
-        <a href="">About</a>
+        <a id="AboutNav" href="#About">About</a>
       </div>
     </nav>
-    <header>
+    <header id="Top">
       <div>
-        <h1>Hello,<br> I'm Joe.</h1>
+        <h1 id="title">Hello,<br> I'm Joe.</h1>
       </div>  
+      <a class="chevron" href="#About"><img src="./img/chevron.png" alt=""></a>
     </header>
     <div class="sectionDiv"></div>
     <section id="Subhead">
-      <p>A NYC based UX Designer/Prototyper with a specialization in the AR/VR space. I operate best in the new, experimental meeting points of tech and design and am always trying to push the boundaries on what design can be. </p>
+      <p>I'm a NYC based UX Designer with a specialization in the enterprise AR space. I design and prototype effective AR solutions can be applied to real world problems.   </p>
     </section>
-    <section id="Projects"></section>
+    <!-- <section id="Projects">
+      <img src="./img/projects/285914753_485439830088926_1929909542993646851_n.png" alt="">
+      <div>
+        <h1>Selected Projects 2021-2022</h1>
+        <a href="./pages/Command.html">
+          <div class="project">
+            <h2>COMMAND ASSIST AR</h2>
+            <p>3M - AR - HoloLens 2 - 3D UI - International</p>
+          </div>
+        </a>
+        <a href="./pages/Fasara.html">
+          <div class="project">
+            <h2>FASARA AR</h2>
+            <p>3M - Mobile AR - International</p>
+          </div>
+        </a>
+        <a>
+          <div class="project">
+            <h2>3M VR TRAINING </h2>
+            <p>3M - VR - Enterprise - Training - UX</p>
+          </div>
+        </a>
+        <a href="./pages/Color.html">
+          <div class="project">
+            <h2>3D COLOR SELECTOR</h2>
+            <p>AR - Case Study - HoloLens2 - 3D UI</p>
+          </div>
+        </a>
+      </div>
+    </section> -->
+    <footer id="About">
+      <div>
+        <h2>Pardon My Dust!</h2>
+        <h3>My website is currently under construction. Feel free to reach out for any displays of work and/or my resume!</h3>
+        <h4>Lets Connect!</h4>
+        <div id="social">
+          <div id="icons">
+            <a class="icon" target="_blank" href="https://www.linkedin.com/in/jhorowit/"><img src="./img/linkedIcon.png" alt=""></a>
+            <div class="icon" id="email_icon">
+              <img src="./img/mailIcon.png" alt="">
+              <div><i>contact@josephbhorowitz.com</i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="ProfileImage">
+        <img id="defaultProfileImg" class="profile_alt" src="./img/profile/profile_01.png" alt="">
+        <img class="profile_alt" src="./img/profile/profile_02.png" alt="">
+        <img class="profile_alt" src="./img/profile/profile_03.png" alt="">
+        <img class="profile_alt" src="./img/profile/profile_04.png" alt="">
+        <img class="profile_alt" src="./img/profile/profile_05.png" alt="">
+      </div>
+    </footer>
+    <h4 id="signature">&#x3c \ &#x3e & Shaders by yours truly!</h4>
   </body>
 </html>

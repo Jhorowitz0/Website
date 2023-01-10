@@ -1,0 +1,16 @@
+#noise
+    *Perfect shader specifics
+    *remove un-needed variables
+#nav
+    <!-- *Hover states for projects and About-----
+    *fill when at correct page height------ -->
+    * down chevron
+#projects
+    *proper highlight and extension on hover
+    * background change on hover
+    * scroll parallax 
+    * navbar & text color change
+#About me
+    * changing photo
+    * Icons
+    * text

@@ -32,9 +32,9 @@ void main() {
 	float mouseDistort = clamp(distCircle(st,vec2(uResolution.x/2.,(uResolution.y/2.)-scroll*uResolution.y*0.5),min(uResolution.x,uResolution.y)*0.45),0.,1.);
 	mouseDistort = easeOut(mouseDistort) + 1.;
 	mouseDistort *= 1.0-uScroll;
-	float noise2 = noise * (0.5+0.5*perlin3D(vec3(st*0.005,(30.+uTime)*0.3)));
+	float noise2 = noise * (0.5+0.5*perlin3D(vec3(st*0.005,sin((30.+uTime)*0.1))));
 	noise2 *= mouseDistort*0.2;
-	float noise3 = noise * (0.5+0.5*perlin3D(vec3(st*0.005,(60.+uTime)*0.3)));
+	float noise3 = noise * (0.5+0.5*perlin3D(vec3(st*0.005,(sin(60.+uTime)*0.1))));
 	noise3 *= mouseDistort;
 	// float noise4 = noise * (0.5+0.5*perlin3D(vec3(st*0.005,(90.+uTime)*0.3)));
 	
