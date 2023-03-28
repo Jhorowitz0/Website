@@ -61,7 +61,7 @@ canvas {
     background-color: rgba(0, 0, 0, 0.365);
     position: absolute;
     width: 100px;
-    height: 0vh;
+    height: 0px;
     /* transform: translateX(100px); */
     z-index: -1;
     transition: 0.3s;
@@ -78,6 +78,7 @@ nav{
     align-items: center;
     position: fixed;
     top:0;
+    z-index: 5;
 }
 
 nav div{
@@ -105,7 +106,7 @@ nav div{
     border-color: black;
     border-radius: 30px;
     border: 0px solid;
-    height: 7vh;
+    height: 50px;
     width: 200px;
     display: flex;
     align-items: center;
@@ -170,13 +171,6 @@ header a{
     transition: 0.3s;
 }
 
-header a:hover{
-    bottom: 4vh;
-    width: 65px;
-    height: 65px;
-    transition: 0.2s;
-}
-
 header a img{
     width:100%;
     height: 100%;
@@ -231,27 +225,31 @@ header h2{
 }
 
 #Projects img{
-    width: 50vw;
+    width: 1000px;
     border-radius: 45px;
 }
 
 .project_preview{
     display: flex;
     align-items:center;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     width: 100%;
+    overflow: hidden;
 }
 
 .project_description{
     display: flex;
     background-color: #4B7964;
-    width: 30vw;
+    width: 500px;
     border-radius: 30px;
-    height: 30vh;
+    height: 300px;
     box-sizing: border-box;
     text-align: left;
     /* align-items: center; */
     justify-content: space-around;
+    z-index: 1;
+    position: absolute;
+    right: 5%;
 
 }
 
@@ -289,12 +287,14 @@ span p{
 
 .project_description div{
     position: absolute;
-    width: 30%;
-    height: 30%;
+    width: 40%;
+    height: 270px;
     text-align: right;
     padding: 3%;
     box-sizing: border-box;
     display: flex;
+    right: 10%;
+    /* background-color: red; */
 }
 
 .project_description div a{
@@ -489,7 +489,7 @@ footer div h4{
     font-size: 20px;
 }
 
-@media only screen and (max-device-width: 1000px) {
+@media only screen and (max-device-width: 1500px) {
     #ProfileImage{
         display: none;
     }
@@ -497,8 +497,8 @@ footer div h4{
     #NavFill{
         background-color: rgba(0, 0, 0, 0.365);
         position: absolute;
-        width: 100px;
-        height: 0vh;
+        width: 70px;
+        height: 60px;
         /* transform: translateX(100px); */
         z-index: -1;
         transition: 0.3s;
@@ -527,20 +527,13 @@ footer div h4{
         width: 6vh;
     }
     
-    #middleBar{
-        width: 50%;
-        background-color: black;
-        height: 1px;
-        padding-left: 10px;
-        padding-right:10px;
-    }
     
     #links{
         backdrop-filter: blur(20px);
         background-color: none;
-        border-color: black;
-        border: 1.5px solid;
-        height: 5vh;
+        /* border-color: black; */
+        /* border: 1.5px solid; */
+        height: 50px;
         width: 200px;
         display: flex;
         align-items: center;
@@ -588,6 +581,46 @@ footer div h4{
         padding: 0;
         padding-top: 5vh;
         text-align: center;
+    }
+
+    #Projects{
+        padding: 0;
+    }
+
+    .project_preview{
+        justify-content: space-around;
+    }
+
+    #Projects img{
+        border-radius: 0px;
+    }
+
+    .project_description{
+        margin: auto;
+        right: inherit;
+        width: 350px;
+        height: 350px;
+    }
+
+    #Projects span{
+        width: 80%;
+        text-align: left;
+    }
+
+    span h2{
+        text-align: left;
+        font-size: 30px;
+    }
+
+    span h3{
+        text-align: left;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+
+    .project_description div{
+        height: 300px;
+        width: 100%;
     }
 
     footer div{

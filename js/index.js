@@ -30,7 +30,7 @@ function updateNavBar(scrollPos){
     projectNav.style.color = 'black';
   }
   else{
-    navFillElement.style.height = '7vh';
+    navFillElement.style.height = '50px';
     // navFillElement.style.transform = 'translateY(0vh)';
     if(scrollPos >= aboutHeight){
       projectNav.style.color = 'black';
