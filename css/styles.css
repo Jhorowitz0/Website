@@ -215,7 +215,7 @@ header h2{
 #Projects{
     box-sizing: border-box;
     width: 100%;
-    padding: 5%;
+    padding: 5vw;
     padding-top: 0;
     margin: auto;
     /* height: 100vh; */
@@ -225,7 +225,7 @@ header h2{
 }
 
 #Projects img{
-    width: 1000px;
+    width: 80vw;
     border-radius: 45px;
 }
 
@@ -234,7 +234,6 @@ header h2{
     align-items:center;
     /* justify-content: space-around; */
     width: 100%;
-    max-width: 1800px;
     overflow: hidden;
 }
 
@@ -490,7 +489,7 @@ footer div h4{
     font-size: 20px;
 }
 
-@media only screen and (max-device-width: 1500px) {
+@media only screen and (max-width: 1000px) {
     #ProfileImage{
         display: none;
     }
@@ -590,10 +589,13 @@ footer div h4{
 
     .project_preview{
         justify-content: space-around;
+        width: 100vw;
     }
 
     #Projects img{
         border-radius: 0px;
+        /* height: 500px; */
+        width: 1000px;
     }
 
     .project_description{
