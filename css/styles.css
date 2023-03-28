@@ -234,6 +234,7 @@ header h2{
     align-items:center;
     /* justify-content: space-around; */
     width: 100%;
+    max-width: 1800px;
     overflow: hidden;
 }
 
@@ -598,7 +599,7 @@ footer div h4{
     .project_description{
         margin: auto;
         right: inherit;
-        width: 350px;
+        width: 80vw;
         height: 350px;
     }
 
