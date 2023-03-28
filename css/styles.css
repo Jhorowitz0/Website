@@ -65,6 +65,7 @@ canvas {
     /* transform: translateX(100px); */
     z-index: -1;
     transition: 0.3s;
+    border-radius: 30px;
 
 }
 
@@ -86,14 +87,14 @@ nav div{
 
 #icon {
     /* background-color: rgb(255, 99, 99); */
-    height: 8vh;
-    width: 8vh;
+    height: 5vh;
+    width: 5vh;
 }
 
 #middleBar{
     width: 70%;
     background-color: black;
-    height: 1px;
+    height: 0px;
     padding-left: 10px;
     padding-right:10px;
 }
@@ -102,7 +103,8 @@ nav div{
     backdrop-filter: blur(20px);
     background-color: none;
     border-color: black;
-    border: 1.5px solid;
+    border-radius: 30px;
+    border: 0px solid;
     height: 7vh;
     width: 200px;
     display: flex;
@@ -139,7 +141,11 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 90vh;
+}
+
+header div{
+    transform: translate(0,5vh);
 }
 
 
@@ -176,6 +182,14 @@ header a img{
     height: 100%;
 }
 
+header h2{
+    text-align: center;
+    font-size: 2vh;
+    font-family: 'Raleway', sans-serif;
+    padding: 30px;
+    height: auto;
+}
+
 .sectionDiv{
     width: 60%;
     margin: auto;
@@ -191,6 +205,7 @@ header a img{
     justify-content: center;
     /* backdrop-filter: blur(20px); */
     padding-bottom: 10vh;
+    padding-top: 10vh;
     /* background-color: red; */
 }
 
@@ -206,76 +221,100 @@ header a img{
 #Projects{
     box-sizing: border-box;
     width: 100%;
-    padding: 10%;
+    padding: 5%;
+    padding-top: 0;
     margin: auto;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     /* justify-content: center; */
-    align-items: center;
     /* background-color:gray; */
 }
 
-#Projects a{
-    text-decoration: none;
-    color: black;
+#Projects img{
+    width: 50vw;
+    border-radius: 45px;
 }
+
+.project_preview{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.project_description{
+    display: flex;
+    background-color: #4B7964;
+    width: 30vw;
+    border-radius: 30px;
+    height: 30vh;
+    box-sizing: border-box;
+    text-align: left;
+    /* align-items: center; */
+    justify-content: space-around;
+
+}
+
+#Projects span{
+    vertical-align: middle;
+    line-height: normal;
+    /* background-color: red; */
+    width: 70%;
+    padding-top: 50px;
+}
+
+span h2{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    color: #E8E8E8;
+}
+
+span h3{
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    padding-bottom: 6px;
+    color: #a9c3b7;
+    font-style: italic;
+}
+
+span p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    padding-bottom: 6px;
+    color: #E8E8E8;
+}
+
+.project_description div{
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    text-align: right;
+    padding: 3%;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.project_description div a{
+    align-self: flex-end;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    padding-bottom: 6px;
+    color: #E8E8E8;
+    font-style: italic;
+}
+
 
 #Projects h1{
     font-family: 'Inter', sans-serif;
     font-weight: 800;
-    font-size: 35px;
-}
-
-#Projects img{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    padding: 0px;
-    margin: 0px;
-    left: 0px;
-    z-index: -1;
-    object-fit: cover;
-}
-
-.project {
-    transition: 0.2s;
-    border-radius: 20px;
-}
-
-.project:hover{
-    background-color: black;
-    padding: 10px;
-}
-
-.project:hover p{
-    display: inline;
-    color: white;
-}
-
-.project:hover h2{
-    color: white;
-    padding: none;
-    font-weight: 600;
-}
-
-.project h2{
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
     list-style: none;
-    font-size: 50px;
-    /* margin-top: 1px; */
-}
+    font-size: 40px;
 
-.project p{
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    list-style: none;
-    font-size: 20px;
-    display: none;
-    transition: 0.2s;
-    padding-left: 0px;
-    margin: auto;
-    height: 40vh;
 }
 
 
@@ -289,14 +328,14 @@ footer{
     justify-content:space-between;
 }
 
-h2{
+footer h2{
     padding-top: 20vh;
     font-family: 'Inter', sans-serif;
     font-weight: 800;
     list-style: none;
     font-size: 40px;
 }
-h3{
+footer h3{
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     list-style: none;
@@ -618,10 +657,4 @@ footer div h4{
    
 
 }
-
-
-
-
-
-
-
+}
