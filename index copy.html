@@ -53,23 +53,17 @@
     <canvas id="glcanvas">
       Your browser doesn't appear to support the HTML5 <code>&lt;canvas&gt;</code> element.
     </canvas>
-    <nav id="Menu">
+    <nav>
+      <a href="#Top">
+        <img id="icon" src="./img/icon.png" alt="">
+      </a> 
+      <div id="middleBar"></div>
       <div id="links">
+        <div id="NavFill"></div>
         <a id="ProjectNav" href="#projectLink">Projects</a>
         <a id="AboutNav" href="#About">About</a>
       </div>
     </nav>
-
-    <nav id="Hamburger">
-      <input type="checkbox" name="checkbox" class="cm-toggle">
-      <div class="hamburger-lines">
-        <span class="line line1"></span>
-        <span class="line line2"></span>
-        <span class="line line3"></span>
-      </div> 
-    </nav>
-
-    <a href="#Top"><nav id="ToTop"><h3>↑</h3></nav></a>
     <header id="Top">
       <div>
         <h1 id="title">Hello,<br> I'm Joe.</h1>
@@ -77,59 +71,71 @@
       </div>  
     </header>
     <section id="Projects">
-      <div class="Project_Preview" style="background-image: url('img/projects/fasara.png');">
-        <a href="#">
-          <div class="background_fade">
-            <div class="text_wrapper">
-              <span>
-                <h1>Title</h1>
-                <h2>Tag - Tag - Tag - Tag</h2>
-                <p>Short Description of the project that I have created, mostly talking about stuff like the form the project takes and what it helps with.</p>
-              </span>
-            </div>
-          </div>
-        </a>
+      <div class="project_preview">
+        <img src="./img/projects/fasara.png">
+        <div class="project_description">
+          <span>
+            <h2>FASARA AR</h2>
+            <h3>Mobile AR - Sales Tool - Physical Product</h3>
+            <p>An AR Sales tool used to showcase various architectural glass films.</p>
+          </span>
+          <div><a>Coming Soon</a></div>
+        </div>
       </div>
-      <div class="Project_Preview" style="background-image: url('img/projects/post-it.png');">
-        <a href="#">
-          <div class="background_fade">
-            <div class="text_wrapper">
-              <span>
-                <h1>Title</h1>
-                <h2>Tag - Tag - Tag - Tag</h2>
-                <p>Short Description of the project that I have created, mostly talking about stuff like the form the project takes and what it helps with.</p>
-              </span>
-            </div>
-          </div>
-        </a>
+      <div class="project_preview">
+        <img src="./img/projects/post-it.png">
+        <div class="project_description" style="background-color: rgb(117, 137, 147)";>
+          <span>
+            <h2>Post-It Showcases</h2>
+            <h3>Mobile AR - Sales Tool - Physical Product</h3>
+            <p>An AR Sales tool used to showcase various architectural glass films.</p>
+          </span>
+          <div><a>Coming Soon</a></div>
+        </div>
       </div>
-      <div class="Project_Preview" style="background-image: url('img/projects/Color_Render.png');">
-        <a href="#">
-          <div class="background_fade">
-            <div class="text_wrapper">
-              <span>
-                <h1>Title</h1>
-                <h2>Tag - Tag - Tag - Tag</h2>
-                <p>Short Description of the project that I have created, mostly talking about stuff like the form the project takes and what it helps with.</p>
-              </span>
-            </div>
-          </div>
-        </a>
+      <div class="project_preview">
+        <img src="./img/projects/Color_Render.png">
+        <div class="project_description" style="background-color: rgb(117, 137, 147)";>
+          <span>
+            <h2>Post-It Showcases</h2>
+            <h3>Mobile AR - Sales Tool - Physical Product</h3>
+            <p>An AR Sales tool used to showcase various architectural glass films.</p>
+          </span>
+          <div><a>Coming Soon</a></div>
+        </div>
       </div>
-      <div class="Project_Preview" style="background-image: url('img/projects/SliderRender.png');">
-        <a href="#">
-          <div class="background_fade">
-            <div class="text_wrapper">
-              <span>
-                <h1>Title</h1>
-                <h2>Tag - Tag - Tag - Tag</h2>
-                <p>Short Description of the project that I have created, mostly talking about stuff like the form the project takes and what it helps with.</p>
-              </span>
-            </div>
-          </div>
-        </a>
+      <div class="project_preview">
+        <img src="./img/projects/SliderRender.png">
+        <div class="project_description" style="background-color: rgb(117, 137, 147)";>
+          <span>
+            <h2>Post-It Showcases</h2>
+            <h3>Mobile AR - Sales Tool - Physical Product</h3>
+            <p>An AR Sales tool used to showcase various architectural glass films.</p>
+          </span>
+          <div><a>Coming Soon</a></div>
+        </div>
       </div>
     </section>
-    <footer>&#x3c \ &#x3e & Shaders by yours truly!</footer>
+    <footer id="About">
+      <div>
+        <h2>Pardon My Dust!</h2>
+        <h3>My website is currently under construction. Feel free to reach out though!</h3>
+        <h4>Lets Connect!</h4>
+        <div id="social">
+          <div id="icons">
+            <a class="icon" target="_blank" href="https://www.linkedin.com/in/jhorowit/"><img src="./img/linkedIcon.png" alt=""></a>
+            <a class="icon" id="email_icon" href="mailto:contact@josephbhorowitz.com"><img src="./img/mailIcon.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+      <div id="ProfileImage">
+        <img id="defaultProfileImg" class="profile_alt" src="./img/profile/profile_01.png" alt="">
+        <img class="profile_alt" src="./img/profile/profile_02.png" alt="">
+        <img class="profile_alt" src="./img/profile/profile_03.png" alt="">
+        <img class="profile_alt" src="./img/profile/profile_04.png" alt="">
+        <img class="profile_alt" src="./img/profile/profile_05.png" alt="">
+      </div>
+    </footer>
+    <h4 id="signature">&#x3c \ &#x3e & Shaders by yours truly!</h4>
   </body>
 </html>

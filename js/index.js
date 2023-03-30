@@ -1,55 +1,33 @@
 document.addEventListener("scroll",handlePageScroll);
 var projectElement = document.getElementById('Projects');
-var aboutElement = document.getElementById('About');
-var navFillElement = document.getElementById('NavFill');
-var projectNav = document.getElementById('ProjectNav');
-var aboutNav = document.getElementById('AboutNav');
-var profilePhoto = document.getElementById('ProfileImage');
-var currentPhoto = 0;
-setInterval(rotatePhoto,1500);
+var ToTopArrow = document.getElementById('ToTop');
 
 function handlePageScroll(event){
   scrollPos = window.pageYOffset;
-  updateNavBar(scrollPos);
+  updateScrollContent(scrollPos);
 }
 
-function updateNavBar(scrollPos){
+function updateScrollContent(scrollPos){
+  if(!ToTopArrow)ToTopArrow = document.getElementById('ToTop');
   if(!projectElement)projectElement = document.getElementById('Projects');
-  if(!aboutElement)aboutElement = document.getElementById('About');
-  if(!navFillElement)navFillElement = document.getElementById('NavFill');
-  if(!projectNav)projectNav = document.getElementById('ProjectNav');
-  if(!aboutNav)aboutNav = document.getElementById('AboutNav');
-
-  var projectHeight = projectElement.offsetTop - projectElement.scrollHeight/2;
-  var aboutHeight = aboutElement.offsetTop - aboutElement.scrollHeight/2;
-
-
-  if(scrollPos < projectHeight){
-    // navFillElement.style.transform = 'translateY(3.5vh)';
-    navFillElement.style.height = 0;
-    projectNav.style.color = 'black';
+  var hamburger = document.getElementById('Hamburger');
+  if(scrollPos < projectElement.offsetTop/2){
+    ToTopArrow.style.opacity = 0;
+  } else{
+    ToTopArrow.style.opacity = 100;
   }
-  else{
-    navFillElement.style.height = '50px';
-    // navFillElement.style.transform = 'translateY(0vh)';
-    if(scrollPos >= aboutHeight){
-      projectNav.style.color = 'black';
-      aboutNav.style.color = 'white';
-      navFillElement.style.transform = 'translateX(100px)';
+
+  if(window.innerWidth < 1530){
+    if(scrollPos < projectElement.offsetTop){
+      hamburger.style.boxShadow = '5px 5px 10px #1b441b59,-5px -5px 10px rgba(245, 255, 240, 0.869)';
+      hamburger.style.backgroundColor = "none";
+    } else{
+      hamburger.style.boxShadow = 'none';
+      hamburger.style.backgroundColor = "rgba(217, 241, 217, 0.385)";
     }
-    else{
-      projectNav.style.color = 'white';
-      aboutNav.style.color = 'black';
-      navFillElement.style.transform = 'translateX(0)';
-    }
+  } else {
+    hamburger.style.boxShadow = '5px 5px 10px #1b441b59,-5px -5px 10px rgba(245, 255, 240, 0.869)';
+    hamburger.style.backgroundColor = "none";
   }
 }
 
-function rotatePhoto(){
-  // profilePhoto.children[currentPhoto].style.opacity = 0;
-  // currentPhoto = (currentPhoto + 1) % 6;
-  if(!profilePhoto) profilePhoto = document.getElementById('ProfileImage');
-  profilePhoto.children[currentPhoto].style.opacity = 0;
-  currentPhoto = (currentPhoto + 1) % 5;
-  profilePhoto.children[currentPhoto].style.opacity = 100;
-}

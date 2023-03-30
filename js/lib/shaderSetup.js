@@ -1,6 +1,9 @@
 (function(global) {
 
   var canvas, gl, program,FRAMES = 0, mousePos, scrollPos;
+  var stop = false;
+  var frameCount = 0;
+  var fps = 30, fpsInterval, startTime, now, then, elapsed;
 
   glUtils.SL.init({ callback:function() { main(); } }); //load shaders 
 
@@ -95,10 +98,24 @@
 
   //updates frame value and draws shaders
   function animate() {
+    var fpsInterval = 1000 / fps;
+    var then = Date.now();
+    var startTime = then;
+
     tick = function() {
-      draw();
-      FRAMES++;
       req = requestAnimationFrame(tick);
+      now = Date.now();
+      elapsed = now - then;
+      if (elapsed > fpsInterval) {
+
+        // Get ready for next frame by setting then=now, but also adjust for your
+        // specified fpsInterval not being a multiple of RAF's interval (16.7ms)
+        then = now - (elapsed % fpsInterval);
+        draw();
+        FRAMES++;
+        // Put your drawing code here
+
+    }
     };
     tick();
   }
