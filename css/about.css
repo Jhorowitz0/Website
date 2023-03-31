@@ -263,12 +263,11 @@ a{
 }
 
 section{
-    width: 80%;
-    height: 80vh;
+    width: 100vw;
+    height: 95vh;
     display: flex;
     margin: auto;
-    padding-top: 10vh;
-    align-items: top;
+    align-items: center;
     justify-content:space-between;
 }
 
@@ -288,6 +287,10 @@ section h3{
 
 section div{
     width: 50%;
+}
+
+#Description{
+    padding-left: 10vw;
 }
 
 section div h1{
@@ -466,6 +469,26 @@ footer{
         right: 3vw;
         height: 50px;
         width: 50px;
+    }
+
+    #ProfileImage{
+        display: none;
+    }
+
+    section{
+    }
+
+    #Description{
+        width: 100vw;
+        padding: 50px;
+    }
+
+    #Description h2{
+        font-size: 30px;
+    }
+
+    #Description h3{
+        font-size: 15px;
     }
 }
 
