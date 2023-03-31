@@ -57,56 +57,6 @@ canvas {
 }
 
 /*---------------------------------Nav Bar------------------------ */
-
-/* #Menu{
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    position: fixed;
-    top:3vh;
-    right: 3vw;
-    z-index: 5;
-}
-
-#menu div{
-    width: 30px;
-    height: 30px;
-} */
-
-
-#links{
-    backdrop-filter: blur(20px);
-    background-color: none;
-    box-shadow: 
-    5px 5px 10px #1b441b59,
-    -5px -5px 10px rgba(245, 255, 240, 0.869);
-    border-radius: 30px;
-    border: 0px solid;
-    height: 50px;
-    width: 200px;
-    display: flex;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.193);
-}
-
-#links a{
-    padding-top: 7%;
-    padding-bottom: 7%;
-    width: 50%;
-    text-align: center;
-    font-size: 120%;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-}
-
-#links a:hover{
-    font-weight: 800;
-    /* background-color:rgba(255, 255, 255, 0.178) */
-}
-
 #ToTop{
     position: fixed;
     backdrop-filter: blur(20px);
@@ -201,7 +151,7 @@ canvas {
     position:fixed;
     width: 100vw;
     height: 50vh;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.957);
     right: -3vw;
     top: -3vh;
     z-index: -1;
@@ -215,10 +165,23 @@ canvas {
 
 .slide-menu a{
     color: black;
+    transition: 0.2s;
 }
 
 .slide-menu a:hover{
-    text-decoration: underline;
+    color: rgb(190, 190, 190);
+}
+
+.slide-menu h1{
+    font-size: 20px;
+    color: rgb(190, 190, 190);
+    font-weight: 400;
+}
+
+.slide-menu h2{
+    font-size: 24px;
+    padding-top: 20px;
+    font-weight: 400;
 }
 
 .menu-sig{
@@ -230,10 +193,16 @@ canvas {
     font-size: 36px;
 }
 
-
-.slide-menu h2{
+.menu-sig h1{
     font-size: 30px;
-    padding-top: 10px;
+    color: black;
+}
+
+.menu-sig h2{
+    font-size: 24px;
+    font-weight: 400;
+    color: black;
+    padding-top: 0;
 }
 
 .menu-info{
@@ -241,14 +210,12 @@ canvas {
     padding-top: 6vh;
     height: 100%;
     width: 25%;
-    font-size: 30px;
 }
 .menu-proj{
     box-sizing: border-box;
     padding-top: 6vh;
     height: 100%;
     width: 25%;
-    font-size: 30px;
 }
 
 
@@ -418,51 +385,35 @@ a{
     
 
     .slide-menu{
-        transform: translateY(-60vh);
+        transform: translateY(-100vh);
         flex-direction: column;
-        height: 60vh;
+        height: 100vh;
+        background-color: white;
     }
 
     .menu-sig{
         width: 100%;
+        height: auto;
     }
 
     .menu-info{
-        padding-left: 5vw;
         width: 100%;
+        text-align: center;
+        padding-top: 7vh;
+        height: auto;
     }
 
     .menu-proj{
-        padding-left: 5vw;
-        padding-bottom: 5vh;
+        padding-top: 7vh;
         width: 100%;
+        text-align: center;
+        
     }
 }
 
 @media screen and (max-width: 950px) {
     .background_fade{
         opacity: 100%;
-    }
-
-    .menu-sig h1{
-        font-size: 40px;
-    }
-
-    .menu-info h1{
-        font-size: 40px;
-    }
-
-    .menu-info{
-        padding-top: 3vh;
-    }
-
-    .menu-proj{
-        padding-top: 3vh;
-        margin-bottom: 10vh;
-    }
-
-    .menu-proj h1{
-        font-size: 40px;
     }
 }
 
@@ -533,35 +484,6 @@ a{
     #ToTop h3{
         top:0px;
         font-size: 30px;
-    }
-
-    .menu-sig h1{
-        font-size: 30px;
-    }
-
-    .menu-info h1{
-        font-size: 24px;
-    }
-
-    .menu-info h2{
-        font-size: 20px;
-    }
-
-    .menu-info{
-        padding-top: 3vh;
-    }
-
-    .menu-proj{
-        padding-top: 3vh;
-        margin-bottom: 10vh;
-    }
-
-    .menu-proj h1{
-        font-size: 24px;
-    }
-
-    .menu-proj h2{
-        font-size: 20px;
     }
 }
 
