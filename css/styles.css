@@ -427,9 +427,6 @@ a{
     }
 
     .Project_Preview span{
-        position: relative;
-        top: 40%;
-        transform: translateY(-0%);
     }
 
     .Project_Preview h1{
