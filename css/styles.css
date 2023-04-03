@@ -427,9 +427,12 @@ a{
     }
 
     .Project_Preview span{
+        top: 0;
+        transform: translateY(0px);
     }
 
     .Project_Preview h1{
+        padding-top: 60px;
         font-size: 80px;
     }
 
@@ -448,8 +451,6 @@ a{
 
     .Project_Preview span{
         position: relative;
-        top: 30%;
-        transform: translateY(-0%);
     }
 
     .Project_Preview h1{
