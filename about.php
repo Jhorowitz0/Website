@@ -57,20 +57,20 @@
       <input type="checkbox" name="checkbox" class="cm-toggle">
       <div class="slide-menu">
         <div class="menu-sig">
-          <a href="index.php"><h1>Joseph Horowitz</h1></a>
+          <a href="www.josephbhorowitz.com"><h1>Joseph Horowitz</h1></a>
           <h2>AR Designer</h2>
         </div>
         <div class="menu-info">
           <h1>Menu</h1>
-          <a href="index.php"><h2>Home</h2></a>
-          <a href="josephbhorowitz.com/about"><h2>About</h2></a>
+          <a href="www.josephbhorowitz.com"><h2>Home</h2></a>
+          <a href="www.josephbhorowitz.com/about"><h2>About</h2></a>
         </div>
         <div class="menu-proj">
           <h1>Projects</h1>
-          <a href="index.php"><h2>Title</h2></a>
-          <a href="index.php"><h2>Title</h2></a>
-          <a href="index.php"><h2>Title</h2></a>
-          <a href="index.php"><h2>Title</h2></a>
+          <a href="www.josephbhorowitz.com"><h2>Title</h2></a>
+          <a href="www.josephbhorowitz.com"><h2>Title</h2></a>
+          <a href="www.josephbhorowitz.com"><h2>Title</h2></a>
+          <a href="www.josephbhorowitz.com"><h2>Title</h2></a>
         </div>
       </div>
       <div class="hamburger-lines">
