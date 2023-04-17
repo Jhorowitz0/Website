@@ -1,0 +1,17 @@
+ How do we plan for the future? Try to anticipate how changes to the devices around us lend themselves to the physical products we use? How dooes our use of the physical product change to lend themselves to the devices around us?
+
+While speculation like this is decidedly *not* Human Centered Design (Designing for what might be instead of what is), It does function as a way to get the creative blood pumping, allowing a typically familiar product to be viewed in the light of potentiality instead of practicality. This process is not unlike the elaborate concept cars created for trade shows only. Wholely inpractical but uesd more as sparks of inspiration for current design. 
+
+In short, this project was a breakdown of command hanging process, readressed with the assumption that the user would have a headset capable of high end AR available to them.
+
+**research**
+Speculations and technology aside, understanding the context around the command products is obviously the first priority. Who uses them mostly? what are the common purposes? When does Command really work? When does it really not? 
+
+To find out we drew upon existing research from the Command team, interviewed customers with product experience, and of course hung (and watched others hang) many, many command products. 
+
+Afterwards came the breakdown and affinitizations of our interviews as well as an annotated process breakdown/ psedo flow. 
+
+*Process breakdown/flow*
+
+*Takaways*
+

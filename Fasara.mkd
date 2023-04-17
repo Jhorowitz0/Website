@@ -1,0 +1,34 @@
+**Fasara AR Sales Assistance**
+
+**fasara is:**
+3M™ FASARA™ Glass Finishes are semi-translucent, textured films that, when applied to glass, can be used to control the amout of light and privacy in a space while enhancing the interior's aesthetics.
+
+For this product the business was seeking a way to easily showcase the fasara catalogue within the context of an interior to easily pitch fasara.
+
+**"Augmenting" the FASARA sales process**
+For insight into this project, I worked with the architectural finish sales reps at 3M to understand the context around selling fasara.
+The 3M catalogue for architectural finishes is extensive and usually a sales rep will work along side a companies architect or interior designer to find the perfect products for a specific sites branding and image. This is a long process and often involves multiple visits with many samplings of the material. The main area identified for improvement was in that first meeting with a client when a sales rep seeks showcase various products and narrow down potential products for use. Often times this involves the sales person navigating various pages of our internal catalogue on an iPad as the sales person cannot possibly carry every patturn of every finish nor showcase possible finish modifications. 
+
+**Competetive Analysis**
+- while this is an internal tool and not directly involved in competition itself, its useful to look at other examples of augmenting the sales process of a physical product with an AR showcase in similar apps such as xyz.
+- The creation of exensive app breakdowns (in terms of target market, physical accuracy, core business, usability, layout, navigation, content, branding, and performance) aided in identifying what works and what doesn't for our purposes as well as problem areas AR in this use case typically runs into. 
+
+**Opportunities and Challenges for AR**
+-takaways from comp analysis
+
+**Wireframes**
+-basic wireframes
+
+**minimal branding**
+- fasara as a product has some of the most neutral branding for 3M possible. this tool is meant to be able to adapt to the branding and situation of the content. 
+
+**The Final product**
+-video, images
+
+**Showcases**
+- images of CES and Milan
+- currently on desplay for a whole year at a select location in Milan.
+
+**The Future of AR in physical product sales.** 
+- use of DiNoc
+- More in depth customization 
