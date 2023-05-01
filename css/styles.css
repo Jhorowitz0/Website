@@ -468,7 +468,7 @@ a{
     }
 
     .Project_Preview p{
-        font-size: 1.1em;
+        display: none;   
     }
 
     #Hamburger{
