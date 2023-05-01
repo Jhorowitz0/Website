@@ -342,7 +342,8 @@ a{
 }
 
 .Project_Preview h1{
-    font-size: 7vh;
+    font-size: 60px;
+    /* color: red; */
 }
 
 .Project_Preview h2{
@@ -374,7 +375,7 @@ a{
     }
     
     .Project_Preview h1{
-        font-size: 5vh;
+        font-size: 60px;
     }
 
     /* #Hamburger{
