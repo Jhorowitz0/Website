@@ -326,17 +326,19 @@ a{
     opacity: 100%;
 }
 
-.text_wrapper{
+.background_fade div{
     width: 70%;
     color: #f3fdee;
     font-family: 'Raleway', sans-serif;
     text-align: left;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+
 .Project_Preview span{
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 .Project_Preview h1{
@@ -369,6 +371,10 @@ a{
     #ToTop{
         box-shadow: none;
         background-color: rgba(217, 241, 217, 0.385);
+    }
+    
+    .Project_Preview h1{
+        font-size: 5vh;
     }
 
     /* #Hamburger{
@@ -433,7 +439,7 @@ a{
 
     .Project_Preview h1{
         padding-top: 60px;
-        font-size: 80px;
+        font-size: 40px;
     }
 
     .Project_Preview p{
@@ -454,7 +460,7 @@ a{
     }
 
     .Project_Preview h1{
-        font-size: 50px;
+        font-size: 30px;
     }
 
     .Project_Preview h2{
