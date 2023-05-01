@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="css/about.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
     
     <!-- GLSL -->
     <script name="shader" data-src="glsl/lib/easingFunctions.glsl" data-type="easing" data-version="v1"></script>
@@ -25,7 +25,7 @@
     <script type="text/javascript" src="js/lib/glUtils.js"></script>
     <script type="text/javascript" src="js/lib/uiUtils.js"></script>
     <script type="text/javascript" src="js/lib/shaderSetup.js"></script>
-    <script type="text/javascript" src="js/about.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
   </head>
 
   <body>
@@ -57,20 +57,20 @@
       <input type="checkbox" name="checkbox" class="cm-toggle">
       <div class="slide-menu">
         <div class="menu-sig">
-          <a href="/"><h1>Joseph Horowitz</h1></a>
-          <h2>AR Designer</h2>
+          <a href="index.html"><h1>Joseph Horowitz</h1></a>
+          <h2>Ar Designer</h2>
         </div>
         <div class="menu-info">
           <h1>Menu</h1>
-          <a href="/"><h2>Home</h2></a>
-          <a href="/about"><h2>About</h2></a>
+          <a href="index.html"><h2>Home</h2></a>
+          <a href="about.html"><h2>About</h2></a>
         </div>
         <div class="menu-proj">
           <h1>Projects</h1>
-          <a href="/"><h2>Title</h2></a>
-          <a href="/"><h2>Title</h2></a>
-          <a href="/"><h2>Title</h2></a>
-          <a href="/"><h2>Title</h2></a>
+          <a href="index.html"><h2>Title</h2></a>
+          <a href="index.html"><h2>Title</h2></a>
+          <a href="index.html"><h2>Title</h2></a>
+          <a href="index.html"><h2>Title</h2></a>
         </div>
       </div>
       <div class="hamburger-lines">
@@ -79,24 +79,66 @@
         <span class="line line3"></span>
       </div> 
     </nav>
-    <section id="About">
-      <div id="Description">
-        <h2>Pardon My Dust!</h2>
-        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis.<br><br> Nisl condimentum id venenatis a condimentum vitae sapien. Consequat interdum varius sit amet mattis vulputate enim nulla. Leo a diam sollicitudin tempor id eu nisl nunc.</h3>
-        <h4>Lets Connect!</h4>
-        <div id="social">
-          <div id="icons">
-            <a class="icon" target="_blank" href="https://www.linkedin.com/in/jhorowit/"><img src="./img/linkedIcon.png" alt=""></a>
-            <a class="icon" id="email_icon" href="mailto:contact@josephbhorowitz.com"><img src="./img/mailIcon.png" alt=""></a>
+
+    <a href="#Top"><nav id="ToTop"><h3>↑</h3></nav></a>
+    <header id="Top">
+      <div>
+        <h1 id="title">Hello,<br> I'm Joe.</h1>
+        <h2 id="projectLink">AR Designer  -  Prototyper  -  Creative Technologist</h2>
+      </div>  
+    </header>
+    <section id="Projects">
+      <div class="Project_Preview" style="background-image: url('img/projects/fasara.png');">
+        <a href="#">
+          <div class="background_fade">
+            <div class="text_wrapper">
+              <span>
+                <h1>Title</h1>
+                <h2>Tag - Tag - Tag - Tag</h2>
+                <p>Short Description of the project that I have created, mostly talking about stuff like the form the project takes and what it helps with.</p>
+              </span>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
-      <div id="ProfileImage">
-        <img id="defaultProfileImg" class="profile_alt" src="./img/profile/profile_01.png" alt="">
-        <img class="profile_alt" src="./img/profile/profile_02.png" alt="">
-        <img class="profile_alt" src="./img/profile/profile_03.png" alt="">
-        <img class="profile_alt" src="./img/profile/profile_04.png" alt="">
-        <img class="profile_alt" src="./img/profile/profile_05.png" alt="">
+      <div class="Project_Preview" style="background-image: url('img/projects/post-it.png');">
+        <a href="#">
+          <div class="background_fade">
+            <div class="text_wrapper">
+              <span>
+                <h1>Title</h1>
+                <h2>Tag - Tag - Tag - Tag</h2>
+                <p>Short Description of the project that I have created, mostly talking about stuff like the form the project takes and what it helps with.</p>
+              </span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="Project_Preview" style="background-image: url('img/projects/Color_Render.png');">
+        <a href="#">
+          <div class="background_fade">
+            <div class="text_wrapper">
+              <span>
+                <h1>Title</h1>
+                <h2>Tag - Tag - Tag - Tag</h2>
+                <p>Short Description of the project that I have created, mostly talking about stuff like the form the project takes and what it helps with.</p>
+              </span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="Project_Preview" style="background-image: url('img/projects/SliderRender.png');">
+        <a href="#">
+          <div class="background_fade">
+            <div class="text_wrapper">
+              <span>
+                <h1>Title</h1>
+                <h2>Tag - Tag - Tag - Tag</h2>
+                <p>Short Description of the project that I have created, mostly talking about stuff like the form the project takes and what it helps with.</p>
+              </span>
+            </div>
+          </div>
+        </a>
       </div>
     </section>
     <footer>&#x3c \ &#x3e & Shaders by yours truly!</footer>

@@ -1,9 +1,9 @@
-**Who is He?**
+**Who am I?**
 I am a Brooklyn based AR/VR Designer and Prototyper. I currently work at 3M as their principle AR designer
 researching, designing and prototying various enterprise AR/VR solutions for sales, training and product displays.
-Notable showcases of my work for 3M have included CES in Las Vegas, Milan Design Week and the Global DIY Summit in Copenhagen.
+Notable showcases of my work for 3M have included CES 2023 in Las Vegas, Milan Design Week 2022-23 and the  2022 Global DIY Summit in Copenhagen.
 
-**How Did he get here?**
+**How Did I start?**
 Originally attending Caregie Mellon in 2017 with an interest code based art, I focused more on experimental ways to utilize the web, game engines, and shaders to create novel digital experiences. After a later pivot towards UX design and research with CMU's Human and Computer Interaction Institute I graduated CMU in 2021 with a BFA in Electronic and Time Based Media. I then found an unlikely middle ground between experimental digital experiences and functional UX design work as a part of 3M's first class of AR design interns and have since been working there full time. 
 
 **Why AR/VR**

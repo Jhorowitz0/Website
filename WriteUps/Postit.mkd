@@ -1,0 +1,47 @@
+# Post-It Augmented Mural #
+### Revitilizing a familiar brand with a novel experience ###
+
+---
+
+Utilizing the Hololens 2, this 25 foot long, multi-day collaborative, hologram guided post it mural was my first large scale project and the a centerpeice of the 3M PGA open.
+
+- view final display
+
+## Small Beginnings ##
+Originally starting as an intern project, the AR mural construction guide began as an exploration into the ways in which wearables could transform and improve a physical product experience.
+
+- initial videos
+
+when developing the app and building a lot of murals, it quickly became apparent that this tech was extremely suited to address two common pain points in mural construction: 
+
+- ## visualizing mural scale and location ##
+  people often underestimate the size of post it murals by magnitudes. What starts as a simple 16x16 pixel idea quickly becomes a huge 4ft x 4ft mural that doesnt fit on a small window. The hololens allows users to quickly and easily see exactly how a mural will look in its space
+
+- ## aiding in the finer points of construction. ##
+  
+  
+
+
+
+**The problem:**
+How does 3M display a pretty widely used product looked at daily and push the post-it brand into the 21st century. 
+
+Utilizing the Hololens to create large scale murals over time using post it. 
+
+**breaking down the post it mural.**
+jhb
+
+**wireframing and "cardboarding"**
+kjh
+
+**animation and branding**
+While operating within a pretty strict existing brand, the goal was to pull out the fun and interactive elements and apply a bit more wow factor through motion sound and animation.
+
+**Small scale showcase at CES**
+CES was the perfect place to put an experience like this in front of other engineers/designers in the field to generate interest and gain insight. Being able to attend, set up and run the booth myself informed future changes to the app as well. I got to see the typical scale that most showcases exist at as well as the practical problems with managing headsets in person and running hundreds of people through an experience while having conversations. 
+
+**Future Plans**
+
+
+
+

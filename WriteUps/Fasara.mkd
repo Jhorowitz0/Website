@@ -1,5 +1,50 @@
-**Fasara AR Sales Assistance**
+# 3M FASARA / DINOC #
+### Using AR to quickly showcase extensive product catalogues. ###
 
+---
+
+
+**As a sales person for 3M**.... describe how the success of a sale is about finding the appropriate 3M product tailored perfectly to meet the clients ideas for a space. This typically involves navigating 3M's massive catologue of finishes/films and designs and also going in depth on potential adjustments and modifications that can be tweaked for each design. 
+
+describe the issue: the first impressions of a product is everything and small samples can only go so far.
+
+## **A Better Elevator Pitch** ##
+Talks with sales people at 3M suggested the potential use of an AR tool that could showcase the architectural finish catalogue in all its glory and modularity, in any space+lighting condition quickly and effectively. 
+
+- jump to finished product and showcases at the Milan Design Salone 22 & 23.
+
+## **A look at the sales process** ##
+to start formulating a solution I had to first dive deeply into what it means to sell these products. 
+
+- insert quote from sales person 
+
+from the talks with sales people I identified a possible solution route that AR could fit into
+
+- Journey map of sales process
+
+From here we could start to decide the core function of the app, it was time to breakdown the differences of materials. 
+
+## **The Product** ##
+
+- insert short fasara description
+- insert short dinoc description
+
+## **Breakdowns** ##
+
+- user flow
+- wireframe sketches
+- first wireframe embed clickthrough
+- in depth flow
+
+## **First Uses** ##
+
+- final showcases in milan
+- app video
+
+
+
+
+# Old Draft #
 **fasara is:**
 3M™ FASARA™ Glass Finishes are semi-translucent, textured films that, when applied to glass, can be used to control the amout of light and privacy in a space while enhancing the interior's aesthetics.
 
