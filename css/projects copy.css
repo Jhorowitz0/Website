@@ -272,41 +272,17 @@ header img{
     width:100%;
     background-color: darkgray;
     height:80vh;
-    /* position: absolute; */
+    position: absolute;
     top: 0;
     z-index: -1 ;
 }
 
-header span{
-    position: absolute;
-    top: 30vh;
-    width: 100%;
-    text-align: center;
-}
-
-header h1{
-    position: relative;
-    top:3px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 50px;
-    color: black;
-    font-weight: 900;
-}
-
-header h2{
-    font-family: 'Raleway', sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    padding-top: 10px;
-}
-
 #info{
-    display: none;
     width: 700px;
     height: 15vh;
     margin: auto;
     margin-top: 73vh;
-    /* display: flex; */
+    display: flex;
     justify-content: center;
     text-align: left;
     font-family: 'Montserrat', sans-serif;
@@ -335,7 +311,11 @@ header h2{
 /* -----------------General---------------- */
 
 section{
-    display: none;
+    padding: 50px;
+}
+
+footer{
+    padding: 50px;
 }
 
 .paragraph{
@@ -358,60 +338,159 @@ section{
     text-align: justify;
 }
 
-footer{
-    display: none;
+.showcase{
+    width: 750px;
+    margin: auto;
+    padding-bottom: 10vh;
 }
 
-/*------------------Media Adjustments--------------*/
+.showcase video{
+    width: 100%;
+    height: 50vh;
+    background-color: darkgray;
+    margin: auto;
+}
+
+.showcase img{
+    width: 100%;
+    height: 50vh;
+    background-color: darkgray;
+    margin: auto;
+}
+
+.caption{
+    padding-top: 20px;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+section h1{
+    width: 70%;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size:xx-large;
+    padding-bottom: 5vh;
+}
+
+.mobile{
+    width: 268px;
+    height: 426px;
+    background-color: darkgrey;
+}
+
+.cardSmall{
+    width: 250px;
+    height: 250px;
+    background-color: darkgrey;
+}
+
+.cardMedium{
+    width: 400px;
+    height: 400px;
+    background-color: darkgrey;
+}
+
+.imgAndText{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 5vh;
+}
+
+.imgAndText > div{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgAndText > div > div {
+    background-color: rgb(255, 255, 255);
+    padding: 25px;
+    box-shadow: 
+    5px 5px 10px #00000025,
+    -5px -5px 10px #00000025;
+}
+
+.imgAndText h2{
+    padding-bottom: 5px;
+}
+
+.gallery{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 5vh;
+}
+
+#signature{
+    height: 5vh;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+/* -----------------------Rainbow-------------- */
+.rainbow-text {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	text-shadow: #A3A3A3 1px 1px 1px;
+}
+.rainbow-text .block-line > span {
+	display: inline-block;
+}
 
 @media screen and (max-width: 1200px) {
-
-    .slide-menu{
-        transform: translateY(-100vh);
-        flex-direction: column;
-        height: 100vh;
-        background-color: white;
-    }
-
-    .menu-sig{
+    section{
         width: 100%;
-        height: auto;
+        padding-left: 0;
+        padding-right: 0;
     }
 
-    .menu-info{
-        width: 100%;
-        text-align: center;
-        padding-top: 7vh;
-        height: auto;
+    .imgAndText{
+        width: 80%;
     }
 
-    .menu-proj{
-        padding-top: 7vh;
-        width: 100%;
-        text-align: center;
-        
-    }
-
-    #info{
-        width: 80vw;
+    .gallery{
+        width: 85%;
     }
 }
 
-
-@media screen and (max-width: 550px) {
-    #Hamburger{
-        bottom: 2vh;
-        right: 3vw;
-        height: 50px;
-        width: 50px;
+@media screen and (max-width: 950px) {
+    section{
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
     }
 
-    header h1{
-        font-size: 40px;
+    .imgAndText{
+        width: 90%;
+        flex-direction: column;
+        padding-bottom: 30px;
+        margin-top: 0px;
     }
 
-    header h2{
-        font-size: 24px;
+    .imgAndText * {
+        margin-bottom: 30px;
+        margin-top: 0px;
+    }
+
+    .gallery{
+        flex-direction: column;
+    }
+
+    .gallery * {
+        padding-bottom: 10px;
     }
 }
 
