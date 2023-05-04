@@ -362,7 +362,7 @@ p{
     font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 5vh;
+    padding-top: 5vh;
     /* padding-top: 5vh; */
     text-align: justify;
 }
@@ -378,7 +378,7 @@ section h1{
     margin: auto;
     font-family: 'Montserrat', sans-serif;
     font-size:xx-large;
-    padding-bottom: 5vh;
+    padding-top: 5vh;
 }
 
 .imgAndText{
@@ -388,7 +388,7 @@ section h1{
     display: flex;
     justify-content: space-between;
     /* background-color: rgb(197, 194, 217); */
-    padding-bottom: 5vh;
+    /* padding-bottom: 5vh; */
     padding-top: 5vh;
     font-family: 'Montserrat', sans-serif;
 }
@@ -444,6 +444,7 @@ section h1{
     font-weight: 700;
     box-shadow: -4px 0px 0 #000;
     padding-left: 30px;
+    margin-top: 5vh;
     margin-bottom: 5vh;
 }
 
@@ -454,6 +455,10 @@ section h1{
     text-align: left;
 }
 
+.paragraph + p{
+    padding-top: 2vh;
+}
+
 .paragraph{
     width: 80%;
     max-width: 700px;
@@ -462,7 +467,7 @@ section h1{
     display: flex;
     justify-content: space-between;
     /* margin-top: 3vh; */
-    padding-bottom: 5vh;
+    padding-top: 5vh;
 }
 
 .paragraph h2{
@@ -480,7 +485,7 @@ section h1{
 .showcase{
     width: 70vw;
     margin: auto;
-    padding-bottom: 5vh;
+    padding-top: 5vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -489,7 +494,7 @@ section h1{
 .cardLarge{
     width: 40vw;
     margin: auto;
-    padding-bottom: 5vh;
+    padding-top: 5vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -514,7 +519,7 @@ section h1{
     max-width: 500px;
     width: 80vw;
     margin: auto;
-    padding-bottom: 5vh;
+    padding-top: 5vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -560,7 +565,7 @@ section h1{
     margin: auto;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 5vh;
+    padding-top: 5vh;
 }
 
 .gallery div{
