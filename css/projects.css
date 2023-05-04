@@ -661,11 +661,11 @@ footer h1{
         width: 80vw;
     }
 
-    header h1{
+    title-wrapper h1{
         font-size: 30px;
     }
 
-    header h2{
+    title-wrapper h2{
         /* width: 50vw; */
         font-size: 14px;
         font-family: 'Montserrat', sans-serif;
