@@ -362,7 +362,7 @@ p{
     font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 3vh;
+    padding-bottom: 5vh;
     /* padding-top: 5vh; */
     text-align: justify;
 }
@@ -462,7 +462,7 @@ section h1{
     display: flex;
     justify-content: space-between;
     /* margin-top: 3vh; */
-    padding-bottom: 3vh;
+    padding-bottom: 5vh;
 }
 
 .paragraph h2{
@@ -480,7 +480,7 @@ section h1{
 .showcase{
     width: 70vw;
     margin: auto;
-    padding-bottom: 3vh;
+    padding-bottom: 5vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -489,7 +489,7 @@ section h1{
 .cardLarge{
     width: 40vw;
     margin: auto;
-    padding-bottom: 3vh;
+    padding-bottom: 5vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -514,7 +514,7 @@ section h1{
     max-width: 500px;
     width: 80vw;
     margin: auto;
-    padding-bottom: 3vh;
+    padding-bottom: 5vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -560,7 +560,7 @@ section h1{
     margin: auto;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 3vh;
+    padding-bottom: 5vh;
 }
 
 .gallery div{
