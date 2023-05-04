@@ -88,71 +88,66 @@
     <section style="background-color: rgb(210, 234, 218)">
       <div class="paragraph">
         <h2>Recreating 3M Archtictural Finishes</h2>
-        <p>Before beginning the whole design process for this tool it was first crutial to create digital samples of the products to see it they can hold up to the real thing. After all, what's the point of a product showcase demo that can't properly showcase the products?</p>
+        <p>This project centers mainly around 3M's architectural and glass finishes FASARA™ and DI-NOC™. FASARA™ Glass Finishes are semi-translucent, textured films that, when applied to glass, can be used to control the amout of light and privacy in a space while enhancing the interior's aesthetics. Later on the app's usage branched out to include the DI-NOC™ product line as well. DI-NOC™ is a thick, printed film that mimics the roughness, specularity, and color of other materials for a fraction of the cost.</p>
       </div>
-      <p>Working with Unity's URP shader library and some custom GLSL, I first began recreating FASARA™ patterns and blurs. FASARA™ Glass Finishes are semi-translucent, textured films that, when applied to glass, can be used to control the amout of light and privacy in a space while enhancing the interior's aesthetics.</p>
-      <p>Later on the app's usage branched out to include the DI-NOC™ product line as well. DI-NOC™ is a thick, printed film that mimics the roughness, specularity, and color of other materials for a fraction of the cost. </p>
       <div class="gallery">
         <div>
           <img class="cardMedium" src="./../img/fasara/fasara_product.png">
-          <p class="caption"><em>FASARA Natural Series Samples</em></p>
+          <p class="caption"><em><a class="external" target="_blank" href="https://www.3m.com/3M/en_US/architectural-design-us/products/new-fasara-glass-finishes/natural-series/">FASARA™ Natural Series</a></em></p>
         </div>
         <div>
           <img class="cardMedium" src="./../img/fasara/dinoc_product.jpg">
-          <p class="caption"><em>DINOC Wood Pattern</em></p>
+          <p class="caption"><em><a class="external" target="_blank" href="https://www.3m.com/3M/en_US/architectural-design-us/new-dinoc-finishes/premium-wood-series/">DI-NOC™ Architectural Finishes</a></em></p>
         </div>
       </div>
-      <div class="showcase">
-        <img src="./../img/fasara/fasara_shader.PNG">
-        <p class="caption"><em>Realtime blur and pattern shaders.</em></p>
-      </div>
-      <div class="showcase">
-        <img src="./../img/fasara/dinoc_shader.PNG">
-        <p class="caption"><em>DI-NOC procedural shader.</em></p>
+      <p>Before beginning the design process for this tool it was first crucial to create digital samples of the product line to determine if it was feasable to render high quality material previews live in AR on a mobile device. After all, what's the point of a product showcase that can't properly showcase the products?<br><br>After constant comparison to the real product and much tweaking, I created sample gradiated blur shaders as well as pattern approxamations using URP's shader graph in unity and some custom GLSL.</p>
+      <div class="gallery">
+        <div>
+          <img class="cardMedium" src="./../img/fasara/blur.PNG">
+          <p class="caption"><em>Realtime Blur Effects.</em></p>
+        </div>
+        <div>
+          <img class="cardMedium" src="./../img/fasara/pane.PNG">
+          <p class="caption"><em>Procedural Pattern Sample.</em></p>
+        </div>
       </div>
     </section>
     <section style="background-color:white;">
       <div class="paragraph">
         <h2>Lo-Fi Mockups</h2>
-        <p>After a lot of tweaking, we deemed the AR materials a success. Next I worked with 3M Japan's design team to review sales points of the products that the app should drive home such as flexable pattern size and color as well as possible custom material tweaks.</p>
+        <p>I worked with 3M Japan's design team to review the main points of the FASARA sales process that the app should highlight. The main focus was on FASARA's flexable pattern size, color and blur, as well as possible custom material masking to client spec.</p>
       </div>
       <div class="showcase">
-        <img>
-        <p class="caption"><em>App Flow</em></p>
-      </div>
-      <div class="showcase">
-        <img>
-        <p class="caption"><em>First Design Sketches</em></p>
+        <img src="./../img/fasara/Initial_Flow.PNG">
+        <p class="caption"><em>Inital App Flow</em></p>
       </div>
       <div class="paragraph">
         <h2>Simplicty & Speed</h2>
-        <p>After talks with salespeople and news of a potential use in upcoming exhibitions we decided that the app needed to have a focus on ease-of-use as clients would likely only use it once or twice and for very small windows of time. This meant streamlining the app greatly and cutting many planned features.</p>
+        <p>After news of an immidiate potential use in 3M's showcase of the FASARA Natural Series at the Milan Design Salone 2022 the app took a quick detour from a daily-use sales tool to instead function as a quick, one time showcase. This drastically changed the context the app was being used in and the design needed to shift to reflect that. </p>
       </div>
-      <div class="gallery">
-        <div>
-          <img class="cardMedium">
-          <p class="caption"><em>Reduced Flow</em></p>
-        </div>
-        <div>
-          <img class="cardMedium">
-          <p class="caption"><em>Screen Layout</em></p>
-        </div>
-      </div>
+      <p>We refined the flow, cutting out any complex features such as pattern customization and focusing instead on making an explorable experience that users could jump in and out of at any time without a defined start or end of the experience. Additionally, instead navigating via separate menus and pages, the app could now be freely explored with swipes in any direction, encouraging free discovery of new interesting designs.</p>
       <div class="showcase">
-        <img>
-        <p class="caption"><em>Lo-Fi figma mockup</em></p>
+        <img src="./../img/fasara/Refined Flow.PNG">
+        <p class="caption"><em>Streamlined Flow</em></p>
+      </div>
+      <div class="cardLarge">
+        <img src="./../img/fasara/Low-Fi Mockups.PNG">
+        <p class="caption"><em>Early Screen Mockups</em></p>
       </div>
     </section>
     <section style="background-color: white">
       <div class="paragraph">
-        <h2>First Prototype</h2>
-        <p>Below is a walk-through of the finished mobile prototype I created in unity. This inital version was showcased briefly at 3M's booth in Milan Design Week 2022 as well as used breifly in product sales pitches company wide.</p>
+        <h2>Finished Demo</h2>
+        <p>Below is a walk-through of the finished mobile prototype I created in unity. This inital version was showcased as a part of 3M's booth in Milan Design Week 2022 as well as used in current sales company-wide.</p>
       </div>
-      <div class="showcase">
-        <img>
+      <div class="cardLarge">
+        <img src="./../img/fasara/Milan22.png">
+      </div>
+      <div class="mobile_showcase">
+        <iframe src="https://www.youtube.com/embed/ToY9rWQ-lcM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
     </section>
-    <section style="background-color: rgb(255, 234, 204)">
+    <section style="background-color: rgb(255, 234, 204); display: none;" >
       <div class="paragraph">
         <h2>Improvements and Pivots</h2>
         <p>After success in Milan, the apps usage expanded to include a showcase of DI-NOC product line as well. Learning from the app's drawbacks when initially showcased, we focused more on planning the both around the app to work in tandem with the app itself. Lighting was pre-planned to make materials fit the space seamlessly and a QR was used to quickly and accurately place samples and panels of information.</p>
