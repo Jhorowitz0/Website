@@ -94,8 +94,8 @@ a{
     backdrop-filter: blur(20px);
     background-color: none;
     box-shadow: 
-    5px 5px 10px #1b441b59,
-    -5px -5px 10px rgba(245, 255, 240, 0.869);
+    5px 5px 10px #00000059,
+    -5px -5px 10px rgba(255, 255, 255, 0.869);
     height: 55px;
     width: 55px;
     border-radius: 5vh;
@@ -266,22 +266,42 @@ header{
     align-items: center;
     justify-content: center;
     top: 0;
+    /* background-color: red; */
 }
 
 header img{
-    width:100%;
-    background-color: darkgray;
+    width:100vw;
+    /* background-color: rgb(43, 0, 255); */
     height:80vh;
-    /* position: absolute; */
+    position: fixed;
     top: 0;
-    z-index: -1 ;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+    object-position: left;
 }
 
-header span{
-    position: absolute;
-    top: 30vh;
+#intro{
+    background-color: white;
+    padding-top: 5vh;
+    padding-bottom: 3vh;
+}
+
+#title-wrapper{
+    /* position: absolute; */
+    top: 0;
+    height: 80vh;
     width: 100%;
+    display: inline-flex;
+    align-items: center;
     text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#title-wrapper h2{
+    font-weight: 500;
 }
 
 header h1{
@@ -290,14 +310,7 @@ header h1{
     font-family: 'Raleway', sans-serif;
     font-size: 50px;
     color: black;
-    font-weight: 900;
-}
-
-header h2{
-    font-family: 'Raleway', sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    padding-top: 10px;
+    font-weight: 700;
 }
 
 #info{
@@ -333,19 +346,117 @@ header h2{
 }
 
 /* -----------------General---------------- */
-
-section{
-    display: none;
+img{
+    object-fit: cover;
 }
-
-.paragraph{
-    width: 80vw;
+p{
+    width: 80%;
+    max-width: 700px;
     margin: auto;
     font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 10vh;
-    margin-top: 5vh;
+    padding-bottom: 3vh;
+    /* padding-top: 5vh; */
+    text-align: justify;
+}
+
+section{
+    /* display: none; */
+    padding: 50px;
+}
+
+section h1{
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size:xx-large;
+    padding-bottom: 5vh;
+}
+
+.imgAndText{
+    width: 70%;
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: rgb(197, 194, 217); */
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.imgAndText > div > div {
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-shadow: 
+    5px 5px 10px #00000025,
+    -5px -5px 10px #00000025;
+}
+
+.imgAndText > div{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgAndText p{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.mobile{
+    width: 268px;
+    height: 426px;
+    background-color: darkgrey;
+}
+
+.cardSmall{
+    width: 250px;
+    height: 250px;
+    background-color: darkgrey;
+}
+
+.cardMedium{
+    width: 400px;
+    height: 400px;
+    background-color: darkgrey;
+}
+
+.blockText{
+    width: 60%;
+    max-width: 500px;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: larger;
+    font-weight: 700;
+    box-shadow: -4px 0px 0 #000;
+    padding-left: 30px;
+    margin-bottom: 5vh;
+}
+
+.blockText p{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+}
+
+.paragraph{
+    width: 80%;
+    max-width: 700px;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3vh;
+    padding-bottom: 3vh;
 }
 
 .paragraph h2{
@@ -356,10 +467,73 @@ section{
 .paragraph p{
     width: 75%;
     text-align: justify;
+    padding: 0;
+    margin: 0;
+}
+
+.showcase{
+    max-width: 750px;
+    width: 80vw;
+    margin: auto;
+    padding-bottom: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.showcase video{
+    width: 100%;
+    max-height: 50vh;
+    background-color: darkgray;
+    margin: auto;
+}
+
+.showcase img{
+    width: 100%;
+    height: 50vh;
+    background-color: darkgray;
+    margin: auto;
+    margin-top: 5vh;
+}
+
+.caption{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.gallery{
+    display: flex;
+    width: 70%;
+    max-width: 900px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 3vh;
+}
+
+.gallery div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 footer{
     display: none;
+    padding: 50px;
+}
+
+footer h1{
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size:xx-large;
+    padding-bottom: 5vh;
 }
 
 /*------------------Media Adjustments--------------*/
@@ -395,6 +569,31 @@ footer{
     #info{
         width: 80vw;
     }
+
+    .imgAndText{
+        flex-direction: column;
+        width: 100%;
+        margin-top: 0;
+        padding-bottom: 0;
+    }
+
+    .imgAndText .cardMedium{
+        margin: auto;
+    }
+
+    .imgAndText > div{
+        width: 60%;
+        margin: auto;
+        padding-bottom: 5vh;
+    }
+
+    .gallery{
+        flex-direction: column;
+    }
+
+    .gallery div{
+        padding-bottom: 5vh;
+    }
 }
 
 
@@ -412,6 +611,42 @@ footer{
 
     header h2{
         font-size: 24px;
+        font-family: 'Montserrat', sans-serif;
+        color: red;
+    }
+
+    .paragraph{
+        flex-direction: column;
+    }
+
+    .paragraph h2{
+        padding-bottom: 30px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .paragraph p{
+        width: 100%;
+    }
+
+
+    section{
+        padding: 20px;
+    }
+
+    .imgAndText > div{
+        width: 100%;
+        margin: auto;
+        padding-bottom: 5vh;
+    }
+
+    .imgAndText p{
+        font-size: 4vw;
+    }
+
+    .cardMedium{
+        width: 300px;
+        height: 300px;
+        background-color: darkgrey;
     }
 }
 
