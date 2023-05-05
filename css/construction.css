@@ -261,7 +261,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 90vh;
+    height: 95vh;
 }
 
 header div{
@@ -271,7 +271,7 @@ header div{
 
 header h1{
     text-align: center;
-    font-size: 8vh;
+    font-size: 5vh;
     font-family: 'Raleway', sans-serif;
 
 }
@@ -304,7 +304,7 @@ a{
     width: 95vw;
     max-width: 1300px;
     height: 600px;
-    background-color: rgba(37, 37, 37, 0.112);
+    background-color: red;
     margin-bottom: 2vw;
     background-size: cover;
     background-position: center;

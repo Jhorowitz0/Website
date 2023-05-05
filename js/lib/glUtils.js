@@ -28,7 +28,7 @@
         }
       }
       if (!gl) {
-        alert("WebGL not available, sorry! Please use a new version of Chrome or Firefox.");
+        alert("WebGL did not load correctly! Try refeshing :)");
       }
       return gl;
     },
