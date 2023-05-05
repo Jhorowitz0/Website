@@ -10,6 +10,11 @@ The resulting AR tool enables users to visualize and engage with 3M's products i
 
 The primary focus of this project is on 3M's architectural films, namely FASARA™ and DI-NOC. FASARA™ Glass Finishes are textured, semi-translucent films that can be applied to glass surfaces to regulate light and privacy, while also enhancing the aesthetics of the interior. On the other hand, DI-NOC™ is a printed film with a thick texture that imitates the appearance of other materials with similar roughness, specularity, and color, but at a lower cost.
 
-Before beginning the design process for this tool it was first crucial to create digital samples of the product line to determine if it was feasable to render high quality material previews live in AR on a mobile device. After all, what's the point of a product showcase that can't properly showcase the products?
-
 Before starting the design process for this tool, It was critical to first  create digital representations of the product line in-engine using Unity's URP and custom GLSL. This step was necessary to evaluate the feasibility of producing high-quality material previews in real-time on a mobile device. This was needed to ensure that the product showcase would effectively display the products as intended.
+
+Armed with a lot more prep time, our aim for 2023's display was to address the feedback received from the previous year's event and adapt accordingly. Our primary focus was centered on two key issues, namely, the inconsistent lighting between the AR content and the booth, and the confusion for most surrounding the scanning and placement of AR content.
+
+By getting involved in the booth design early it was possible to match the booths exact lighting to the scene in order to better immerse AR content in the space. We also swapped to using a QR code to place content in order to cut out the need for scanning entirely.
+
+
+By getting involved in the booth design process at an early stage, we were able to align the lighting of virtual scene and its position within the booth, resulting in a more seamless integration of the AR content in the physical space. Additionally, we simplified the process of accessing the AR content by replacing scanning the space with a simple QR code anchor.
