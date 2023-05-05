@@ -1,0 +1,15 @@
+
+For a sales representative at 3M, making a sale involves more than just finding a single product that meets the client's needs. Instead, it is essential to curate a selection from the already extensive list of 3M products. When selling  architectural finishes specifically, the salesperson plays a crucial role in guiding the client through 3M's catalogues and tailoring the products provided to fit their vision. 
+
+The challenge of showcasing a large number of material samples quickly and effectively is a complex one. Mockup images are limited in their ability to convey scale and texture, and setting up physical displays dont capture the feel of a material at scale.
+
+A lightweight, mobile augmented reality(AR) solution would enable 3M to provide a more engaging customer experience by allowing them to view product catalogs in real-world contexts to spec.
+
+The resulting AR tool enables users to visualize and engage with 3M's products in real-world settings. This is achieved by superimposing digital, large-scale samples of the products onto the user's view, thereby allowing them to customize patterns and preview how a product would appear in their own space.
+
+
+The primary focus of this project is on 3M's architectural films, namely FASARA™ and DI-NOC. FASARA™ Glass Finishes are textured, semi-translucent films that can be applied to glass surfaces to regulate light and privacy, while also enhancing the aesthetics of the interior. On the other hand, DI-NOC™ is a printed film with a thick texture that imitates the appearance of other materials with similar roughness, specularity, and color, but at a lower cost.
+
+Before beginning the design process for this tool it was first crucial to create digital samples of the product line to determine if it was feasable to render high quality material previews live in AR on a mobile device. After all, what's the point of a product showcase that can't properly showcase the products?
+
+Before starting the design process for this tool, It was critical to first  create digital representations of the product line in-engine using Unity's URP and custom GLSL. This step was necessary to evaluate the feasibility of producing high-quality material previews in real-time on a mobile device. This was needed to ensure that the product showcase would effectively display the products as intended.
