@@ -771,13 +771,13 @@ footer h1{
         width: 80vw;
     }
 
-    title-wrapper h1{
+    header h1{
         font-size: 30px;
     }
 
-    title-wrapper h2{
+    header h2{
         /* width: 50vw; */
-        font-size: 14px;
+        font-size: 16px;
         font-family: 'Montserrat', sans-serif;
     }
 
