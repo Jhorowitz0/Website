@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Joe Horowitz</title>
+    <meta name="author" content="Joseph B Horowitz">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;500;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="../css/projects.css" rel="stylesheet" type="text/css">
+  
+  </head>
+
+  <body>
+    <div>
+      <form>
+        <h1>Variables</h1>
+        <h3>Color 1:</h3>
+        <input type="color" id="color1" value="#E1F9D7">
+        <h3>Color 2:</h3>
+        <input type="color" id="color2" value="#B9DFBA">
+        <h3>Color 3:</h3>
+        <input type="color" id="color3" value="#333333">
+        <h3>Color 4:</h3>
+        <input type="color" id="color4">
+        <h3>Value 1:</h3>
+        <input type="range" id="v1" name="vol" min="0" max="100">
+        <h3>Value 2:</h3>
+        <input type="range" id="v2" name="vol" min="0" max="100">
+        <h3>Value 3:</h3>
+        <input type="range" id="v3" name="vol" min="0" max="100">
+        <h3>Value 4:</h3>
+        <input type="range" id="v4" name="vol" min="0" max="100">
+      </form> 
+    </div>
+    <nav id="Hamburger">
+      <input type="checkbox" name="checkbox" class="cm-toggle">
+      <div class="slide-menu">
+        <div class="menu-sig">
+          <a href="./../index.html"><h1>Joseph Horowitz</h1></a>
+          <h2>AR Designer</h2>
+        </div>
+        <div class="menu-info">
+          <h1>Menu</h1>
+          <a href="./../index.html"><h2>Home</h2></a>
+          <a href="./../about.html"><h2>About</h2></a>
+        </div>
+        <div class="menu-proj">
+          <h1>Projects</h1>
+          <a href="#"><h2>FASARA + DI-NOC</h2></a>
+          <a href="./../underConstruction.html"><h2>Post-it AR</h2></a>
+          <a href="./../underConstruction.html"><h2>3D Color Selection</h2></a>
+          <a href="./../underConstruction.html"><h2>Rethinking the Slider</h2></a>
+        </div>
+      </div>
+      <div class="hamburger-lines">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </div> 
+    </nav>
+    <a href="#Top"><nav id="ToTop"><h3>↑</h3></nav></a>
+    <header id="Top">
+      <div id="title-wrapper">
+        <span>
+          <h1 style="color:white">Post-It™ AR Mural Maker</h1>
+          <h2 style="color:white">Revitilizing a familiar brand with a novel wearable experience.</h2>
+        </span>
+      </div>
+      <img src="./../img/post-it/post_header.png">
+      <div id="intro">
+        <div class="paragraph">
+          <h2>Title</h2>
+          <p>Wearables are poised to revolutionize the ways in which we interact with physical products. Employing AR wearables, the demo guides users through the construction murals made of hundreds of post-its. Users enter the demo and choose a mural from a pre-made selection (if one isn't already in-progress). They are then shown a guide telling them where to place post-its. The result is a clean, collaborative mural that would have typically not been worth the effort in coordinating. </p>
+        </div>
+        <p>describe the challenges facing such a tool</p>
+        <div class="blockText">
+          <p>AR Demo Descition that describres the product in detail and what form/contexts it takes</p>
+        </div>
+      </div>
+    </header>
+    <section style="background-color:beige">
+      <div class="paragraph">
+        <h2>Humble Beginnings</h2>
+        <p>Originally starting as my first intern project, the AR mural construction guide began as an experiment in interactive product exhibition, seeking to bring a unique, engaging experience to a familiar brand.</p>
+      </div>
+      <p>when researching the app's feasability, it quickly became apparent there were a few issues with post-it mural construction that AR wearables are uniquely equipped to handle: </p>
+      <div class="keyPoints">
+        <div>
+          <img>
+          <h3>Scale & Location</h3>
+          <p>people often underestimate the size of post it murals by magnitudes. What starts as a simple 16x16 pixel idea quickly becomes a huge 4ft x 4ft mural that doesnt fit on a small window. An AR projection would allow users to preview exactly how a mural will fill up a space.</p>
+        </div>
+        <div>
+          <img>
+          <h3>Juggling Colors</h3>
+          <p> One limitation that became apparent was the need for new post-its to be placed next to existing ones in order to maintain a neat grid. This resulted in the need to carry 2-3 stacks of post-its along with referance while making the mural. By projecting an AR guide over the mural surface, users not only had hands free referance, but also work faster, placing one color in its entirety before moving on to the next.</p>
+        </div>
+      </div>
+      <p>After interating and perfecting the functional aspect of the app (and building a LOT of murals) we had an effective prototype that significantly sped up the mural creation process.</p>
+      <div class="showcase">
+        <img src="./../img/fasara/Initial_Flow.PNG">
+        <p class="caption"><em>Initial Flow</em></p>
+      </div>
+      <div class="cardLarge">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZvaRlvxXcYA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <p class="caption"><em>Comparison Video</em></p>
+      </div>
+    </section>
+    <section style="background-color: white;">
+      <div class="paragraph">
+        <h2>Augmenting the Post-it Brand</h2>
+        <p>A very large part of making a responsive AR interface is perfecting how it responds to the users input. How to things let you know that they exist in the space with you and not on a screen on your head? By using motion and sound to react. This is an unexplored new dimension of the Post-it brand.</p>
+      </div>
+      <p>
+        Post-it as a brand is quite established across physical packaging, web pages and digital content. While it would have been easy to utilize the pre-existing brand when designing the UI, we sought to push the brand in a more kinetic, fun direction; in stark contrast to most of the clean, futuristic ar app branding nowadays. We focused on post-it brands' hand drawn elements a lot, leaning into the work-in progress brainstorm feel
+      </p>
+      <div class="gallery">
+        <div>
+          <img class="cardMedium" src="./../img/fasara/blur.PNG">
+          <p class="caption"><em>Post-it brand examples</em></p>
+        </div>
+        <div>
+          <img class="cardMedium" src="./../img/fasara/pane.PNG">
+          <p class="caption"><em>Hand drawn pattern example</em></p>
+        </div>
+      </div>
+      <p>
+        When centering an AR app around Post-it we decided that the presence of that post-it notes should be pervasive throughout the experience. The sounds of swooshing paper, scribbling markers and sticking adhesive make the interfaces feel like theyre cobbled together from paper glue and ink. As menu's appear and dissapear any hand-drawn elements should be drawn in front of the users eyes, any paper elements should be slapped on the surface. When buttons are pressed, the whole interface should spring as if being held up by cardboard. 
+      </p>
+      <div class="cardLarge">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZvaRlvxXcYA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <p class="caption"><em>AR Branding Reel</em></p>
+      </div>
+      <p>The final demo was so fun and successful that 3M saw a future in showcasing this application and filed a scientific patent on the use of AR headsets to assist in product based mural creation!</p>
+      <div class="cardLarge">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZvaRlvxXcYA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <p class="caption"><em>Final Product</em></p>
+      </div>
+    </section>
+    <section style="background-color: aliceblue;">
+      <div class="paragraph">
+        <h2>CES 2023</h2>
+        <p>AFter my internship brought on as 3M's in-house AR prototyper. With me on the team 3M looked to expand our small intern demo into an actual large scale showcase.3M's booth at CES was the perfect place to put an experience like this in front of other engineers/designers in the field to generate interest and gain insight. Being able to attend, set up and run the booth myself informed future changes to the app as well. I got to see the typical scale that most showcases exist at as well as the practical problems with managing headsets in person and running hundreds of people through an experience.</p>
+      </div>
+      <div class="cardLarge">
+        <img src="./../img/fasara/Milan22.png">
+      </div>
+    </section>
+    <section style="background-color: white;">
+      <div class="paragraph">
+        <h2>Next Steps</h2>
+        <p>The next steps for this project is to up the scale and wow factor to make large scale, interactive mural displays for 3M. Current plans are to explore the creation of large scale, multi person murals that would be built by guests of an event over multiples days. This results in a personal, engaging showcase of the post it brand and results in a large scale, physical testimate to cooperation.</p>
+      </div>
+      <div class="cardLarge">
+        <img src="./../img/fasara/booth.png">
+        <p class="caption"><em>Early Concepts</em></p>
+      </div>
+      <div class="cardLarge">
+        <img src="./../img/fasara/booth.png">
+        <p class="caption"><em>Large Scale Mural Testing</em></p>
+      </div>
+      <p>plans are to streamline the current experience, replace manual placement with QR anchors to sync content between headsets and across large distances without the need for wifi as well as the addition of AR guides for which colors to take and where to stand when constructing. </p>
+    </section>
+    <footer>
+      <a href="./../underConstruction.html">
+        <div id="nextProject_Gap">
+          <span>
+            <h1>Next Project: FASARA + DI-NOC →</h1>
+          </span>
+        </div>
+      </a>
+      <img id="nextProject_Img" src="./../img/post-it/post_footer.png">
+    </footer>
+  </body>
+</html>

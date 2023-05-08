@@ -281,7 +281,7 @@ header img{
     position: fixed;
     top: 0;
     left: 0;
-    z-index: -2;
+    z-index: -1;
     object-fit: cover;
     object-position: left;
 }
@@ -438,6 +438,51 @@ section h1{
     width: 400px;
     height: 400px;
     background-color: darkgrey;
+}
+
+.keyPoints{
+    width: 80%;
+    max-width: 700px;
+    display: flex;
+    margin: auto;
+    padding-top: 5vh;
+    justify-content: space-between;
+}
+
+.keyPoints div{
+    /* background-color: red; */
+    /* height: 300px; */
+    /* width: 45%; */
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.keyPoints img{
+    background-color: rgba(0, 0, 0, 0.039);
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.keyPoints p{
+    /* background-color: blue; */
+    width: 100%;
+    margin-top: 10px;
+    padding: 0;
+    text-align: justify;
+}
+
+.keyPoints h3{
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .blockText{
@@ -610,7 +655,7 @@ section h1{
     height: 20vh;
     position: fixed;
     bottom: 0;
-    z-index: -1;
+    z-index: -2;
     object-fit: cover;
     object-position: left;
 }
@@ -682,6 +727,19 @@ footer h1{
 
     .gallery div{
         padding-bottom: 5vh;
+    }
+
+    .keyPoints{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .keyPoints div{
+        padding-bottom: 5vh;
+    }
+
+    .keyPoints p{
+        margin: auto;
     }
 
     #ToTop{
