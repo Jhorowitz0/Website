@@ -1,27 +1,39 @@
-...making a sale involves more than just finding a single product that meets the client's needs. Instead, it is essential to curate a selection from the already extensive list of 3M products. When selling architectural finishes specifically, the salesperson plays a crucial role in guiding the client through 3M's catalogues and tailoring the products provided to fit their vision.
 
-The challenge of showcasing a large number of material samples quickly and effectively is a complex one. Mockup images are limited in their ability to convey scale and texture, and physical samples dont capture the feel of a material at scale.
 
-This project takes the form of an AR tool that allows clients and salespeople to visualize and customize 3M's products in real-world settings by superimposing digital samples onto the devices' camera feed.
+AR as a tool to showcase product catalogues.
 
-This project centers mainly around 3M's architectural films FASARA™ and DI-NOC. FASARA™ Glass Finishes are semi-translucent, textured films that can be applied to glass to control light and privacy while enhancing the interior's aesthetics. DI-NOC™ is a thick, printed film that mimics the roughness, specularity, and color of other materials for a fraction of the cost.
+...making a sale involves more than just finding a single product that meets the client's needs. It is essential to curate a selection from the already overwhelming list of 3M products. When selling architectural finishes specifically, the salesperson must guide the client through 3M's catalogue and prove them with the most optimal products to fit their vision. 
 
-Before starting the design process, it was critical to first create digital representations of the product line using Unity's URP and custom GLSL. This step was necessary to evaluate the feasibility of producing high-quality material previews in real-time and ensure that the product would be effectively displayed as intented.
+Showcasing a large number of material samples quickly and effectively is extremely challenging. Mockup images are limited in their ability to convey scale and texture. Physical samples do not capture the feel of a material at scale.
 
-Upon receiving news of the upcoming opportunity to showcase the FASARA™ Natural Series at the Milan Design Salone 2022, the app's purpose shifted from a daily-use sales tool to a one-time showcase. This change drastically altered the context in which the app would be used, necessitating a shift in design to align with the new objectives.
+The solution is an AR tool that allows clients and salespeople to browse, visualize, and customize 3M's products in real-world settings by superimposing digital samples onto the devices' camera feed.
 
-As part of the app redesign process, we streamlined the flow by removing complex features, such as pattern customization. Instead, the focus was on creating an intuitive and immersive experience that users could use for any amount of time be it 2 minutes or 20, without the need for a defined start or end point. 
+This project focuses on 3M's architectural films FASARA™ and DI-NOC. FASARA™ Glass Finishes are semi-translucent, textured films that can be applied to glass to control light and privacy while enhancing the interior's aesthetics. DI-NOC™ is a thick, printed film that mimics the roughness, specularity, and color of other materials for a fraction of the cost.
 
-Below is a walk-through of the finished mobile prototype I created in Unity. This inital version was showcased as a part of 3M's booth at the Milan Design Salone 2022.
+It was critical to evaluate the feasability of AR material previews. This was accomplished by creating digital representations of the product line using Unity's URP and custom GLSL. 
 
-Following the success of the FASARA™ Natural Series showcase at the Milan Design Salone 2022, the business sought to feature a similar app at the upcoming Milan 2023 event. This time, the focus would be on DI-NOC™ Architectural finishes.
+In collaboration with 3M Japan's design team, I familiarized myself with the FASARA sales process. Using these learnings, I identified the importance of customizability with regards to pattern sizing, blur strength and color.
 
-At the Milan Design Salone 2023, 3M collaborated with StudioPepe, an Italian design firm based in Milan, to design this year's booth. The booth was designed to showcase the flexibility and variety of DI-NOC™, featuring warm materials and curved abstract layouts that highlighted the product's versatility.
+Early 2022 3M decide to incorperate this app into its showcase of the FASARA Natural series at the Minal Design Salone for that year. The app's purpose shifted from a daily-use sales tool to a one-time showcase. This change drastically altered the context in which the app would be used, necessitating a redesign to align with the new objectives.
 
-Taking inspiration from StudioPepe's booth design, we transformed the in-app product display from a conventional framed pane to a selection of more fluid and organic shapes.
+We streamlined the flow by removing complex features, such as pattern customization. We redirected the focus to creating an intuitive experience that users could engage with for any amount of time, without the need for a defined start or end point.
 
-Armed with a additional prep time, our aim for 2023's display was to address the feedback received from the previous year's event and adapt accordingly. Our primary focus was centered on two key issues, namely, the inconsistent lighting between the AR content and the booth, and issues surrounding the scanning and placement of AR content.
+Finished Demo: Milan 22
+Featured below are moments from 3M's booth at the 22 Milan Design Salone.
 
-By getting involved in the booth design process at an early stage, we were able to align the lighting of the virtual scene with specific spotlightings within the booth, resulting in a more seamless integration of the AR content in the physical space. Additionally, we simplified the process of accessing the AR content by replacing environmental scanning with a simple QR code anchor.
+The success of the FASARA AR showcase inspired the business to feature a similar similar app at the Milan 2023 event. This time, the focus would be on DI-NOC™ Architectural finishes.
 
-Below are some photos from a closed event at the StudioPepe booth in Milan 2023 as well as a quick video of the demo in action!
+At the Salone, 3M collaborated with StudioPepe, an Italian design firm, to design their booth. The booth was designed to showcase the flexibility and variety of DI-NOC™, featuring warm materials and curved abstract layouts that highlighted the product's versatility.
+
+Learning From Experience
+
+It was key to address the feedback received from the previous year's event. Our primary focus was centered on two key issues: The inconsistent lighting between the AR content and the booth, and issues for many unfamiliar with AR when trying to scan and place AR content.
+
+Last years showcase offered two key insight: user struggle to place AR content manually, and misaligned lighting can break the immersion of an AR experience. My goal for this year was to use this feedback to improve provide a more seamless experience. 
+
+Getting involved in the booth design process at an early stage allowed us align the lighting of the virtual scene with specific spotlights within the booth, resulting in a more seamless integration of the AR content in the physical space. Additionally, we simplified the process of accessing the AR content by replacing environmental scanning with a simple QR code anchor.
+
+
+Finished Demo: Milan 23
+
+Featured below are moments from a closed event at the StudioPepe booth in Milan 2023 as well as a quick video of the demo in action.
