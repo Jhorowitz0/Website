@@ -350,6 +350,27 @@ header h1{
     font-weight: 500;
 }
 
+.button_wrapper{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.button {
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 20px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+
 /* -----------------General---------------- */
 img{
     object-fit: cover;
@@ -781,6 +802,11 @@ footer h1{
         /* width: 50vw; */
         font-size: 16px;
         font-family: 'Montserrat', sans-serif;
+    }
+
+    .button{
+        font-size: 20px;
+        padding: 20px 30px;
     }
 
     .paragraph{
