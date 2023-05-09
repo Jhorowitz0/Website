@@ -10,11 +10,11 @@ The solution is an AR tool that allows clients and salespeople to browse, visual
 
 This project focuses on 3M's architectural films FASARA™ and DI-NOC. FASARA™ Glass Finishes are semi-translucent, textured films that can be applied to glass to control light and privacy while enhancing the interior's aesthetics. DI-NOC™ is a thick, printed film that mimics the roughness, specularity, and color of other materials for a fraction of the cost.
 
-It was critical to evaluate the feasability of AR material previews. This was accomplished by creating digital representations of the product line using Unity's URP and custom GLSL. 
+It was critical to evaluate the feasibility of AR material previews. This was accomplished by creating digital representations of the product line using Unity's URP and custom GLSL. 
 
-In collaboration with 3M Japan's design team, I familiarized myself with the FASARA sales process. Using these learnings, I identified the importance of customizability with regards to pattern sizing, blur strength and color.
+In collaboration with 3M Japan's design team, I familiarized myself with the FASARA™ sales process. Using these learnings, I identified the importance of customizability with regards to pattern sizing, blur strength and color.
 
-Early 2022 3M decide to incorperate this app into its showcase of the FASARA Natural series at the Minal Design Salone for that year. The app's purpose shifted from a daily-use sales tool to a one-time showcase. This change drastically altered the context in which the app would be used, necessitating a redesign to align with the new objectives.
+Early 2022 3M decide to incorporate this app into its showcase of the FASARA™ Natural series at the Milan Design Salone for that year. The app's purpose shifted from a daily-use sales tool to a one-time showcase. This change drastically altered the context in which the app would be used, necessitating a redesign to align with the new objectives.
 
 We streamlined the flow by removing complex features, such as pattern customization. We redirected the focus to creating an intuitive experience that users could engage with for any amount of time, without the need for a defined start or end point.
 
