@@ -70,10 +70,10 @@ a{
     backdrop-filter: blur(20px);
     background-color: none;
     box-shadow: 
-    5px 5px 10px #00000059,
-    -5px -5px 10px rgba(255, 255, 255, 0.869);
-    height: 70px;
-    width: 70px;
+    5px 5px 10px #0000004f,
+    -5px -5px 10px rgba(255, 255, 255, 0.541);
+    height: 50px;
+    width: 50px;
     border-radius: 5vh;
     bottom: 3vh;
     right: 3vw;
@@ -88,9 +88,9 @@ a{
 
 #ToTop h3{
     position: relative;
-    top:3px;
+    top:2px;
     font-family: 'Raleway', sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     color: black;
     font-weight: 900;
 }
@@ -99,10 +99,10 @@ a{
     backdrop-filter: blur(20px);
     background-color: none;
     box-shadow: 
-    5px 5px 10px #00000059,
-    -5px -5px 10px rgba(255, 255, 255, 0.869);
-    height: 55px;
-    width: 55px;
+    5px 5px 10px #0000004f,
+    -5px -5px 10px rgba(255, 255, 255, 0.541);
+    height: 50px;
+    width: 50px;
     border-radius: 5vh;
     position: fixed;
     top: 5vh;
@@ -134,7 +134,7 @@ a{
     display: block;
     background-color:rgb(0, 0, 0);
     width: 120%;
-    height: 5px;
+    height: 4px;
     border-radius: 10px;
     z-index: 4;
 }
@@ -761,10 +761,12 @@ footer h1{
 
 @media screen and (max-width: 550px) {
     #Hamburger{
-        bottom: 2vh;
+        top: 3vh;
         right: 3vw;
         height: 50px;
         width: 50px;
+        backdrop-filter: none;
+        box-shadow: none;
     }
 
     header span{
