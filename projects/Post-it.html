@@ -77,40 +77,55 @@
       <img src="./../img/post-it/post_header.png">
       <div id="intro">
         <div class="paragraph">
-          <h2>Title</h2>
-          <p>Wearables are poised to revolutionize the ways in which we interact with physical products. Employing AR wearables, the demo guides users through the construction murals made of hundreds of post-its. Users enter the demo and choose a mural from a pre-made selection (if one isn't already in-progress). They are then shown a guide telling them where to place post-its. The result is a clean, collaborative mural that would have typically not been worth the effort in coordinating. </p>
+          <h2>The Next Step in Product Showcases</h2>
+          <p>Wearables are poised to revolutionize the ways in which we interact with physical products. Although widespread adoption by consumers may still be on the horizon, the current capability to develop captivating interactive product showcases already exists.</p>
         </div>
-        <p>describe the challenges facing such a tool</p>
+        <p>This project served as an exploration into the potential of AR wearables to offer a fresh perspective on a familiar, household brand. We selected Post-it due to it's visability and unique branding.</p>
         <div class="blockText">
-          <p>AR Demo Descition that describres the product in detail and what form/contexts it takes</p>
+          <p>The project employed the use of AR wearables to guide users through the creation of large scale Post-it murals. The end result being both a personal immersive experience and a public collaborative product display.</p>
         </div>
       </div>
     </header>
     <section style="background-color:beige">
       <div class="paragraph">
-        <h2>Humble Beginnings</h2>
-        <p>Originally starting as my first intern project, the AR mural construction guide began as an experiment in interactive product exhibition, seeking to bring a unique, engaging experience to a familiar brand.</p>
+        <h2>Murals, Murals, Murals</h2>
+        <p>We knew that getting a thorough grasp of the mural creation process was key. So, we dove right in and began both making and watching others make Post-it murals.</p>
       </div>
-      <p>when researching the app's feasability, it quickly became apparent there were a few issues with post-it mural construction that AR wearables are uniquely equipped to handle: </p>
+      <p>Notes and observations from these sessions were compiled and refined into a journey map that broke down the mural creation process.</p>
+      <div class="showcase">
+        <img src="./../img/post-it/Mural Journey.png">
+        <p class="caption"><em>Post-it Mural Journey</em></p>
+      </div>
+      <p>As we got familiar with the mural construction process, we noticed several key pain points that could be tackled effectively by AR wearables.</p>
       <div class="keyPoints">
         <div>
           <img src="./../img/post-it/scaleicon.png">
           <h3>Scale & Location</h3>
-          <p>people often underestimate the size of post it murals by magnitudes. What starts as a simple 16x16 pixel idea quickly becomes a huge 4ft x 4ft mural that doesnt fit on a small window. An AR projection would allow users to preview exactly how a mural will fill up a space.</p>
+          <p>People typically had a tough time envisioning how big their mural would be initially, often severely under-estimating the amount of space needed.</p>
         </div>
         <div>
           <img src="./../img/post-it/gridicon.png">
-          <h3>Juggling Colors</h3>
-          <p> One limitation that became apparent was the need for new post-its to be placed next to existing ones in order to maintain a neat grid. This resulted in the need to carry 2-3 stacks of post-its along with referance while making the mural. By projecting an AR guide over the mural surface, users not only had hands free referance, but also work faster, placing one color in its entirety before moving on to the next.</p>
+          <h3>Grid Issues</h3>
+          <p>People struggled with placing Post-its in a grid. To maintain a grid, people needed to build off of adjacent Post-its, resulting in the need to carry multiple stacks at a time.</p>
         </div>
       </div>
-      <p>After interating and perfecting the functional aspect of the app (and building a LOT of murals) we had an effective prototype that significantly sped up the mural creation process.</p>
+      <p>Following our research, we held a series of quick brainstorming sessions which resulted in a few different AR app concepts. Using Figma, we then created mockups that reflected these ideas and slowly worked on merging together what worked.</p>
+      <p>At first, the app's layout was fairly simple, only utilizing a two-dimensional on-the-wall interface. But as we continued to iterate, more complex interfaces like hand menus and floating consoles started to be used.</p>
       <div class="showcase">
-        <img src="./../img/post-it/flow.PNG">
+        <img src="./../img/post-it/post-it_low-fi.PNG">
         <p class="caption"><em>Initial Flow</em></p>
       </div>
+      <div class="paragraph">
+        <h2>Getting Comfortable With 3D</h2>
+        <p>This being the first time I had designed a 3D interface, I struggled with the best way to arrange content in space and decide which features should be available in specific contexts.</p>
+      </div>
+      <p>Our layouts went through several rounds of redesigns before they started to become coherent. To help us stay organized, we created a simple outline that broke down the features available, the form they these features would take, and how they changed depending on which stage of process the user was on.</p>
+      <div class="showcase">
+        <img src="./../img/post-it/post-it_ux.PNG">
+      </div>
+      <p>From this initial plan we were able to make some functional prototypes in Unity to test the effectiveness of an AR guide with side-by-side mural construction.</p>
       <div class="cardLarge">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZvaRlvxXcYA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/UAAI4Edjx3k?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <p class="caption"><em>Comparison Video</em></p>
       </div>
     </section>
@@ -136,12 +151,12 @@
         When centering an AR app around Post-it we decided that the presence of that post-it notes should be pervasive throughout the experience. The sounds of swooshing paper, scribbling markers and sticking adhesive make the interfaces feel like theyre cobbled together from paper glue and ink. As menu's appear and dissapear any hand-drawn elements should be drawn in front of the users eyes, any paper elements should be slapped on the surface. When buttons are pressed, the whole interface should spring as if being held up by cardboard. 
       </p>
       <div class="cardLarge">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZvaRlvxXcYA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="700" height="700" src="https://editor.p5js.org/jhorowitz3m/full/1Z5tizZLM"></iframe>
         <p class="caption"><em>AR Branding Reel</em></p>
       </div>
       <p>The final demo was so fun and successful that 3M saw a future in showcasing this application and filed a scientific patent on the use of AR headsets to assist in product based mural creation!</p>
       <div class="cardLarge">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZvaRlvxXcYA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/8SXToz8FFCs?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <p class="caption"><em>Final Product</em></p>
       </div>
     </section>

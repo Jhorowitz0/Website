@@ -1,55 +1,32 @@
 # Post-It Augmented Mural #
 ### Revitilizing a familiar brand with a novel experience ###
 
-**Future Plans**
+Wearables are poised to revolutionize the ways in which we interact with physical products. While we might be a ways from these devices being used daily by consumers, the ability to create stunning interactive product showcases is already possible. 
 
-Wearables are poised to revolutionize the ways in which we interact with physical products. Employing AR wearables, the demo guides users through the construction murals made of hundreds of post-its. Users enter the demo and choose a mural from a pre-made selection (if one isn't already in-progress). They are then shown a guide telling them where to place post-its. The result is a clean, collaborative mural that would have typically not been worth the effort in coordinating. 
+This project functioned as 3M's exploration into the use of this tech to revitalize post-it and showcase a familiar brand in a new light. Employing AR wearables, the demo guides users through the construction of murals made of hundreds of post-its to result in large scale, collaborative desplays of the product.
 
-## Small Beginnings ##
-Originally starting as my first intern project, the AR mural construction guide began as an experiment in interactive product exhibition, seeking to bring a unique, engaging experience to a familiar brand.
+<!-- -------------------------------------------------------------------------- -->
 
-when researching the app's feasability, it quickly became apparent there were a few issues with post-it mural construction that AR wearables are uniquely equipped to handle: 
+### Murals,Murals,Murals ##
+As a start, it was important to first understand the mural creation process inside out. This involved making and watching people make many many many post-it murals. The notes from those sessions were then compiled and refined into a journey map breakdown of the mural creation project.
 
-- ## visualizing mural scale and location ##
-  people often underestimate the size of post it murals by magnitudes. What starts as a simple 16x16 pixel idea quickly becomes a huge 4ft x 4ft mural that doesnt fit on a small window. An AR projection would allow users to preview exactly how a mural will fill up a space.
+> Journey
 
-- ## juggling colors##
-  One limitation that became apparent was the need for new post-its to be placed next to existing ones in order to maintain a neat grid. This resulted in the need to carry 2-3 stacks of post-its along with referance while making the mural. By projecting an AR guide over the mural surface, users not only had hands free referance, but also work faster, placing one color in its entirety before moving on to the next.
+It quickly became apparent there were a few issues with post-it mural construction that AR wearables are uniquely equipped to handle.
 
-After interating and perfecting the functional aspect of the app (and building a LOT of murals) we had an effective prototype that significantly sped up the mural creation process.
+Scale and location: people often struggled predicting just how big a mural would look in a space, often not reserving enough room.
 
-<!-- App flow -->
+Grid Issues: Placing post-its in a grid proved harder than it seemed and forced people to juggle multiple stacks of post-its while building the mural.
 
-<!-- Comparison Video -->
+From here we held a few quick brainstorming sessions on how best to arrange these different features into a formal flow before creating mockups in figma. Early outlines of the app were fairly one dimensional and used only an on-the-wall canvas interface. We would later explore usage of hand menus and a floating control console.
 
-## Augmenting the post-it brand ##
-A very large part of making a responsive AR interface is perfecting how it responds to the users input. How to things let you know that they exist in the space with you and not on a screen on your head? By using motion and sound to react. This is an unexplored new dimension of the Post-it brand.
+> lo-fi
 
-Post-it as a brand is quite established across physical packaging, web pages and digital content. While it would have been easy to utilize the pre-existing brand when designing the UI, we sought to push the brand in a more kinetic, fun direction; in stark contrast to most of the clean, futuristic ar app branding nowadays. We focused on post-it brands' hand drawn elements a lot, leaning into the work-in progress brainstorm feel
+Working our way through 3D layouts
+During the mockup process, our layouts were redesigned probably 3-4 times before we got something we were happy with. This being our first AR wearable app, it became extremely difficult to decide where features should exist in space and which menu's should be accessible in what contexts. Below is a small outline we made for ourselves to divide features between various menus and steps of the process.
 
-<!-- highlights of the post-it brand.  -->
+> Feature outline
 
-When centering an AR app around Post-it we decided that the presence of that post-it notes should be pervasive throughout the experience. The sounds of swooshing paper, scribbling markers and sticking adhesive make the interfaces feel like theyre cobbled together from paper glue and ink. As menu's appear and dissapear any hand-drawn elements should be drawn in front of the users eyes, any paper elements should be slapped on the surface. When buttons are pressed, the whole interface should spring as if being held up by cardboard. 
+From this initial plan we were able to make some functional prototypes in unity to test the effectiveness of an AR guide with side-by-side mural construction.
 
-<!-- Video and audio examples of a menu appearing, murals changing, buttons pressed. -->
-
-The final demo was so fun and successful that 3M saw a future in showcasing this application and filed a scientific patent on the use of AR headsets to assist in product based mural creation!
-
-<!-- Final app video -->
-
-CES 2023
-AFter my internship brought on as 3M's in-house AR prototyper. With me on the team 3M looked to expand our small intern demo into an actual large scale showcase.3M's booth at CES was the perfect place to put an experience like this in front of other engineers/designers in the field to generate interest and gain insight. Being able to attend, set up and run the booth myself informed future changes to the app as well. I got to see the typical scale that most showcases exist at as well as the practical problems with managing headsets in person and running hundreds of people through an experience.
-
-<!-- CES photos -->
-
-Next Steps
-
-The next steps for this project is to up the scale and wow factor to make large scale, interactive mural displays for 3M. Current plans are to explore the creation of large scale, multi person murals that would be built by guests of an event over multiples days. This results in a personal, engaging showcase of the post it brand and results in a large scale, physical testimate to cooperation.
-
-plans are to streamline the current experience, replace manual placement with QR anchors to sync content between headsets and across large distances without the need for wifi as well as the addition of AR guides for which colors to take and where to stand when constructing. 
-
-<!-- Concept image, large scale mural -->
-
-
-
-
+> comparison video
