@@ -54,8 +54,9 @@
         </div>
         <div class="menu-proj">
           <h1>Projects</h1>
-          <a href="#"><h2>FASARA + DI-NOC</h2></a>
-          <a href="./../underConstruction.html"><h2>Post-it AR</h2></a>
+          <a href="./FasaraDinoc.html"><h2>FASARA + DI-NOC</h2></a>
+          <a href="#"><h2>Post-it AR</h2></a>
+          <a href="./../underConstruction.html"><h2>Command AR</h2></a>
           <a href="./../underConstruction.html"><h2>3D Color Selection</h2></a>
           <a href="./../underConstruction.html"><h2>Rethinking the Slider</h2></a>
         </div>
@@ -83,6 +84,9 @@
         <p>This project served as an exploration into the potential of AR wearables to offer a fresh perspective on a familiar, household brand. We selected Post-it due to it's visability and unique branding.</p>
         <div class="blockText">
           <p>The project employed the use of AR wearables to guide users through the creation of large scale Post-it murals. The end result being both a personal immersive experience and a public collaborative product display.</p>
+        </div>
+        <div class="button_wrapper">
+          <a href="#AppShowcase" class="button" style="color: black; background-color: rgb(255, 232, 148);">Jump to Showcase</a>
         </div>
       </div>
     </header>
@@ -131,12 +135,9 @@
     </section>
     <section style="background-color: white;">
       <div class="paragraph">
-        <h2>Augmenting the Post-it Brand</h2>
-        <p>A very large part of making a responsive AR interface is perfecting how it responds to the users input. How to things let you know that they exist in the space with you and not on a screen on your head? By using motion and sound to react. This is an unexplored new dimension of the Post-it brand.</p>
+        <h2>Embracing the Post-it Brand</h2>
+        <p>We then moved on to the challenge of integrating the iconic Post-it brand into our app. The goal was to push beyond the futuristic sleekness of most AR/VR applications and capture Post-it's light-hearted, work-in-progress identity.</p>
       </div>
-      <p>
-        Post-it as a brand is quite established across physical packaging, web pages and digital content. While it would have been easy to utilize the pre-existing brand when designing the UI, we sought to push the brand in a more kinetic, fun direction; in stark contrast to most of the clean, futuristic ar app branding nowadays. We focused on post-it brands' hand drawn elements a lot, leaning into the work-in progress brainstorm feel
-      </p>
       <div class="gallery">
         <div>
           <img class="cardMedium" src="./../img/post-it/branding.PNG">
@@ -144,26 +145,39 @@
         </div>
         <div>
           <img class="cardMedium" src="./../img/post-it/branding2.PNG">
-          <p class="caption"><em>Hand drawn pattern example</em></p>
+          <p class="caption"><em>Fun, Messy and Light</em></p>
         </div>
       </div>
-      <p>
-        When centering an AR app around Post-it we decided that the presence of that post-it notes should be pervasive throughout the experience. The sounds of swooshing paper, scribbling markers and sticking adhesive make the interfaces feel like theyre cobbled together from paper glue and ink. As menu's appear and dissapear any hand-drawn elements should be drawn in front of the users eyes, any paper elements should be slapped on the surface. When buttons are pressed, the whole interface should spring as if being held up by cardboard. 
+      <div class="paragraph">
+        <h2>Brand Optimizations</h2>
+        <p>Below is a glimpse into our early attempts at modifying the base MRTK button with the unique character that defines Post-it. It was important to tweak the design to retain proper visual clarity within the HoloLens 2 display.</p>
+      </div>
+      <div class="showcase">
+        <img src="./../img/post-it/branding_process_post-it.PNG">
+      </div>
+      <div class="paragraph">
+        <h2>Beyond Visuals</h2>
+        <p>In an 3D interface, the visuals are only a fraction of the experience. Sound and movement play pivotal roles in making an interface feel tactile and responsive.</p>
+      </div>
+      <p>We sought to make our interface feel like it was made of marker and paper to better work with the physical action it was assisting. Hand-drawn elements spring to life, quickly scribbled into the air, while paper murals fluttered onto walls.
+        <br>
+        <br>
+        We utilized P5js to merge visual and auditory components to rapidly get a sense of the "feel" of our designs. Below is a sample of the previous button design in action.
       </p>
       <div class="cardLarge">
         <iframe width="700" height="700" src="https://editor.p5js.org/jhorowitz3m/full/1Z5tizZLM"></iframe>
         <p class="caption"><em>AR Branding Reel</em></p>
       </div>
-      <p>The final demo was so fun and successful that 3M saw a future in showcasing this application and filed a scientific patent on the use of AR headsets to assist in product based mural creation!</p>
-      <div class="cardLarge">
+      <p>The Post-it AR demo surpassed all expectations, resulting in enough support from 3M to file a patent on the function of the app. We were thrilled with the outcome of our project — an engaging and distinctly Post-it AR showcase.</p>
+      <div class="cardLarge" id="AppShowcase">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/8SXToz8FFCs?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <p class="caption"><em>Final Product</em></p>
+        <p class="caption"><em>Final Demo</em></p>
       </div>
     </section>
     <section style="background-color: rgb(204, 204, 255);">
       <div class="paragraph">
         <h2>CES 2023</h2>
-        <p>AFter my internship brought on as 3M's in-house AR prototyper. With me on the team 3M looked to expand our small intern demo into an actual large scale showcase.3M's booth at CES was the perfect place to put an experience like this in front of other engineers/designers in the field to generate interest and gain insight. Being able to attend, set up and run the booth myself informed future changes to the app as well. I got to see the typical scale that most showcases exist at as well as the practical problems with managing headsets in person and running hundreds of people through an experience.</p>
+        <p>Early 2023 I had the exciting privilege of being flown out to attend CES as a part of 3M's booth. CES 2023 offered us the opportunity to present this immersive experience, generate interest and gather valuable insights. I took charge of setting up and managing my demo, an experience that would prove to be instrumental in shaping the future of our app.</p>
       </div>
       <div class="showcase">
         <img src="./../img/post-it/ces.png">
@@ -171,28 +185,28 @@
     </section>
     <section style="background-color: white;">
       <div class="paragraph">
-        <h2>Next Steps</h2>
-        <p>The next steps for this project is to up the scale and wow factor to make large scale, interactive mural displays for 3M. Current plans are to explore the creation of large scale, multi person murals that would be built by guests of an event over multiples days. This results in a personal, engaging showcase of the post it brand and results in a large scale, physical testimate to cooperation.</p>
+        <h2>Future Plans: Thinking Bigger</h2>
+        <p>My time working at CES was not without its fair share of hurdles. Juggling headsets that broke or ran out of battery mid-demo resulted in misaligned AR content. Displaying the headset's content with spotty internet connection proved impossible and managing the flow of guests was extremely tedious.</p>
+      </div>
+      <p>Encountering these challenges proved invaluable for our design process as we looked to scaling up to large scale, multi-day murals. We recognized the importance of planning the booth layout ahead of time. This allowed us to control the flow of users through the showcase as well as add in tools such as QR Code anchors to help align content across headsets automatically.</p>
+      <div class="cardLarge">
+        <img src="./../img/post-it/concept.png">
+        <p class="caption"><em>Early Large Scale Mural Concepts</em></p>
       </div>
       <div class="cardLarge">
         <img src="./../img/post-it/largemural.JPG">
-        <p class="caption"><em>Large SCale Mural Testing</em></p>
+        <p class="caption"><em>Large Scale Mural Alignment Testing</em></p>
       </div>
-      <div class="cardLarge">
-        <img src="./../img/post-it/concept.png">
-        <p class="caption"><em>Early Concepts</em></p>
-      </div>
-      <p>plans are to streamline the current experience, replace manual placement with QR anchors to sync content between headsets and across large distances without the need for wifi as well as the addition of AR guides for which colors to take and where to stand when constructing. </p>
     </section>
     <footer>
       <a href="./FasaraDinoc.html">
         <div id="nextProject_Gap">
           <span>
-            <h1>Next Project: FASARA + DI-NOC →</h1>
+            <h1 style="color: black;">Next Project: Command AR →</h1>
           </span>
         </div>
       </a>
-      <img id="nextProject_Img" src="./../img/fasara/fasara_footer.png">
+      <img id="nextProject_Img" src="./../img/Command/footer.png">
     </footer>
   </body>
 </html>

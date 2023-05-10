@@ -368,7 +368,12 @@ header h1{
     margin: auto;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
+    transition: 0.2s;
     border-radius: 10px;
+  }
+
+  .button:hover{
+    background-color: white;
   }
 
 /* -----------------General---------------- */

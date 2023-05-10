@@ -1,0 +1,1 @@
+Visuals arnt everything when designing for 3D, it was important that the sound and animation of the interface also worked with post-its brand. Hand drawn elements should be scribbled into the air, paper interfaces should flutter onto walls. I used P5JS to combine spritesheets and audio recordings we made to rapidly test the overall 'feel' of our designs.
