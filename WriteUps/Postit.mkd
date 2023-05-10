@@ -30,3 +30,18 @@ During the mockup process, our layouts were redesigned probably 3-4 times before
 From this initial plan we were able to make some functional prototypes in unity to test the effectiveness of an AR guide with side-by-side mural construction.
 
 > comparison video
+
+### "Augmenting" The Post-It Brand ###
+Once we had the bones of the application functional, the next step was to apply the post it brand. Most 3D interfaces in AR/VR today focus on being hi-tech and sleek, but the post-it brand is anything but. Post-it is all about being a messy fun, work in progress. 
+
+For our app design, we took cues from existing post-it design language such as the commonly misaligned piles of papers, and peppering in hand drawn elements as well. 
+
+>existing post-it content
+
+In order to take the app one step further we focused heavily on perfecting the movement and sound of each design element. Hand drawn elements should be scribbled hastily onto the air, murals should appear in a flurry of paper, menus should bounce as if held up by cardboard and tape.  
+
+> branding breakdown
+
+Finished App
+
+The app came together very nicely and was a perfect internship capstone. It was featured around 3M and attracted enough attention to be filed for patent and allow me to join 3M as a full time AR designer. Below is a breakdown of the finished app.
