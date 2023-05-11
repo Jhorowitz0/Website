@@ -1,0 +1,49 @@
+ How do we plan for the future? At 3M, I was constantly tasked with trying to anticipate how changes to the devices around us might affect how we use our current products. While AR wearables are still years away from existing within the hands of the consumer there is still value in trying to develop for this consumer of the future.
+
+While speculation like this is decidedly *not* Human Centered Design (Designing for what might be instead of what is), It does function as a way to get the creative blood pumping, allowing a product to be used in ways we never thought it could be. This process is not unlike the elaborate concept cars created for trade shows or high fashion. Wholely impractical but used more as sparks of inspiration for current design. 
+
+This project sought to design a wearable AR application that could assist a user in utilizing 3M's Command product line to hang frames.
+
+**research**
+Speculations and technology aside, understanding the context around the command products is obviously the first priority. We drew upon existing research from the Command team and of course hung(and watched others hang) many, many frames. We found that while our products help customers with the actual physical hanging of a frame, the planning involved is mostly unaffected. 
+
+Customers still need to use tools to assure perfectly level frames that are spaced along a surface evenly. 
+
+Customers typically have a tough time envisioning multiple frame designs and will often adjust frames after placement. 
+
+Both of these issues could result in pencil marks on the wall, damage to the surface or a reduction in the adhesives effectiveness which could cause the product to fail. These problems all work against Command's goal as a damage-free hanging solution.
+
+Luckily these issues were something that AR headsets had the capability to address. We got to work defining the main features we would integrate and outlined a basic flow of the app. Due to this app's nature of assisting with the placement of a product on a flat surface, most of this product's ux was built off of our existing *Post-it App's* design.
+
+>flow
+
+>Lo-fi mockup
+
+**Augmenting the Command Brand**
+Unlike the iconic Post-it brand, however, Command's brand language is much more serious, clean and efficient without being futuristic or techy. We sought to pull from Command's package design as well as the product line's appearance for our interface.
+
+> brand compilation
+
+> branding examples
+
+The Challenge we faced while adapting the command brand was that it's main color pallet consisted of bright reds, yellows, and whites. None of witch could be used too frequently in a headset due to eye strain and rainbow effects. We attempted to modify the existing brand colors to better fit the the HoloLens 2's display while still maintaining the Command identity. Below are some glimpses into our design process as well as a final Hi-Fi mockup in Figma.
+
+> examples
+
+> mockup
+
+**The App's Final Form**
+This app naturally went through many iterations to perfect it's usability. Hand menu's were added, sliders were swapped with number pads to be allow for more precise input, etc. In the end we settled into a console+canvas design with a few measuring utilities hiding in a hand menu. Below is a breakdown of the final app features as well as a walkthrough.
+
+>gif
+
+>gif
+
+>gif
+
+>walkthrough
+
+**DIY Summit 2022**
+This app made its rounds at 3M and garnered enough support to be filed for a scientific patent as well as showcased at the 2022 Global DIY Summit. 
+
+>Diy summit display
