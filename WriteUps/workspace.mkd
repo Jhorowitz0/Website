@@ -1,25 +1,23 @@
-How can spatial design, explore complex ideas in new ways?
-
-This was the question I asked myself when I started this case study. Being able explore things through touch is essential to the human experience. With wearable AR headsets we are now able to take abstract, digital concepts and project them into the space in front of us; to 'hold' and 'touch' these concepts directly. I wanted to leverage this unique aspect of spatial interface design to delve deep into a concept in a way 2D design never could. I decided to start with Color.
-
-
-Through 3D visualizations, we can delve into the various nuances and complex dynamics of color in more natural and unique ways than ever before.
-
 Why Color?
-I decided to use color as the focus of this project because, while seemingly straight forward, the world of color is deeper than it seems. We as humans have found incredibly complex ways to break down, categorize and manipulate color. As an added benefit, the ways we commonly describe color commonly come in 3 dimensions; RGB, CMY, HSB which map neatly to the three spatial dimensions.
-
-<common color breakdowns>
-
 Narrowing Down on Form
-The original plan was to make a cubed color space, mapping Hue Saturation and Brightness to XYZ axis. This works to an extent but falls short in one aspect. 
+Blending Colors
+Exploring Images
+Tactile Image Processing
 
-Unlike saturation and value that both have minimums and maximums, hue is a contiguous value that loops. Taking inspiration from some of my 2D predecessors, I swapped to a cylindrical color-space that was comprised of a saturation/hue cross section of color-space mounted on a sliding axis of brightness. Goodbye color Cube hello color Tube!
-
-From there it was just a matter of adding some responsive elements to make the selection tool feel more polished. I added hover and grabbed modes for color selection and caps to the brightness axis to make the whole thing feel a bit more grounded and physical. I also mounted the whole thing on a Lazy -Susan type rotation tool to make viewing the interface from any side easy.
-
-This innovative approach comprised a cross-section of color-space, blending saturation and hue, while being mounted on a sliding axis of brightness. With this transformation, I bid farewell to the color Cube and embraced the all-new color Tube, introducing a fresh and captivating perspective to the world of color exploration.
-
-
-Gradients
-
-I then became interested in blends between colors displayed as a line or curve through color-space. Starting with a basic interpolation from one HSB value to another created a line between two colors that blend additively.  You can see how hues on opposing sides of the wheel pass through the center and cancel out making white. 
+<refined video> --
+<common color breakdowns> --
+<Color Selection Examples> --
+<Cubed color-space>--
+<Cylinder Colorspace color-space>--
+<Color Selection Gif> --
+<Color Selection Video> --
+<gif of color blending> --
+<gif of rgb blending> --
+<gif of rgb axis> --
+<compound gradient gif> --
+<full video of blending> --
+<image projection video> --
+<vscope wfmonitor> 
+<Photo-shop manipulation video> --
+<Pinch and pull manipulation> --
+<linkedin video> --

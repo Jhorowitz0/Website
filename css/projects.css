@@ -316,11 +316,33 @@ header img{
     align-items: center;
     padding: none;
     margin: auto;
+    padding-bottom:  3vh;
 }
 
 .displayVideo iframe{
     padding: 0;
     margin: auto;
+}
+
+header ul{
+    width: 100%;
+    padding-bottom:  3vh;
+    padding-top: 3vh;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+header h3{
+    text-align: center;
+    padding-bottom:1vh;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+header li{
+    text-align: center;
 }
 
 
@@ -588,6 +610,15 @@ section h1{
     align-items: center;
 }
 
+.gallery2 iframe{
+    width: 40vw;
+    margin: auto;
+    padding-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .cardLarge{
     width: 40vw;
     margin: auto;
@@ -610,6 +641,17 @@ section h1{
     max-height: 50vh;
     background-color: darkgray;
     margin: auto;
+}
+
+.gallery2{
+    display: flex;
+    width: 70%;
+    max-width: 900px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0vh;
+    flex-direction: column;
 }
 
 .mobile_showcase{
@@ -663,9 +705,16 @@ section h1{
     align-items: center;
     justify-content: space-between;
     padding-top: 5vh;
+    
 }
 
 .gallery div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gallery2 div{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -776,6 +825,10 @@ footer h1{
         padding-bottom: 5vh;
     }
 
+    .gallery2 div{
+        padding-bottom: 5vh;
+    }
+
     .keyPoints{
         flex-direction: column;
         align-items: center;
@@ -830,6 +883,14 @@ footer h1{
         font-family: 'Montserrat', sans-serif;
     }
 
+    header h3{
+        font-size: 25px;
+    }
+
+    header li{
+        font-size: 20px;
+    }
+
     .button{
         font-size: 20px;
         padding: 20px 30px;
@@ -845,6 +906,14 @@ footer h1{
     }
 
     .paragraph p{
+        width: 100%;
+    }
+
+    .gallery2{
+        width: 90%;
+    }
+
+    .gallery2 iframe{
         width: 100%;
     }
 
