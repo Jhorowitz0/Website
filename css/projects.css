@@ -286,10 +286,15 @@ header img{
     object-position: left;
 }
 
+
 #intro{
     background-color: white;
     padding-top: 5vh;
     padding-bottom: 3vh;
+}
+
+#intro iframe{
+    margin: auto;
 }
 
 #title-wrapper{
@@ -304,6 +309,20 @@ header img{
     justify-content: space-around;
     font-family: 'Montserrat', sans-serif;
 }
+
+.displayVideo{
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    padding: none;
+    margin: auto;
+}
+
+.displayVideo iframe{
+    padding: 0;
+    margin: auto;
+}
+
 
 #title-wrapper h2{
     font-weight: 500;

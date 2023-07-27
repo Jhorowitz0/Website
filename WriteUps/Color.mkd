@@ -1,0 +1,30 @@
+
+This was the question I asked myself when I started this case study. Exploration through touch is undeniably essential to the human experience. 
+
+Wearable headsets have unlocked a remarkable ability to materialize abstract digital concepts into the space around us. We can now to 'hold' and 'touch' what was before stuck behind a screen.  I sought to leverage the unique aspects of spatial interfaces to delve deep into a concept in a way 2D design never could.
+
+This case study harnesses the power of spatial data visualization to delve into the nuances and intricacies of color in a way that feels remarkably organic and fun. 
+
+Why Color?
+
+For this project I decided to center my focus on deceptively deep world of color. Color is a completely man-made quality created by our brains to help us understand the world around us. We as humans have developed remarkably intricate methods to deconstruct, classify, and manipulate color. 
+
+Moreover, color is commonly broken down into three-dimensional systems—RGB, CMY, HSB— luckily mirroring the three spatial dimensions. As such, color lends itself very well to spatial design. 
+
+<common color breakdowns>
+
+Many designers have been made designs simplify 3D color values into 2D interfaces, forced to make compromises based on context.With spatial interfaces, I have found myself in a unique position to push past those 2D limits and explore beyond the boundaries of flat color pickers. 
+
+<Color Selection Examples>
+
+Narrowing Down on Form
+
+Initially, I have planed on creating a cubed color space,  mapping Hue, Saturation, and Brightness to the XYZ axis. While this approach showcased promising results, it became clear that it fell short when dealing with hue.
+
+<Cubed color-space>
+
+Unlike saturation and value that both have minimums and maximums, hue is a contiguous value that loops. With that in mind, I pivoted towards a cylindrical color-space design.
+
+This new design was comprised of a saturation/hue cross section of color-space mounted on a sliding axis of brightness and I felt it more accurately portrayed the behavior of hue. Goodbye color Cube hello color Tube!
+
+<Cylinder Colorspace color-space>
